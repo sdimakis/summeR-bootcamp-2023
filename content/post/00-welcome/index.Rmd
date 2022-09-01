@@ -1,0 +1,37 @@
+---
+title: Welcome
+author: ''
+date: "`r Sys.Date()`"
+weight: 1
+slug: []
+categories: []
+tags: []
+subtitle: ''
+summary: ' '
+authors: []
+featured: no
+image:
+  caption: "Artwork by [@allison_horst](https://twitter.com/allison_horst)"
+  focal_point: ''
+  preview_only: no
+projects: []
+links:
+- icon: film
+  icon_pack: fas
+  name: Slides
+  url: /slides/00-slides.html
+---
+
+Welcome, everyone! We're glad you're here.
+
+***
+
+## Slides 
+
+```{r echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "/slides/00-slides.html",
+  ratio = "16:9"
+)
+```
+
