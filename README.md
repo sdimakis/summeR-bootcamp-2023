@@ -1,6 +1,6 @@
 # summeR-bootcamp-2022
 
-This website contains materials for the UO R Bootcamp: a 3-day introductory R workshop developed by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
+This repo contains materials for the UO R Bootcamp: a 3-day introductory R workshop developed by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
 
 The full website is available here: INSERT URL HERE.
 
