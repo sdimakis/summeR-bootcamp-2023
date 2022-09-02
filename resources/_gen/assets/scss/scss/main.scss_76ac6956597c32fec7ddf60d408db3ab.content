@@ -9219,8 +9219,8 @@ a:hover, a:focus {
 /* hashtags */
 pre, code {
   font-family: "Source Code Pro", monospace;
-  color: #c44c02;
-  background-color: #f7e1d2; }
+  color: #d95530;
+  background-color: #fce3dc; }
 
 /* notes */
 div.puzzle, div.fyi, div.demo, div.note, div.book, div.github, div.profile, div.bookmark, div.link, div.code, div.alert, div.download, div.people, div.uo, div.clock {
@@ -9230,14 +9230,14 @@ div.puzzle, div.fyi, div.demo, div.note, div.book, div.github, div.profile, div.
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  min-height: 120px;
+  min-height: 80px;
   color: #fff;
-  background-color: #457580;
-  border: solid 5px #5f8e99; }
+  background-color: var(--main-color);
+  /*border: solid 5px #5f8e99;*/ }
 
 /* background panels (featurettes) */
 .home-section:nth-of-type(even) {
-  background-color: #d9f4fa; }
+  background-color: #f0f8fa; }
 
 .featurette {
   color: #000; }
@@ -9262,4 +9262,4 @@ h1, h2, h3, h4, h5, h6 {
   color: #333; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff !important; }

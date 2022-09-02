@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UO Psych R Bootcamp</title>
+    <link>https://uopsych-r-bootcamp-2021.netlify.app/authors/brendan/</link>
+      <atom:link href="https://uopsych-r-bootcamp-2021.netlify.app/authors/brendan/index.xml" rel="self" type="application/rss+xml" />
+    <description>UO Psych R Bootcamp</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://uopsych-r-bootcamp-2021.netlify.app/img/ducks.jpg</url>
+      <title>UO Psych R Bootcamp</title>
+      <link>https://uopsych-r-bootcamp-2021.netlify.app/authors/brendan/</link>
+    </image>
+    
+  </channel>
+</rss>
