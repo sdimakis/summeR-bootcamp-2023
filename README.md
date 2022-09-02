@@ -8,7 +8,7 @@ The full website is available here: INSERT URL HERE.
 
 The UO R Bootcamp gives a gentle introduction to R and RStudio, transforming and visualizing data with the tidyverse, and the basics of R Markdown. It assumes no prior experience with R or any other programming language and is designed to get learners up and running with the most widely used tools for conducting reproducible data analysis in R, while emphasizing best practices for writing code and organizing project-oriented workflows. It also contains a curated list of resources relevant to each topic for those who want more opportunities for learning and practice. 
 
-Please contact [Cameron S. Kay](https://cameronstuartkay.com), the 2022 UO R Bootcamp instructor, with any questions at [ckay@uoregon.edu](mailto:ckay@uoregon.edu).
+Please contact [Cameron S. Kay](https://cameronstuartkay.com), the 2022 bootcamp coordinator, with any questions at [ckay@uoregon.edu](mailto:ckay@uoregon.edu).
 
 Topics covered include:
 

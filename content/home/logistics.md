@@ -6,7 +6,6 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Logistics"
-subtitle = "All workshop sessions will take place live via Zoom."
 
 # Showcase personal skills or business features.
 # 
@@ -15,16 +14,16 @@ subtitle = "All workshop sessions will take place live via Zoom."
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "<a href='https://rstudio.cloud/spaces/169455/join?access_code=yWOd%2Fuf8lAnvG%2Bz1KkK38lol4iUfCMrw60kxkTq2'>RStudio Cloud</a>"
-  description = "Where you will be working hands-on with R through interactive exercises"
+  icon = "fa-solid fa-video"
+  icon_pack = "fa"
+  name = "<a href='https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=101392'>Zoom</a>"
+  description = "For attending the workshop sessions"
   
 [[feature]]
   icon = "slack"
   icon_pack = "fab"
   name = "<a href='https://uodatascience.slack.com/'>Slack</a>"
-  description = "For communicating outside of the workshop (use channel #bootcamp2021)"
+  description = "For communicating outside of the workshop (use channel `#bootcamp2022`)"
   
 [[feature]]
   icon = "github"
