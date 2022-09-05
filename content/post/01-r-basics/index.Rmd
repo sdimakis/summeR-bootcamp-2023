@@ -30,6 +30,13 @@ links:
   url: https://rstudio.cloud/learn/primers/1.2
 ---
 
+```{css}
+iframe {
+  width: 500px; /* adjust to your needs */
+  max-width: 100%; /* to make it responsive */
+}
+```
+
 Learning R can feel intimidating, and getting started is often the hardest part. Learning a few basics can go a long way and empower you to take the next step. And, even if you've been using R for a while, you can almost always learn something new and useful when going back over the fundamentals. 
 
 ***
@@ -40,8 +47,7 @@ Learning R can feel intimidating, and getting started is often the hardest part.
 ```{r echo=FALSE}
 xaringanExtra::embed_xaringan(
   url = "/slides/01-slides.html",
-  ratio = "16:9",
-  max_width = "720px"
+  ratio = "16:9"
 )
 ```
 
