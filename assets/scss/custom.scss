@@ -183,3 +183,11 @@ body {
     background-color: #fff !important;
 }
 
+/* fix iframe width */
+
+iframe {
+  width: 720px; /* adjust to your needs */
+  max-width: 100%; /* to make it responsive */
+}
+
+

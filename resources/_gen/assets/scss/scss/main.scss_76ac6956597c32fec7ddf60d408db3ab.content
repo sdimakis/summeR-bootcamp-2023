@@ -9263,3 +9263,10 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #fff !important; }
+
+/* fix iframe width */
+iframe {
+  width: 720px;
+  /* adjust to your needs */
+  max-width: 100%;
+  /* to make it responsive */ }
