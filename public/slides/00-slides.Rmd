@@ -37,5 +37,13 @@ style_mono_accent(base_color = "#15758c",
 
 class: title-slide, center, middle
 
-# Welcome: Coming soon!
+# Welcome
+
+## Introduction and Orientation
+
+---
+class: split-four
+
+# Hello `r emo::ji("wave")`
+
 
