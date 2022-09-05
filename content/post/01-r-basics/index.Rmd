@@ -40,7 +40,8 @@ Learning R can feel intimidating, and getting started is often the hardest part.
 ```{r echo=FALSE}
 xaringanExtra::embed_xaringan(
   url = "/slides/01-slides.html",
-  ratio = "16:9"
+  ratio = "16:9",
+  max_width = "720px"
 )
 ```
 
