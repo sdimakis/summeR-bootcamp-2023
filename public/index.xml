@@ -115,16 +115,6 @@
 &lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/01-r-basics/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;pre class=&#34;css&#34;&gt;&lt;code&gt;iframe {
-  width: 500px; /* adjust to your needs */
-  max-width: 100%; /* to make it responsive */
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;style type=&#34;text/css&#34;&gt;
-iframe {
-  width: 500px; /* adjust to your needs */
-  max-width: 100%; /* to make it responsive */
-}
-&lt;/style&gt;
 &lt;p&gt;Learning R can feel intimidating, and getting started is often the hardest part. Learning a few basics can go a long way and empower you to take the next step. And, even if you’ve been using R for a while, you can almost always learn something new and useful when going back over the fundamentals.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
