@@ -31,7 +31,8 @@ Welcome, everyone! We're glad you're here.
 ```{r echo=FALSE}
 xaringanExtra::embed_xaringan(
   url = "/slides/00-slides.html",
-  ratio = "16:9"
+  ratio = "16:9",
+  max_width = "720px"
 )
 ```
 
