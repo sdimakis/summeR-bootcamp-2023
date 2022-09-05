@@ -1,8 +1,10 @@
 # summeR-bootcamp-2022
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9af47a19-4cf5-47c1-8c42-0f51dcf2bb2b/deploy-status)](https://app.netlify.com/sites/uorbootcamp2022/deploys)
+
 This repo contains materials for the UO R Bootcamp: a 3-day introductory R workshop developed by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
 
-The full website is available here: INSERT URL HERE.
+The full website is available here: uorbootcamp2022.netlify.app
 
 # Description
 
