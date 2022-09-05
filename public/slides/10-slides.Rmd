@@ -1,0 +1,40 @@
+---
+title: "Welcome"
+subtitle: "Introduction & Orientation"
+author: 
+date: 
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, "assets/css/custom.css"]
+    seal: false
+    lib_dir: libs
+  nature:
+    highlightStyle: github
+    highlightLines: true
+    countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(countdown)
+library(tidyverse)
+
+xaringanExtra::use_xaringan_extra(include = c("panelset", "tile_view", "share_again"))
+xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin", "pocket"))
+
+# your turn counter
+yt_counter <- 0
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(base_color = "#15758c",
+                text_font_google = google_font("Montserrat", "300", "300i"),
+                code_font_google = google_font("Source Code Pro"),
+                link_color = "#15758c",
+                code_inline_color = "#d95530")
+```
+
+class: title-slide, center, middle
+
+# ggplot2: Coming soon!

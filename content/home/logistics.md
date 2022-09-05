@@ -28,7 +28,7 @@ title = "Logistics"
 [[feature]]
   icon = "github"
   icon_pack = "fab"
-  name = "<a href='https://github.com/uopsych/summeR-bootcamp-2021'>Github repo</a>"
+  name = "<a href='https://github.com/uopsych/summeR-bootcamp-2021'>GitHub</a>"
   description = "For accessing source code of all workshop materials"
 
 +++

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UO R Bootcamp</title>
+    <link>https://uopsych-r-bootcamp-2022.netlify.app/authors/mcdougald/</link>
+      <atom:link href="https://uopsych-r-bootcamp-2022.netlify.app/authors/mcdougald/index.xml" rel="self" type="application/rss+xml" />
+    <description>UO R Bootcamp</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://uopsych-r-bootcamp-2022.netlify.app/img/ducks.jpg</url>
+      <title>UO R Bootcamp</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/authors/mcdougald/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview | UO Psych R Bootcamp</title>
-    <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/</link>
-      <atom:link href="https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/index.xml" rel="self" type="application/rss+xml" />
+    <title>Overview | UO R Bootcamp</title>
+    <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/</link>
+      <atom:link href="https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/index.xml" rel="self" type="application/rss+xml" />
     <description>Overview</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://uopsych-r-bootcamp-2021.netlify.app/img/ducks.jpg</url>
+      <url>https://uopsych-r-bootcamp-2022.netlify.app/img/ducks.jpg</url>
       <title>Overview</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/</link>
     </image>
     
     <item>
       <title>Useful books</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/books/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/books/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/books/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/books/</guid>
       <description>&lt;br&gt;
 &lt;h2 id=&#34;visualization&#34;&gt;Visualization&lt;/h2&gt;
 &lt;ul&gt;
@@ -87,9 +87,9 @@
     
     <item>
       <title>Useful readings</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/readings/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/readings/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/readings/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/readings/</guid>
       <description>&lt;br&gt;
 &lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
 &lt;ol&gt;
@@ -174,9 +174,9 @@
     
     <item>
       <title>Useful websites</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/websites/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/websites/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/websites/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/websites/</guid>
       <description>&lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;

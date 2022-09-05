@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UO Psych R Bootcamp</title>
-    <link>https://uopsych-r-bootcamp-2021.netlify.app/</link>
-      <atom:link href="https://uopsych-r-bootcamp-2021.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <description>UO Psych R Bootcamp</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <title>UO R Bootcamp</title>
+    <link>https://uopsych-r-bootcamp-2022.netlify.app/</link>
+      <atom:link href="https://uopsych-r-bootcamp-2022.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <description>UO R Bootcamp</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 05 Sep 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://uopsych-r-bootcamp-2021.netlify.app/img/ducks.jpg</url>
-      <title>UO Psych R Bootcamp</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/</link>
+      <url>https://uopsych-r-bootcamp-2022.netlify.app/img/ducks.jpg</url>
+      <title>UO R Bootcamp</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/</link>
     </image>
     
     <item>
       <title>Welcome</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/00-welcome/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/00-welcome/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/00-welcome/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/00-welcome/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/00-welcome/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/00-welcome/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/00-welcome/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Welcome, everyone! We’re glad you’re here.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Slides&lt;/h2&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/00-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/00-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -36,9 +35,9 @@
     
     <item>
       <title>Useful books</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/books/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/books/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/books/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/books/</guid>
       <description>&lt;br&gt;
 &lt;h2 id=&#34;visualization&#34;&gt;Visualization&lt;/h2&gt;
 &lt;ul&gt;
@@ -109,20 +108,19 @@
     
     <item>
       <title>Basics of R &amp; RStudio</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/01-r-basics/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/01-r-basics/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/01-r-basics/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/01-r-basics/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/01-r-basics/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/01-r-basics/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/01-r-basics/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Learning R can feel intimidating, and getting started is often the hardest part. Learning a few basics can go a long way and empower you to take the next step. And even if you’ve been using R for a while, I always find that I learn something new and useful when going back over the fundamentals.&lt;/p&gt;
+&lt;p&gt;Learning R can feel intimidating, and getting started is often the hardest part. Learning a few basics can go a long way and empower you to take the next step. And, even if you’ve been using R for a while, you can almost always learn something new and useful when going back over the fundamentals.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/01-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/01-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -142,9 +140,9 @@
     
     <item>
       <title>Useful readings</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/readings/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/readings/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/readings/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/readings/</guid>
       <description>&lt;br&gt;
 &lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
 &lt;ol&gt;
@@ -229,9 +227,9 @@
     
     <item>
       <title>Useful websites</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/websites/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/websites/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/courses/resources/websites/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/courses/resources/websites/</guid>
       <description>&lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -325,20 +323,19 @@
     
     <item>
       <title>Data Types &amp; Structures</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/02-data-types/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/02-data-types/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/03-data-types/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/03-data-types/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/02-data-types/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/02-data-types/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/03-data-types/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Data comes in many different shapes and sizes, which means we need a way to represent different kinds of data in R in order to distinguish them. Today we’re going to cover the different fundamental types of data in R and give you a feel for different ways that data can be structured and indexed.&lt;/p&gt;
+&lt;p&gt;Data comes in many different shapes and sizes, which means we need a way to represent different kinds of data in R in order to distinguish them. Today, we’re going to cover the different fundamental types of data in R and give you a feel for different ways that data can be structured and indexed.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/02-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/03-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -357,20 +354,19 @@
     
     <item>
       <title>Functions &amp; Debugging</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/04-functions/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/04-functions/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/04-functions/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Functions are the “verbs” of R – they allow you to actually do interesting things with your data. We will cover the basics of how to use functions in R, how to get access to different functions by downloading packages and some general principles for what to do when you run into problems.&lt;/p&gt;
+&lt;p&gt;Functions are the “verbs” of R—they allow you to actually do interesting things with your data. We will cover the basics of how to use functions in R, how to get access to different functions by downloading packages, some general principles for what to do when you run into problems.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/03-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/04-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -390,20 +386,19 @@
     
     <item>
       <title>Introduction to the Tidyverse</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/05-intro-tidyverse/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/05-intro-tidyverse/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/05-intro-tidyverse/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;So far we have been using functions in base R. Now we’re going to take a first look at the tidyverse – a widely used framework for doing the full spectrum of data analysis, from importing data to cleaning, visualizing, and modelling.&lt;/p&gt;
+&lt;p&gt;So far we have been using functions in base R. Now we’re going to take a first look at the tidyverse—a widely used framework for doing the full spectrum of data analysis, from importing to cleaning, visualizing, and modelling data.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/04-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/05-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -422,21 +417,51 @@
     </item>
     
     <item>
-      <title>Importing Data &amp; Project-oriented Workflows</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/</guid>
+      <title>Pipes</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/06-pipes/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/06-pipes/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/06-pipes/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;The first step of any data analysis workflow is to get data into R. This isn’t always as straightforward as you might think, but fortunately there are some core functions that make this easy and efficient. Since we are starting at the beginning, we will also discuss the idea of a project-oriented workflow, which is a way to keep an organized and consistent process whenever you work with data in R that will also make your work reproducible and shareable. And the decisions you make right at the start of a data analysis project – even before importing your data – will have a lot of down-stream consequences.&lt;/p&gt;
+&lt;p&gt;Before we get started importing, wrangling, tidying, and visualizing data, we should talk about a powerful tool for chaining functions together: pipes.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/05-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/06-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-reading&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further Reading&lt;/h3&gt;
+&lt;div class=&#34;book&#34;&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;R for Data Science &lt;a href=&#34;https://r4ds.had.co.nz/pipes.html?q=pipe#pipes&#34;&gt;Ch 18: Pipes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://magrittr.tidyverse.org&#34;&gt;Summary of Magrittr&lt;/a&gt; from tidyverse.org&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Importing Data &amp; Project-oriented Workflows</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/07-importing-workflows/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/07-importing-workflows/</guid>
+      <description>
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/07-importing-workflows/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The first step of any data analysis workflow is to get data into R. This isn’t always as straightforward as you might think, but, fortunately, there are some core functions that make this easy and efficient. Since we are starting at the beginning, we will also discuss the idea of a project-oriented workflow, which is a way to keep an organized and consistent process whenever you work with data in R that will also make your work reproducible and shareable. And the decisions you make right at the start of a data analysis project—even before importing your data—will have a lot of down-stream consequences.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/07-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -456,20 +481,19 @@
     
     <item>
       <title>Data Visualization with ggplot2</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/10-ggplot2/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/10-ggplot2/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/10-ggplot2/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Data visualization is at the very core of science. In order to understand and glean insights from our data, we need different ways of representing it visually. R has an incredible capacity for creating all sorts of plots, charts, and tables, and today we will only scratch the surface. We will discuss the fundamentals of the powerful ggplot2 package and the “grammar of graphics” that underlies it.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/06-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/10-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -482,7 +506,39 @@
 &lt;li&gt;&lt;p&gt;Modern Dive chapter on &lt;a href=&#34;https://moderndive.com/2-viz.html&#34;&gt;data visualization&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Cookbook for R chapter on &lt;a href=&#34;http://www.cookbook-r.com/Graphs/&#34;&gt;data visualization&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ggplot2-book.org/&#34;&gt;ggplot2: Elegant Graphics for Data Analysis&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#1&#34;&gt;the ggplot flipbook&lt;/a&gt; by Gina Reynolds – shows how to create plots line-by-line&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#1&#34;&gt;the ggplot flipbook&lt;/a&gt; by Gina Reynolds—shows how to create plots line-by-line&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Visualization with ggplot2</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/11-tips/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/11-tips/</guid>
+      <description>
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/11-tips/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;For this final topic, we will cover some tips and tricks that will help you become an R power user. This includes customizing how R Studio looks, introducing obscure (but helpful) functions, and some shameless self-promotion on the part of Cameron.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/11-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-reading&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further Reading&lt;/h3&gt;
+&lt;div class=&#34;book&#34;&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://betterwebtype.com/articles/2020/02/13/5-monospaced-fonts-with-cool-coding-ligatures/&#34;&gt;ligature fonts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;papaja&lt;/a&gt; package.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://github.com/camkay/panoply&#34;&gt;panoply&lt;/a&gt; package.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -491,20 +547,19 @@
     
     <item>
       <title>Data Wrangling with dplyr</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/08-dplyr/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/08-dplyr/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/08-dplyr/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Almost always when you are given data to analyze, it will not be in a format in which you are immediately able to create visualizations, perform modelling, generate tables etc. In other words, it needs to be wrangled into the right format. The dplyr package has a very powerful set of functions for just this, and today we will be covering the core dplyr “verbs” that allow you to transform your data with optimal specificity and efficiency.&lt;/p&gt;
+&lt;p&gt;When you are given data to analyze, it will almost always be in a format that makes it hard to create visualizations, perform modelling, and generate tables. In other words, most of the time, it will need to be wrangled into the correct format. The dplyr package has a very powerful set of functions for doing just this. Today we will be covering the core dplyr “verbs” that allow you to transform your data with optimal specificity and efficiency.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/07-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/08-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -524,20 +579,19 @@
     
     <item>
       <title>Data Tidying with tidyr</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/</guid>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/09-tidyr/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/09-tidyr/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/09-tidyr/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;The concept of tidy data is, as the name suggests, of primary importance in the tidyverse. This lesson will introduce you to the criteria of tidy data, why it’s important, and how to reshape your raw data into a tidy format using &lt;code&gt;pivot_wider()&lt;/code&gt; and &lt;code&gt;pivot_longer()&lt;/code&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/08-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/09-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -556,21 +610,20 @@ Sydney&lt;/p&gt;&lt;/li&gt;
     </item>
     
     <item>
-      <title>Reproducible Reporting with R Markdown</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/</link>
-      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/</guid>
+      <title>Basics of R Markdown</title>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/post/02-rmarkdown/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/post/02-rmarkdown/</guid>
       <description>
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/post/02-rmarkdown/index_files/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;R Markdown is one of the most powerful tools at your disposal as a scientist – particularly for communicating and sharing your work. For example, this entire website and all of the slides were created using R Markdown! Today we’ll take a little deeper of a dive into what R Markdown is than what we covered in our initial introduction to R, and you will hopefully get a sense of the endless possibilities it affords you.&lt;/p&gt;
+&lt;p&gt;R Markdown is one of the most powerful tools at your disposal as a scientist – particularly for communicating and sharing your work. For example, this entire website and all of the slides were created using R Markdown! Here, we’ll provide a brief overview of what R Markdown is, and you will hopefully get a sense of the endless possibilities it affords you.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
-&lt;iframe src=&#34;https://uopsych-r-bootcamp-2021.netlify.app/slides/09-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34; data-exeternal=&#34;1&#34;&gt;
+&lt;iframe src=&#34;https://uopsych-r-bootcamp-2022.netlify.app/slides/02-slides.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -592,9 +645,9 @@ Sydney&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Prework</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/prework/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/prework/</link>
       <pubDate>Fri, 11 Sep 2020 11:17:19 -0700</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/prework/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/prework/</guid>
       <description>
 
 
@@ -609,7 +662,7 @@ Sydney&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://uodatascience.slack.com/&#34;&gt;Slack workspace&lt;/a&gt;. This is how we will primarily be communicating with each other, and it is the best place to ask questions outside of the scheduled bootcamp hours. We’ll be using the channel &lt;code&gt;#bootcamp2022&lt;/code&gt;. You should have received an email invitation to join the &lt;code&gt;SlackRs&lt;/code&gt; workspace. If you haven’t received an invitation, send Cameron an email at &lt;a href=&#34;mailto:ckay@uoregon.edu&#34;&gt;ckay@uoregon.edu&lt;/a&gt;. When you join, please introduce yourself and say hello in the &lt;code&gt;#bootcamp2022&lt;/code&gt; channel!&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Download and install both &lt;a href=&#34;https://cran.r-project.org&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;RStudio&lt;/a&gt;. &lt;a href=&#34;https://cran.r-project.org&#34;&gt;R&lt;/a&gt; is free and, for the purposes of the bootcamp, you will only need the free version of &lt;a href=&#34;https://cran.r-project.org&#34;&gt;RStudio&lt;/a&gt;. If you have any trouble downloading or opening &lt;a href=&#34;https://cran.r-project.org&#34;&gt;R&lt;/a&gt; or &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;RStudio&lt;/a&gt;, please let one of the UO R Bootcamp team members know, and we will do our best to help you solve the issue.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Download the &lt;a href=&#34;&#34;&gt;materials and exercises&lt;/a&gt; for the UO R Bootcamp. We will be working through the materials and exercises together during the bootcamp.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Review the &lt;a href=&#34;https://uopsych-r-bootcamp-2021.netlify.app/#code_of_conduct&#34;&gt;Code of Conduct&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Review the &lt;a href=&#34;https://uopsych-r-bootcamp-2022.netlify.app/#code_of_conduct&#34;&gt;Code of Conduct&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;Optional&lt;/em&gt; - Download &lt;a href=&#34;https://www.google.com/chrome/&#34;&gt;Google Chrome&lt;/a&gt; if you don’t have it already. The materials on this website are best viewed with Chrome. We’ve found that using other browsers (e.g., Firefox, Safari) can lead to some technical difficulties.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Looking forward to seeing you all soon. Hopefully we’ll have you loving R in no time!&lt;/p&gt;
@@ -619,44 +672,44 @@ Sydney&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Resources</title>
-      <link>https://uopsych-r-bootcamp-2021.netlify.app/resources/</link>
+      <link>https://uopsych-r-bootcamp-2022.netlify.app/resources/</link>
       <pubDate>Fri, 11 Sep 2020 11:17:19 -0700</pubDate>
-      <guid>https://uopsych-r-bootcamp-2021.netlify.app/resources/</guid>
+      <guid>https://uopsych-r-bootcamp-2022.netlify.app/resources/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#books-free-and-online&#34;&gt;Books (free and online)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#websites-add-to-your-bookmarks&#34;&gt;Websites – add to your bookmarks!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#interactive-tutorials&#34;&gt;Interactive tutorials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#online-communities&#34;&gt;Online communities&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#at-university-of-oregon&#34;&gt;At University of Oregon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#books&#34; id=&#34;toc-books&#34;&gt;Books&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#websites&#34; id=&#34;toc-websites&#34;&gt;Websites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#interactive-tutorials&#34; id=&#34;toc-interactive-tutorials&#34;&gt;Interactive tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#online-communities&#34; id=&#34;toc-online-communities&#34;&gt;Online communities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#university-of-oregon&#34; id=&#34;toc-university-of-oregon&#34;&gt;University of Oregon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Below is a curated list of resources I’ve generally found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please &lt;a href=&#34;mailto:bcullen@uoregon.edu&#34;&gt;let me know&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Below is a curated list of resources we’ve found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please &lt;a href=&#34;mailto:ckay@uoregon.edu&#34;&gt;let us know&lt;/a&gt;!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;div id=&#34;books-free-and-online&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Books (free and online)&lt;/h2&gt;
+&lt;div id=&#34;books&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
 &lt;div class=&#34;book&#34;&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; – thorough and accessible, includes exercises and community-contributed &lt;a href=&#34;https://jrnold.github.io/r4ds-exercise-solutions/&#34;&gt;solutions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://moderndive.netlify.app/&#34;&gt;Modern Dive&lt;/a&gt; – great for complete beginners, more focused on stats and modelling&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://style.tidyverse.org/&#34;&gt;The Tidyverse Style Guide&lt;/a&gt; – for getting into the habit of using best practices early on&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.bigbookofr.com/&#34;&gt;Big Book of R&lt;/a&gt; – one stop shopping for pretty much any R-related book that’s out there (categorized by topic and searchable)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;—thorough and accessible, includes exercises and community-contributed &lt;a href=&#34;https://jrnold.github.io/r4ds-exercise-solutions/&#34;&gt;solutions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://moderndive.netlify.app/&#34;&gt;Modern Dive&lt;/a&gt;—great for complete beginners, more focused on stats and modelling&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://style.tidyverse.org/&#34;&gt;The Tidyverse Style Guide&lt;/a&gt;—for getting into the habit of using best practices early on&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.bigbookofr.com/&#34;&gt;Big Book of R&lt;/a&gt;—a collection of pretty much any R-related book that’s out there (categorized by topic and searchable)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;websites-add-to-your-bookmarks&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Websites – add to your bookmarks!&lt;/h2&gt;
+&lt;div id=&#34;websites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Websites&lt;/h2&gt;
 &lt;div class=&#34;link&#34;&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;RStudio Education’s &lt;a href=&#34;https://education.rstudio.com/learn/&#34;&gt;learning resources&lt;/a&gt; and &lt;a href=&#34;https://education.rstudio.com/blog/&#34;&gt;blog&lt;/a&gt; – a veritable treasure trove!&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34;&gt;RStudio cheatsheets&lt;/a&gt; – worth printing ones you commonly use if you are able to&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.tidyverse.org/packages/&#34;&gt;tidyverse.org&lt;/a&gt; – links to &lt;a href=&#34;https://www.tidyverse.org/learn/&#34;&gt;learning resources&lt;/a&gt;, &lt;a href=&#34;https://www.tidyverse.org/packages/&#34;&gt;package documentation&lt;/a&gt;, and a great &lt;a href=&#34;https://www.tidyverse.org/blog/&#34;&gt;blog&lt;/a&gt; to stay up to date&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.learnr4free.com/en/index.html&#34;&gt;learnr4free&lt;/a&gt; – a searchable site for all sorts of learning resources&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RStudio Education’s &lt;a href=&#34;https://education.rstudio.com/learn/&#34;&gt;learning resources&lt;/a&gt; and &lt;a href=&#34;https://education.rstudio.com/blog/&#34;&gt;blog&lt;/a&gt;—a veritable treasure trove!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34;&gt;RStudio cheatsheets&lt;/a&gt;—worth printing ones you commonly use&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.tidyverse.org/packages/&#34;&gt;tidyverse.org&lt;/a&gt;—links to &lt;a href=&#34;https://www.tidyverse.org/learn/&#34;&gt;learning resources&lt;/a&gt;, &lt;a href=&#34;https://www.tidyverse.org/packages/&#34;&gt;package documentation&lt;/a&gt;, and a great &lt;a href=&#34;https://www.tidyverse.org/blog/&#34;&gt;blog&lt;/a&gt; to stay up to date&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.learnr4free.com/en/index.html&#34;&gt;learnr4free&lt;/a&gt;—a searchable site for all sorts of learning resources&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -665,9 +718,9 @@ Sydney&lt;/p&gt;&lt;/li&gt;
 &lt;h2&gt;Interactive tutorials&lt;/h2&gt;
 &lt;div class=&#34;demo&#34;&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r-bootcamp.netlify.app/&#34;&gt;RBootcamp&lt;/a&gt; – a free online course about the basics of the tidyverse&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio.cloud/learn/primers&#34;&gt;RStudio primers&lt;/a&gt; – these, along with other tutorials, can also be run in the &lt;a href=&#34;https://rstudio.github.io/rstudio-extensions/rstudio-tutorials.html&#34;&gt;Tutorial pane&lt;/a&gt; in the RStudio IDE&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tinystats.github.io/teacups-giraffes-and-statistics/index.html&#34;&gt;Teacup Giraffes&lt;/a&gt; – more stats focused, with incredible artwork and adorable tiny giraffes 🦒&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r-bootcamp.netlify.app/&#34;&gt;RBootcamp&lt;/a&gt;—a free online course about the basics of the tidyverse&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio.cloud/learn/primers&#34;&gt;RStudio primers&lt;/a&gt;—these, along with other tutorials, can also be run in the &lt;a href=&#34;https://rstudio.github.io/rstudio-extensions/rstudio-tutorials.html&#34;&gt;Tutorial pane&lt;/a&gt; in the RStudio IDE&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tinystats.github.io/teacups-giraffes-and-statistics/index.html&#34;&gt;Teacup Giraffes&lt;/a&gt;—more stats focused, with incredible artwork and adorable tiny giraffes 🦒&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -676,23 +729,23 @@ Sydney&lt;/p&gt;&lt;/li&gt;
 &lt;h2&gt;Online communities&lt;/h2&gt;
 &lt;div class=&#34;people&#34;&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.rfordatasci.com/&#34;&gt;R for Data Science Online Learning Community&lt;/a&gt; – super friendly and welcoming to R users at all levels&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;#rstats Twitter – also very friendly and inclusive (despite being Twitter). Good advice on this &lt;a href=&#34;https://www.t4rstats.com/index.html#what-you-can-get-out-of-twitter&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;Tidy Tuesday&lt;/a&gt; – a weekly community-based data viz challenge on Twitter. Great for hands-on, self-directed practice!&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://community.rstudio.com/t/welcome-to-the-rstudio-community/8&#34;&gt;RStudio Community&lt;/a&gt; – great for asking for help from knowledgable experts&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.rfordatasci.com/&#34;&gt;R for Data Science Online Learning Community&lt;/a&gt;—super friendly and welcoming to R users at all levels&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;#rstats&lt;/code&gt; Twitter—also very friendly and inclusive (despite being Twitter). Good advice on this &lt;a href=&#34;https://www.t4rstats.com/index.html#what-you-can-get-out-of-twitter&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;Tidy Tuesday&lt;/a&gt;—a weekly community-based data viz challenge on Twitter. Great for hands-on, self-directed practice!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://community.rstudio.com/t/welcome-to-the-rstudio-community/8&#34;&gt;RStudio Community&lt;/a&gt;—great for asking for help from knowledgable experts&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;at-university-of-oregon&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;At University of Oregon&lt;/h2&gt;
+&lt;div id=&#34;university-of-oregon&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;University of Oregon&lt;/h2&gt;
 &lt;div class=&#34;uo&#34;&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;5-course &lt;a href=&#34;https://education.uoregon.edu/data-science-specialization-educational-leadership&#34;&gt;Educational Data Science Specialization&lt;/a&gt; offered by UO College of Education, led by &lt;a href=&#34;https://education.uoregon.edu/people/faculty/daniela&#34;&gt;Daniel Anderson&lt;/a&gt;. See course websites &lt;a href=&#34;https://github.com/uo-datasci-specialization&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;EDS.jpg&#34;&gt;info sheet&lt;/a&gt; below. Cannot recommend highly enough! ⭐ ⭐ ⭐ ⭐ ⭐&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;UO Psych Data Analysis Sequence (PSY611, PSY612, PSY613), led by &lt;a href=&#34;https://psychology.uoregon.edu/profile/sweston2/&#34;&gt;Sara Weston&lt;/a&gt; and &lt;a href=&#34;https://psychology.uoregon.edu/profile/berkman/&#34;&gt;Elliot Berkman&lt;/a&gt;. See course websites &lt;a href=&#34;https://github.com/uopsych&#34;&gt;here&lt;/a&gt; – you will learn a TON.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;5-course &lt;a href=&#34;https://education.uoregon.edu/data-science-specialization-educational-leadership&#34;&gt;Educational Data Science Specialization&lt;/a&gt; offered by UO College of Education. See course websites &lt;a href=&#34;https://github.com/uo-datasci-specialization&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;EDS.jpg&#34;&gt;info sheet&lt;/a&gt; below. Cannot recommend highly enough! ⭐ ⭐ ⭐ ⭐ ⭐&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;UO Psych Data Analysis Sequence (PSY611, PSY612, PSY613), led by &lt;a href=&#34;https://psychology.uoregon.edu/profile/sweston2/&#34;&gt;Sara Weston&lt;/a&gt; and &lt;a href=&#34;https://psychology.uoregon.edu/profile/berkman/&#34;&gt;Elliot Berkman&lt;/a&gt;. See course websites &lt;a href=&#34;https://github.com/uopsych&#34;&gt;here&lt;/a&gt;—you will learn a TON.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Free R workshops offered by &lt;a href=&#34;https://library.uoregon.edu/data-services&#34;&gt;Data Services&lt;/a&gt;, a branch of UO Libraries. Includes a &lt;a href=&#34;https://researchguides.uoregon.edu/library_workshops/tidyverse&#34;&gt;“Master the Tidyverse”&lt;/a&gt; series.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://uodatascience.slack.com/&#34;&gt;SlackRs workspace&lt;/a&gt; – use this to ask for help from other UO community members when you’re stuck on something or need some advice.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;Each other! As grad students, one of the best resources you have access to is your peers. You can read more of my thoughts about this &lt;a href=&#34;https://bcullen.rbind.io/post/2020-03-08-data-science-training-needs-in-grad-school/&#34;&gt;here&lt;/a&gt;. When in doubt, ask for help – and pay it forward if/whenever you can. ❤️&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://uodatascience.slack.com/&#34;&gt;SlackRs workspace&lt;/a&gt;—use this to ask for help from other UO community members when you’re stuck on something or need some advice.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Each other! As grad students, one of the best resources you have access to is your peers. You can read more of &lt;a href=&#34;https://bcullen.rbind.io&#34;&gt;Brendan Cullen&lt;/a&gt;’s thoughts about this &lt;a href=&#34;https://bcullen.rbind.io/post/2020-03-08-data-science-training-needs-in-grad-school/&#34;&gt;here&lt;/a&gt;. When in doubt, ask for help—and pay it forward if/whenever you can. ❤️&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;

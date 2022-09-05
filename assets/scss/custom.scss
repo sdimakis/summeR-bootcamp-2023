@@ -9,7 +9,7 @@ div.fyi {
 }
 
 div.demo {
-  background-image: url("../note_box_icons/Live-code.png");
+  background-image: url("../note_box_icons/Live-code-2.png");
 }
 
 div.note {
@@ -17,7 +17,7 @@ div.note {
 }
 
 div.book {
-  background-image: url("../note_box_icons/book.png");
+  background-image: url("../note_box_icons/book-solid.png");
 }
 
 div.github {
@@ -33,7 +33,7 @@ div.bookmark {
 }
 
 div.link {
-  background-image: url("../note_box_icons/link.png");
+  background-image: url("../note_box_icons/link-2.png");
 }
 
 div.code {
@@ -49,15 +49,15 @@ div.download {
 }
 
 div.people {
-  background-image: url("../note_box_icons/people.png");
+  background-image: url("../note_box_icons/people-2.png");
 }
 
 div.uo {
-  background-image: url("../note_box_icons/uo_logo.png");
+  background-image: url("../note_box_icons/uo_logo-2.png");
 }
 
 div.clock {
-  background-image: url("../note_box_icons/clock.png");
+  background-image: url("../note_box_icons/clock-solid.png");
 }
 
 /* Cam's custom css */
@@ -140,8 +140,8 @@ div.puzzle, div.fyi, div.demo, div.note, div.book, div.github, div.profile, div.
     background-repeat: no-repeat;
     background-position: 15px center;
     min-height: 80px;
-    color: #fff;
-    background-color: var(--main-color);
+    color: #000;
+    background-color: #f0f8fa;
     /*border: solid 5px #5f8e99;*/
 }
 
