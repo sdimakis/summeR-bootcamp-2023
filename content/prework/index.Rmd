@@ -39,7 +39,7 @@ If possible, please try to complete this checklist *before* the first UO R Bootc
 
 <br> 
 
-1) Register for the bootcamp by completing a short [registration survey](https://oregon.qualtrics.com/jfe/form/SV_dniQzU8XldXFodo). If you can't make all of the days (or all of the sessions on a given day), that's okay! We just ask that you register so that we can (1) send you the links to join the Zoom sessions and (2) get a better understanding of your familiarity with R. Registration is, of course, free. 
+1) Register for the UO R Bootcamp by completing the short [registration survey](https://oregon.qualtrics.com/jfe/form/SV_dniQzU8XldXFodo). If you can't make all of the days (or all of the sessions on a given day), that's okay! We just ask that you register so that we can (1) send you the links to join the Zoom sessions and (2) get a better understanding of your familiarity with R. Registration is, of course, free. 
 
 2) Make sure you have a [Zoom account](https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=101392) set up through the University of Oregon. We will use the same Zoom link for each day of the bootcamp. You will receive the link through email and slack.
 
