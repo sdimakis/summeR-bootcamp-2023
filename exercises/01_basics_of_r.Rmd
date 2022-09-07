@@ -1,0 +1,19 @@
+---
+title: "Basics of R, RStudio, & R Markdown"
+output: html_document
+---
+
+# Your Turn 1
+
+Q1. Create a variable called `var_1` that is equal to 4.
+
+```{r}
+# your code here
+```
+
+
+Q2. Then create a variable called `var_2` that is `var_1` raised to the power of 6. Print the results (i.e. check what value is assigned to `var_2`).
+
+```{r}
+# your code here
+```
