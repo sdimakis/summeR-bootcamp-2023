@@ -66,7 +66,7 @@ Q3. Change the  third element of `named` to the value 21 and then show your resu
 
 # Your Turn 4
 
-1. Create a list like mine that is made up of `year`, `name`, `enrollment`, `fave_data`, but corresponds to you (year in undergrad, year in grad school, years since PhD, etc.). Name your list using your first name. Make sure you enter two types of favorite data (bc who could choose?!). 
+1. Create a list like mine that is made up of `name`, `height`, and `ice_cream`, but corresponds to information about you. Make sure you enter two types of icecream data (because who could choose?!).
 
 ```{r}
 ___ <- list(___)

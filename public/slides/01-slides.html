@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Welcome</title>
+    <title>Basics of R, RStudio, and R Markdown</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -14,6 +14,8 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
   </head>
@@ -27,7 +29,477 @@
 
 class: title-slide, center, middle
 
-# R &amp; R Studio Basics: Coming soon!
+# Basics of R, RStudio, &amp; R Markdown
+
+---
+background-image: url(images/rstudio_blank2.png)
+background-size: 900px
+
+# RStudio IDE
+
+---
+background-image: url(images/rstudio_editor2.png)
+background-size: 900px
+
+# RStudio IDE
+
+---
+background-image: url(images/rstudio_console2.png)
+background-size: 900px
+
+# RStudio IDE
+
+---
+background-image: url(images/rstudio_environment2.png)
+background-size: 900px
+
+# RStudio IDE
+
+---
+background-image: url(images/rstudio_plots2.png)
+background-size: 900px
+
+# RStudio IDE
+---
+background-image: url(images/rstudio_labelled2.png)
+background-size: 900px
+
+# RStudio IDE
+
+---
+# Basic computing
+
+--
+
+
+```r
+# addition
+2 + 3
+```
+
+```
+## [1] 5
+```
+
+--
+
+
+```r
+# subtraction
+2 - 3
+```
+
+```
+## [1] -1
+```
+
+--
+
+
+```r
+# multiplication
+2 * 3
+```
+
+```
+## [1] 6
+```
+
+--
+
+
+```r
+# division
+10 / 2
+```
+
+```
+## [1] 5
+```
+
+---
+# Basic computing
+
+
+```r
+# exponents
+4^2
+```
+
+```
+## [1] 16
+```
+
+--
+
+
+```r
+# modulo
+20 %% 10
+```
+
+```
+## [1] 0
+```
+
+--
+
+
+```r
+# roots
+4^(1/2)
+```
+
+```
+## [1] 2
+```
+
+--
+
+
+```r
+# logs
+log10(100)
+```
+
+```
+## [1] 2
+```
+
+---
+# Basic computing
+
+Thankfully, R follows the order of operations (BEDMAS/PEMDAS/BODMAS/BIDMAS).
+
+
+```r
+2 + 2 * 3
+```
+
+```
+## [1] 8
+```
+
+--
+
+
+```r
+(2 + 2) * 3
+```
+
+```
+## [1] 12
+```
+
+--
+
+***
+
+All of the values computer thus far haven't been stored anywhere though...
+
+---
+
+# Storing values in objects
+
+To keep a value in memory, we need to assign it to an **object**. 
+
+--
+
+To assign a value to an object, use the **assignment operator**. It looks like a left-pointing arrow: 
+
+.center[
+### `&lt;-`
+]
+
+--
+***
+
+Let's use `&lt;-` to assign the number 8 to an object called `x`.
+
+
+```r
+x &lt;- 8 
+```
+
+--
+
+Now we can call `x` by name, and it will print the value.
+
+
+```r
+x
+```
+
+```
+## [1] 8
+```
+
+---
+# Style
+
+Technically, both `&lt;-` and `=` work as assignment operators. But we'll strictly use `&lt;-` from here on out. 
+
+--
+***
+
+This brings up a general coding principle of the day...
+
+--
+
+
+**Style is important!**
+
+You want to use a consistent style so that others (including your future self) can easily and quickly read your code. 
+
+--
+
+We highly recommend following the [tidyverse style guide](https://style.tidyverse.org/). We'll talk more about the tidyverse tomorrow
+
+--
+***
+
+Hint: You will type `&lt;-` a LOT. The keyboard shortcut `Alt` + `-` or `Option` + `-` can be used to insert a `&lt;-`.
+
+---
+# Storing values in objects
+
+Now, let's take a look at the variable `y`...
+
+--
+
+
+```r
+# print y
+y 
+```
+
+```
+## Error in eval(expr, envir, enclos): object 'y' not found
+```
+
+--
+***
+
+Whoops! We didn't assign anything to `y`. Calling a variable that doesn't exist leads to an **error message**. 
+
+--
+
+You'll see a LOT of error messages when using R. Don't worry when this happens. This is 100% normal, and it happens to everyone all the time. 
+
+--
+***
+
+
+```r
+# assign 2 to y
+y &lt;- 2
+
+# print y
+y
+```
+
+```
+## [1] 2
+```
+
+---
+# Storing values in objects
+
+Now, we can use these variables in calculations.
+
+--
+
+***
+
+Remember, `x &lt;- 8` and `y &lt;- 2`?
+
+We can multiply them:
+
+
+```r
+x * y
+```
+
+```
+## [1] 16
+```
+
+--
+***
+
+But, remember, if we want to save the output of that calculation, we need to assign it to an object! 
+
+
+```r
+# assign the the product of x and y to z
+z &lt;- x * y
+
+# print z
+z
+```
+
+```
+## [1] 16
+```
+
+---
+# Naming variables 
+
+You may be wondering how to name variables in R. There are just a few rules...
+
+--
+
+1. Object names should start with a letter.
+
+2. Object names can contain alphanumeric characters, underscores (`_`), and/or periods (`.`).
+
+3. R is case sensitive, so `A` and `a` are different variables
+
+--
+***
+
+This is another element of *style*. 
+
+Using a consistent style when naming variables makes your life easier. There are several to choose from.
+
+---
+# Naming variables 
+
+.footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
+
+.pull-left[
+
+### Some examples
+
++ this_is_snake_case
++ thisIsCamelCase
++ avoid.using.periods
+
+I'll be using snake_case from here on out, but you can change to another option if you'd like.
+]
+
+.pull-right[
+&lt;img src="images/coding_cases.png" width="5335" /&gt;
+]
+  
+---
+class: yourturn
+# Your turn 1
+
+<div class="countdown" id="timer_3bcbc059" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+Open the `01_rstudio_basics.Rmd` file.
+
+1. Create a variable called `var_1` that is equal to 4.
+
+1. Then create a variable called `var_2` that is `var_1` raised to the power of 6. 
+
+1. Print the results (i.e. check what value is assigned to `var_2`).
+
+
+---
+class: solution
+# Solution
+
+.panelset[
+.panel[.panel-name[Q1]
+
+```r
+var_1 &lt;- 4
+```
+]
+
+.panel[.panel-name[Q2]
+
+```r
+var_2 &lt;- var_1^6
+var_2
+```
+
+```
+## [1] 4096
+```
+]
+]
+
+---
+# R Markdown
+
+.footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
+
+R Markdown is a magical thing. It allows you to combine R code and plain text together in the same document. 
+
+R Markdown documents end with the extension `.Rmd`. Let's take a look at how they work... <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"/></svg>
+
+.center[
+&lt;img src="images/rmarkdown_wizards.png" width="70%" /&gt;
+]
+
+---
+# R Markdown
+
+&lt;img src="images/rmd_annotated.png" width="70%" /&gt;
+
+.footnote[Image from [Kieran Healy](https://socviz.co/gettingstarted.html)]
+
+---
+class: yourturn
+# Your turn 2
+
+<div class="countdown" id="timer_038c4ea3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+1. Go back to `01_rstudio_basics.Rmd` and click `knit`. Take a look at the resulting file called `01_rstudio_basics.html`. 
+
+2. Insert `author: [YOUR NAME]` after `title: "Basics of R, RStudio, &amp; R Markdown"` but before `output: html_document`. Re-knit the document. 
+
+---
+class: solution
+
+# Solution
+
+.panelset[
+.panel[.panel-name[Q1]
+&lt;img src="images/rmarkdown_example.png" width="80%" /&gt;
+]
+
+.panel[.panel-name[Q2]
+
+&lt;img src="images/rmarkdown_example_yaml.png" width="80%" /&gt;
+
+&lt;img src="images/rmarkdown_example_author.png" width="80%" /&gt;
+]
+]
+
+---
+class: inverse, center, middle
+# Q &amp; A
+
+<div class="countdown" id="timer_54e9a34a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+class: inverse, center, middle
+# Next up...
+
+## Data Types &amp; Structures
+
+---
+class: inverse, center, middle
+# Break! 
+
+<div class="countdown" id="timer_35e3a7b7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

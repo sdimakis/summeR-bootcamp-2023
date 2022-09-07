@@ -62,9 +62,39 @@ https://github.com/emitanaka/ninja-theme ***/
 
 /************* solutions ****************/
 
-.solution { 
-  background-color: #1AB385;
+.yourturn {
+  background-color: var(--inverse-background-color);
+  color: var(--inverse-text-color);
+  
 }
+.yourturn h1, .yourturn h2, .yourturn h3 {
+  color: var(--inverse-header-color);
+}
+.yourturn a, .yourturn a > code {
+  color: var(--inverse-link-color);
+}
+
+.yourturn code {
+  color: #f78f72;
+}
+
+.solution {
+  background-color: #158c68;
+  color: var(--inverse-text-color);
+  
+}
+.solution h1, .solution h2, .solution h3 {
+  color: var(--inverse-header-color);
+}
+.solution a, .solution a > code {
+  color: var(--inverse-link-color);
+}
+
+.solution code {
+  color: #f78f72;
+}
+
+
 
 /* for separating code and plots */
 /* credit: Garrick Aden-Buie: https://www.garrickadenbuie.com/blog/decouple-code-and-output-in-xaringan-slides/ */
