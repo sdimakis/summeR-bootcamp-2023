@@ -1,0 +1,39 @@
+---
+title: "Functions, Packages, and Debugging"
+output: html_document
+---
+
+# Your Turn 1 
+
+Q1. Look up the help documentation for the function `sd()`.
+
+```{r}
+# your code here
+```
+
+Q2. Calculate the standard deviation of `vec_na`. Be sure to remove missing values first. 
+
+```{r}
+vec_na <- c(1, 2, 3, 4, 5, 6, NA, 2, 4)
+
+# your code here
+```
+
+# Your Turn 2
+
+Q1. In your RStudio console, look up the help documentation for`import()` by typing `?import`. What do you see?
+
+Q2. Run `search()` in the console. Is the `{rio}` package included in this list?
+ 
+Q3. Load the `{rio}` package using the `library()` function. 
+
+Q4. Now look again at the help documentation for `import()`. What do you see this time?
+
+Q5. Run `search()` again. What is different this time?
+
+# Your Turn 3
+
+Q1. Look up the help documentation for the `filter()`function from the `{stats}` package.
+
+Q2. Now look up the help documentation for the `filter()` function from the `{dplyr}` package.
+

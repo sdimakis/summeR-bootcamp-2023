@@ -341,6 +341,15 @@ knitr::include_graphics("images/engine_dashboard.png")
 
 ---
 class: inverse, center, middle
+# Q & A
+
+```{r echo=FALSE}
+countdown(minutes = 3)
+```
+
+---
+
+class: inverse, center, middle
 
 # Let's get started!
 

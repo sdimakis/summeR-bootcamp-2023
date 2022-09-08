@@ -31,7 +31,7 @@ style_mono_accent(base_color = "#15758c",
                 text_font_google = google_font("Montserrat", "300", "300i"),
                 code_font_google = google_font("Source Code Pro"),
                 link_color = "#15758c",
-                code_inline_color = "#d95530")
+                code_inline_color = "#fc653a")
 ```
 
 class: title-slide, center, middle
@@ -427,10 +427,18 @@ class: inverse, center, middle
 
 ---
 class: inverse, center, middle
+# Q & A
+
+```{r echo=FALSE}
+countdown(minutes = 5)
+```
+
+---
+class: inverse, center, middle
 # Break! 
 
 ```{r echo=FALSE}
-countdown(minutes = 10)
+countdown(minutes = 5)
 ```
 
 
