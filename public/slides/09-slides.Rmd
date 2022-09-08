@@ -37,4 +37,4 @@ style_mono_accent(base_color = "#15758c",
 
 class: title-slide, center, middle
 
-# tidyr: Coming soon!
+# ggplot2: Coming soon!

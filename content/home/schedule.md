@@ -18,13 +18,13 @@ subtitle = ""
   icon = "terminal"
   icon_pack = "fas"
   name = "**Getting started with R** <br><br> <i class='fa fa-calendar'></i> Tuesday, 9/20 <br> 9 AM - 11 AM PDT "
-  description = "<br> Basics of R & RStudio <br> Basics of R Markdown <br> Data Types & Structures <br>"
+  description = "<br> Basics of R, RStudio, & R Markdown <br> Data Types & Structures <br>"
   
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
   name = "**Importing & wrangling data** <br><br> <i class='fa fa-calendar'></i> Thursday, 9/22 <br> 9 AM - 2 PM PDT"
-  description = "<br> Functions, Packages, & Debugging <br> Introduction to the Tidyverse <br> Pipes <br> Importing Data & Project-Oriented Workflows <br> Data wrangling with dplyr"
+  description = "<br> Functions, Packages, & Debugging <br> Piping <br> Introduction to the Tidyverse <br> Importing Data & Project-Oriented Workflows <br> Data wrangling with dplyr"
   
 [[feature]]
   icon = "table"

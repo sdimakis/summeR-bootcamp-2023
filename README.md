@@ -14,17 +14,16 @@ Please contact [Cameron S. Kay](https://cameronstuartkay.com), the 2022 bootcamp
 
 Topics covered include:
 
-1. [Basics of R & RStudio](https://uorbootcamp2022.netlify.app/post/01-r-basics/)
-2. [Basics of R Markdown](https://uorbootcamp2022.netlify.app/post/02-rmarkdown/)
-3. [Data Types & Structures](https://uorbootcamp2022.netlify.app/post/03-data-types/)
-4. [Functions, Packages, & Debugging](https://uorbootcamp2022.netlify.app/post/04-functions/)
+1. [Basics of R, RStudio, & R Markdown](https://uorbootcamp2022.netlify.app/post/01-r-basics/)
+2. [Data Types & Structures](https://uorbootcamp2022.netlify.app/post/03-data-types/)
+3. [Functions, Packages, & Debugging](https://uorbootcamp2022.netlify.app/post/04-functions/)
+4. [Piping](https://uorbootcamp2022.netlify.app/post/06-pipes/)
 5. [Introduction to the Tidyverse](https://uorbootcamp2022.netlify.app/post/05-intro-tidyverse/)
-6. [Pipes](https://uorbootcamp2022.netlify.app/post/06-pipes/)
-7. [Importing Data & Project-Oriented Workflows](https://uorbootcamp2022.netlify.app/post/07-importing-workflows/)
-8. [Data Wrangling with dplyr](https://uorbootcamp2022.netlify.app/post/08-dplyr/)
-9. [Data Tidying with tidyr](https://uorbootcamp2022.netlify.app/post/09-tidyr/)
-10. [Data Visualization with ggplot2](https://uorbootcamp2022.netlify.app/post/10-ggplot2/)
-11. [Tips & Tricks](https://uorbootcamp2022.netlify.app/post/11-tips/)
+6. [Importing Data & Project-Oriented Workflows](https://uorbootcamp2022.netlify.app/post/07-importing-workflows/)
+7. [Data Wrangling with dplyr](https://uorbootcamp2022.netlify.app/post/08-dplyr/)
+8. [Data Tidying with tidyr](https://uorbootcamp2022.netlify.app/post/09-tidyr/)
+9. [Data Visualization with ggplot2](https://uorbootcamp2022.netlify.app/post/10-ggplot2/)
+10. [Tips & Tricks](https://uorbootcamp2022.netlify.app/post/11-tips/)
 
 # Acknowledgments
 

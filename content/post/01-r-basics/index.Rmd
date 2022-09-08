@@ -1,5 +1,5 @@
 ---
-title: Basics of R & RStudio
+title: Basics of R, RStudio, & R Markdown
 author: ''
 date: "`r Sys.Date()`"
 weight: 2
@@ -22,11 +22,19 @@ links:
   url: /slides/01-slides.html
 - icon: readme
   icon_pack: fab
-  name: Cheat Sheet
+  name: RStudio Cheat Sheet
   url: https://github.com/rstudio/cheatsheets/blob/main/rstudio-ide.pdf
+- icon: readme
+  icon_pack: fab
+  name: R Markdown Cheat Sheet
+  url: https://github.com/rstudio/cheatsheets/blob/main/rmarkdown-2.0.pdf
+- icon: readme
+  icon_pack: fab
+  name: R Markdown Reference Guide
+  url: https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
 - icon: laptop-code
   icon_pack: fas
-  name: Primer
+  name: R Primer
   url: https://rstudio.cloud/learn/primers/1.2
 ---
 
