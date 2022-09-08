@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Welcome</title>
+    <title>Piping</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -14,6 +14,8 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
   </head>
@@ -27,7 +29,256 @@
 
 class: title-slide, center, middle
 
-# Pipes: Coming soon!
+# Piping
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+--
+
+One very useful function is the **pipe**:
+
+### .center[`%&gt;%`]
+
+--
+
+The pipe is part of the `{magrittr}` package, which is loaded as part of the `{tidyverse}` package (discussed in the next slide deck).
+
+--
+
+Pipes are a way to write code in a way that is easier to read and understand. They allow you to string a series of functions together into a pipeline.
+
+--
+
+Strictly speaking, a pipe passes an object on the **left-hand side** as the first argument of whatever function is on the **right-hand side**. 
+
+--
+
+In general form, this means that...
+
+`x %&gt;% f(y)` is the same as `f(x, y)`
+
+--
+***
+
+Let's see an example...
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+--
+
+
+```r
+coffee_consumed &lt;- c(20, 16, 16, 12, 0, 16, 30, 60)
+```
+
+Let's say we wanted to take the mean of the `coffee_consumed` vector (as we did in the previous slide deck) and then we wanted to round the resulting value.
+
+--
+***
+
+We could do the following:
+
+
+```r
+coffee_consumed_avg &lt;- mean(coffee_consumed)
+
+round(coffee_consumed_avg)
+```
+
+```
+## [1] 21
+```
+
+--
+
+This is inefficient.
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+
+```r
+coffee_consumed &lt;- c(20, 16, 16, 12, 0, 16, 30, 60)
+```
+
+Let's say we wanted to take the mean of the `coffee_consumed` vector (as we did in the previous slide deck) and then we wanted to round the resulting value.
+
+***
+
+We could, instead, do the following:
+
+
+```r
+round(mean(coffee_consumed))
+```
+
+```
+## [1] 21
+```
+--
+However, this is a bit hard to read.
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+
+```r
+coffee_consumed &lt;- c(20, 16, 16, 12, 0, 16, 30, 60)
+```
+
+Let's say we wanted to take the mean of the `coffee_consumed` vector (as we did in the previous slide deck) and then we wanted to round the resulting value.
+
+***
+
+In this case, we could use pipes to chain the functions together:
+
+
+```r
+coffee_consumed %&gt;%
+  mean() %&gt;%
+  round()
+```
+
+```
+## [1] 21
+```
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+
+```r
+coffee_consumed %&gt;%
+  mean() %&gt;%
+  round()
+```
+
+```
+## [1] 21
+```
+
+--
+***
+
+You can, essentially, think of the pipe as representing the phrase "and then..."
+
+--
+
+Verbally, we might describe the code we just wrote as "Start with the `coffee_consumed` data, **and then** calculate the mean, **and then** round the mean.
+
+---
+background-image: url(images/hex/magrittr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Pipe operator
+
+Note that you aren't limited to just two pipes. You can use many (MANY!) pipes to carry out some pretty complex operations.
+
+--
+
+For example:
+
+
+```r
+horror_movies_consumed &lt;- c(JAN = 0,  FEB = 1, MAR = NA, APR = 1, 
+                            MAY = 3,  JUN = 0, JUL =  2, AUG = 3, 
+                            SEP = 1, OCT = 22, NOV =  1, DEC = NA)
+
+horror_movies_consumed %&gt;%
+  na.omit() %&gt;%
+  mean() %&gt;%
+  round() %&gt;%
+  cat("is the average number of horror movies consumed\nbetween January and December.")
+```
+
+```
+## 3 is the average number of horror movies consumed
+## between January and December.
+```
+
+--
+***
+
+⌨️ You can enter a pipe with the shortcut `CTRL+Shift+M` for PC or `CMD+Shift+M` for Mac.
+
+---
+class: yourturn
+# Your Turn 1
+
+<div class="countdown" id="timer_dd3ca0ac" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+</div>
+
+The code below calculates the standard deviation of the US population between 1790 and 1970 and then rounds the resulting value.
+
+
+```r
+round(sd(uspop, na.rm = TRUE))
+```
+
+1. Run the code chunk provided to calculate the rounded standard deviation of the US population between 1790 and 1970.
+
+1. Re-write the code above using the pipe operator (`%&gt;%`). Check that the answer you get matches the original code you ran above. 
+
+---
+class: solution
+
+# Solution
+
+.panelset[
+.panel[.panel-name[Q1]
+
+
+```r
+round(sd(uspop, na.rm = TRUE))
+```
+
+```
+## [1] 63
+```
+
+]
+
+.panel[.panel-name[Q2]
+
+
+```r
+uspop %&gt;% 
+  sd(na.rm = TRUE) %&gt;%
+  round()
+```
+
+```
+## [1] 63
+```
+
+]
+]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -1,0 +1,26 @@
+---
+title: "Piping"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+# Your Turn 1 
+
+The code below calculates the standard deviation of the US population between 1790 and 1970 and then rounds the resulting value.
+
+```{r}
+round(sd(uspop, na.rm = TRUE))
+```
+
+Q1. Run the code chunk provided to calculate the rounded standard deviation of the US population between 1790 and 1970.
+
+Q2. Re-write the code above using the pipe operator (`%>%`). Check that the answer you get matches the original code you ran above. 
+
+```{r}
+# your code here
+```
+
+
