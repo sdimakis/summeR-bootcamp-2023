@@ -1,0 +1,84 @@
+---
+title: "Wrangling Data with {dplyr}"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(rio)
+```
+
+# Your Turn 1
+
+Q1. Convert the data frame `mtcars` to a tibble and assign the resulting object to `data`. *Note.* The data frame `mtcars` is automatically loaded in R; you don't have to install it separately.
+
+```{r}
+data <- tibble(___)
+```
+
+Q2. Filter `data` for cars that have 4 `cyl`. Arrange the resulting observations by descending order of `mpg`.
+
+```{r}
+data %>% 
+  filter(___) %>% 
+  arrange(___)
+```
+
+Q3. Filter `data` for cars that have `disp`s greater than or equal to 350, `hp`s greater than or equal to 200, and `qsec`s less than or equal to 17. 
+
+```{r}
+data %>% 
+  filter(___)
+```
+
+Q4. Filter `data` for cars that have `carb`s equal to 4 or `cyl`s equal to 4. Assign the result to an object called `data_filtered`.
+
+```{r}
+data_filtered <- data %>% 
+  filter(___)
+
+data_filtered
+```
+
+# Your Turn 2
+
+Q1. In `data`, select only the variables `mpg` and `hp`. 
+
+```{r}
+data %>% 
+  select(___)
+```
+
+Q2. As we did with indexing in base R, you can use the minus sign (`-`) to "de-select" columns. Keep everything in `data` except `vs`.
+
+```{r}
+data %>% 
+  select(___)
+```
+
+Q3. Use `mutate()` to convert `cyl` from type "dbl" to type "factor".
+
+```{r}
+data %>% 
+  mutate(___)
+```
+
+# Your Turn 3
+
+Q1. From `data`, get the mean `hp` for each of the different `cyl` values.
+
+```{r}
+data %>% 
+  group_by(___) %>% 
+  summarize(___ = mean(___))
+```
+
+Q2. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest `hp`?
+
+```{r}
+data %>% 
+  group_by(___, ___) %>% 
+  summarize(___ = mean(___)) %>% 
+  arrange(desc(___))
+```
