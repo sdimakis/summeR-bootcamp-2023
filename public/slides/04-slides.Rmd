@@ -245,3 +245,12 @@ uspop %>%
 ]
 ]
 
+---
+class: inverse, center, middle
+# Q & A
+
+```{r echo=FALSE}
+countdown(minutes = 3)
+```
+
+

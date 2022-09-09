@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Welcome</title>
+    <title>Introduction to the Tidyverse</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -14,6 +14,8 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
   </head>
@@ -27,7 +29,471 @@
 
 class: title-slide, center, middle
 
-# Tidyverse: Coming soon!
+# Introduction to the Tidyverse
+
+---
+# Tidyverse
+
+The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+
+--
+***
+
+These packages are designed to support the natural workflow of any data analysis project, as depicted below
+
+
+.center[
+&lt;img src="images/data_science_workflow.png" width="689" /&gt;
+]
+
+.footnote[Image from [R for Data Science](https://r4ds.had.co.nz/introduction.html)]
+
+---
+# Core tidyverse packages
+
+&lt;img src="images/tidyverse_package_load.png" width="2509" /&gt;
+
+---
+
+# Core tidyverse packages
+
+.center[
+&lt;img src="images/tidyverse_packages.png" width="2516" /&gt;
+]
+
+.footnote[Image from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+---
+# Core tidyverse packages
+
+.center[
+&lt;img src="images/tidyverse_packages_purpose.png" width="90%" /&gt;
+]
+
+.footnote[Image from [Mine Çetinkaya-Rundel](https://education.rstudio.com/blog/2020/07/teaching-the-tidyverse-in-2020-part-1-getting-started/)]
+---
+background-image: url(images/hex/readr.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+  
+# readr
+
+.panelset[
+
+.panel[.panel-name[Overview]
+
+.pull-left[
+Importing data is the very first step! &lt;br/&gt; You can use `{readr}` to import rectangular data.
+]
+.pull-right[
+Functions for different file types
++ comma separated (CSV) files with `read_csv()`
++ tab separated files with `read_tsv()`
++ general delimited files with `read_delim()`
++ fixed width files with `read_fwf()`
++ tabular files where columns are separated by white-space with `read_table()`
++ web log files with `read_log()` 
+
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-import-cheatsheet-thumbs.png)
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/data-import.pdf)
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 11: Data import](https://r4ds.had.co.nz/data-import.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://readr.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/tibble.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# tibble
+
+.panelset[
+
+.panel[.panel-name[Overview]
+
+.pull-left[
+A tibble is much like the data frame in base R, but optimized for use in the tidyverse.  
+
+Among other features, it has nicer printing methods. 
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-import-cheatsheet-thumbs.png)
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/data-import.pdf)
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 10: Tibbles](https://r4ds.had.co.nz/tibbles.html)
+
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://tibble.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/ggplot2.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# ggplot2
+
+.panelset[
+.panel[.panel-name[Overview]
+
+`{ggplot2}` uses the "Grammar of Graphics" to create a plot. Check out some examples of what's possible from the [ggplot2 extensions gallery](https://exts.ggplot2.tidyverse.org/gallery/).
+
+&lt;iframe src="https://exts.ggplot2.tidyverse.org/gallery/" width="100%" height="325px" data-external="1"&gt;&lt;/iframe&gt;
+]
+
+
+.panel[.panel-name[Cheatsheet]
+
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-visualization-cheatsheet-thumbs.png)
+
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 3: Data visualization](https://r4ds.had.co.nz/data-visualisation.html)
+
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://ggplot2.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# dplyr
+
+.panelset[
+.panel[.panel-name[Overview]
+
+.pull-left[
+`{dplyr}` includes a host of functions that perform specific and incremental data transformations that help you to wrangle your data. 
+]
+
+.pull-right[
++ Pick observations using their values with `filter()`.
+
++ Reorder rows with `arrange()`.
+
++ Pick variables by their names with `select()`.
+
++ Create new variables with functions applied to existing variables with `mutate()`.
+
++ Collapse many values down to single summary statistics with `summarize()`.
+
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-transformation-cheatsheet-thumbs.png)
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)
+]
+
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 5: Data transformation](https://r4ds.had.co.nz/transform.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://dplyr.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/forcats.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# forcats
+
+.panelset[
+
+.panel[.panel-name[Overview]
+.pull-left[
+`{forcats}` is great for working with **categorical variables** or factors. 
+]
+
+.pull-right[
+A few key functions:
++ `fct_reorder()` reorders a factor by another variable
+
++ `fct_infreq()` reorders a factor by the frequency of values
+
++ `fct_relevel()` changes the order of a factor by hand
+
++ `fct_lump()` collapses the least/most frequent values of a factor into “other”
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+.center[
+&lt;img src="https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/forcats-cheatsheet-thumbs.png" width="60%" /&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/factors.pdf)
+]
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 15: Factors](https://r4ds.had.co.nz/factors.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://forcats.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/stringr.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# stringr
+
+.panelset[
+
+.panel[.panel-name[Overview]
+.pull-left[
+`{stringr}` helps us manipulate strings! The package includes many functions to help us with **regular expressions**, which are a concise language for describing patterns in strings.
+]
+
+.pull-right[
+`{stringr}` allows you to
+
+-  detect matches
+-  subset strings
+-  manage string lengths
+-  mutate strings
+-  join and split strings
+-  order strings
+-  ...and more!
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/strings-cheatsheet-thumbs.png)&lt;!-- --&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/strings.pdf)
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 14: Strings](https://r4ds.had.co.nz/strings.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://stringr.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/tidyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# tidyr
+
+.panelset[
+
+.panel[.panel-name[Overview]
+
+.pull-left[
+`{tidyr}` allows you to reshape raw "untidy" data into a "tidy" format.
+
+Here is an example of what a tidy dataframe looks like:
+
+![](https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png)
+]
+
+.pull-right[
+There are three interrelated rules which make a dataset tidy:
+
+- Each variable must have its own column.
+- Each observation must have its own row.
+- Each value must have its own cell.
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+
+![](https://github.com/rstudio/cheatsheets/blob/main/pngs/thumbnails/tidyr-thumbs.png)&lt;!-- --&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf)
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 12: Tidy data](https://r4ds.had.co.nz/tidy-data.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://tidyr.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+background-image: url(images/hex/purrr.png)
+background-position: 90% 5%
+background-size: 10%
+
+.footnote[Slide adapted from [Silvia Canelón](https://github.com/spcanelon/2020-rladies-chi-tidyverse)]
+
+# purrr
+
+.panelset[
+
+.panel[.panel-name[Overview]
+.pull-left[
+`{purrr}` provides tools for working with functions and vectors---in particular, repeating the same operations many times concisely and efficiently
+
+The `map()` family of functions helps us replace `for loops`, &lt;br/&gt; making our code easier to read and more succinct.
+]
+]
+
+.panel[.panel-name[Cheatsheet]
+
+.center[
+![](https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/purrr-cheatsheet-thumbs.png)&lt;!-- --&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg> [Download PDF](https://github.com/rstudio/cheatsheets/blob/main/purrr.pdf)
+]
+]
+
+.panel[.panel-name[Reading]
+
+.left-column[
+&lt;img src="images/r4ds-cover.png" width="667" /&gt;
+]
+
+.right-column[
+## [Ch 21: Iteration](https://r4ds.had.co.nz/iteration.html)
+]
+]
+
+.panel[.panel-name[Reference]
+
+&lt;iframe src="https://purrr.tidyverse.org/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+---
+class: inverse, center, middle
+# Q &amp; A
+
+<div class="countdown" id="timer_210c9ae5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+class: inverse, center, middle
+# Break!
+
+<div class="countdown" id="timer_be7e46a7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
