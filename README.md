@@ -31,7 +31,7 @@ Much of the content was adapted from [previous iterations](https://github.com/uo
 
 This website was based on a template [demo course website](https://github.com/apreshill/share-blogdown) created by [Alison Hill](https://alison.rbind.io) as part of an [RStudio Webinar](https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/) along with [Desirée De Leon](https://desiree.rbind.io/). Note boxes were created following a [tutorial](https://desiree.rbind.io/post/2019/making-tip-boxes-with-bookdown-and-rmarkdown/) by [Desirée De Leon](https://desiree.rbind.io/). Some [custom CSS](https://github.com/emitanaka/ninja-theme) was also borrowed from [Emi Tanaka](https://emitanaka.org/). 
 
-Slides were created using [`{xaringan}`](https://github.com/yihui/xaringan) by [Yihui Xie](https://yihui.org/) and [`{xaringanExtra}`](https://pkg.garrickadenbuie.com/xaringanExtra/#/) by [Garrick Aden-Buie](https://www.garrickadenbuie.com/). Flipbooks were created using [`{flipbookr}`](https://evamaerey.github.io/flipbooks/about) by [Gina Reynolds](https://evangelinereynolds.netlify.app/) and color-coding was done using [`{flair}`](https://r-for-educators.github.io/flair/index.html) by [Kelly Bodwin](https://www.kelly-bodwin.com/).
+Slides were created using [`{xaringan}`](https://github.com/yihui/xaringan) by [Yihui Xie](https://yihui.org/) and [`{xaringanExtra}`](https://pkg.garrickadenbuie.com/xaringanExtra/#/) by [Garrick Aden-Buie](https://www.garrickadenbuie.com/). 
 
 All artwork, unless otherwise noted, is by [Allison Horst](https://twitter.com/allison_horst). 
 
