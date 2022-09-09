@@ -24,12 +24,12 @@ subtitle = ""
   icon = "chart-bar"
   icon_pack = "fas"
   name = "**Importing & wrangling data** <br><br> <i class='fa fa-calendar'></i> Thursday, 9/22 <br> 9 AM - 2 PM PDT"
-  description = "<br> Functions, Packages, & Debugging <br> Piping <br> Introduction to the Tidyverse <br> Importing Data & Project-Oriented Workflows <br> Data wrangling with dplyr"
+  description = "<br> Functions, Packages, & Debugging <br> Piping <br> Introduction to the Tidyverse <br> Importing Data & Project-Oriented Workflows <br> Data wrangling with {dplyr}"
   
 [[feature]]
   icon = "table"
   icon_pack = "fas"
   name = "**Tidying & visualizing data** <br><br> <i class='fa fa-calendar'></i> Friday, 9/23 <br> 9 AM - 1 PM PDT"
-  description = "<br> Data tidying with tidyr <br> Data Visualization with ggplot2 <br> Tips & Tricks"
+  description = "<br> Data tidying with {tidyr} <br> Data Visualization with {ggplot2} <br> Tips & Tricks"
 
 +++

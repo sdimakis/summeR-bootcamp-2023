@@ -20,9 +20,9 @@ Topics covered include:
 4. [Piping](https://uorbootcamp2022.netlify.app/post/06-pipes/)
 5. [Introduction to the Tidyverse](https://uorbootcamp2022.netlify.app/post/05-intro-tidyverse/)
 6. [Importing Data & Project-Oriented Workflows](https://uorbootcamp2022.netlify.app/post/07-importing-workflows/)
-7. [Data Wrangling with dplyr](https://uorbootcamp2022.netlify.app/post/08-dplyr/)
-8. [Data Tidying with tidyr](https://uorbootcamp2022.netlify.app/post/09-tidyr/)
-9. [Data Visualization with ggplot2](https://uorbootcamp2022.netlify.app/post/10-ggplot2/)
+7. [Data Wrangling with {dplyr}](https://uorbootcamp2022.netlify.app/post/08-dplyr/)
+8. [Data Tidying with {tidyr}](https://uorbootcamp2022.netlify.app/post/09-tidyr/)
+9. [Data Visualization with {ggplot2}](https://uorbootcamp2022.netlify.app/post/10-ggplot2/)
 10. [Tips & Tricks](https://uorbootcamp2022.netlify.app/post/11-tips/)
 
 # Acknowledgments
