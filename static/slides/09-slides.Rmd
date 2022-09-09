@@ -1,6 +1,5 @@
 ---
-title: "Welcome"
-subtitle: "Introduction & Orientation"
+title: "Data Visualization with {ggplot2}"
 author: 
 date: 
 output:
@@ -32,7 +31,7 @@ style_mono_accent(base_color = "#15758c",
                 text_font_google = google_font("Montserrat", "300", "300i"),
                 code_font_google = google_font("Source Code Pro"),
                 link_color = "#15758c",
-                code_inline_color = "#d95530")
+                code_inline_color = "#fc653a")
 ```
 
 class: title-slide, center, middle

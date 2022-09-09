@@ -1,0 +1,28 @@
+---
+title: "Tidying Data with {tidyr}"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse) # if you have never used the `{tidyverse}` package before, you will need to install it using `install.packages("tidyverse")`.
+```
+
+# Your Turn 1
+
+Q1. Use `pivot_longer()` to tidy `table4a` (included as part of the `tidyr` package).
+
+```{r}
+table4a %>%
+  pivot_longer(cols      = ___,
+               names_to  = ___, 
+               values_to = ___)
+```
+
+Q2. Use `pivot_wider()` to tidy `table2` (included as part of the `tidyr` package).
+
+```{r}
+table2 %>%
+  pivot_wider(names_from  = ___,
+              values_from = ___)
+```
+

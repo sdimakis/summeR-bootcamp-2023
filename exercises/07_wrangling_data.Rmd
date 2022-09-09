@@ -4,9 +4,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-library(rio)
+library(tidyverse) # if you have never used the `{tidyverse}` package before, you will need to install it using `install.packages("tidyverse")`.
 ```
 
 # Your Turn 1
