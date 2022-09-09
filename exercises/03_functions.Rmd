@@ -25,7 +25,7 @@ Q1. In your RStudio console, look up the help documentation for`import()` by typ
 
 Q2. Run `search()` in the console. Is the `{rio}` package included in this list?
  
-Q3. Load the `{rio}` package using the `library()` function. 
+Q3. Load the `{rio}` package using the `library()` function. *Note.* If you have never used the `{rio}` package before, you will need to install it using `install.packages("rio")`.
 
 Q4. Now look again at the help documentation for `import()`. What do you see this time?
 
@@ -33,7 +33,7 @@ Q5. Run `search()` again. What is different this time?
 
 # Your Turn 3
 
-Q1. Look up the help documentation for the `filter()`function from the `{stats}` package.
+Q1. Look up the help documentation for the `filter()`function from the `{stats}` package. *Note.* The `{stats}` package is preinstalled as part of base R; you do not need to install it separately. 
 
-Q2. Now look up the help documentation for the `filter()` function from the `{dplyr}` package.
+Q2. Now look up the help documentation for the `filter()` function from the `{dplyr}` package. *Note.* If you have never used the `{dplyr}` package before, you will need to install it using `install.packages("dplyr")`.
 

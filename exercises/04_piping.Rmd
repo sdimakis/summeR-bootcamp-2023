@@ -4,7 +4,7 @@ output: html_document
 ---
 
 ```{r}
-library(tidyverse)
+library(tidyverse) # if you have never used the `{tidyverse}` package before, you will need to install it using `install.packages("tidyverse")`.
 ```
 
 # Your Turn 1 

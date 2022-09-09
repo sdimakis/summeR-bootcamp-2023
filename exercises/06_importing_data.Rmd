@@ -1,0 +1,69 @@
+---
+title: "Importing Data & Project-Oriented Workflows"
+output: html_document
+---
+
+
+# Your Turn 1
+
+Q1. Load the `{rio}` package.
+
+```{r}
+library(rio) # if you have never used the `{rio}` package before, you will need to install it using `install.packages("rio")`.
+```
+
+Q2. Run the following code to import the data called `pragmatic_scales_data.csv`. Why do you get an error? Where is this file saved?    
+*Hint*: Look through the folder(s) in the Files pane
+
+```{r error=TRUE}
+ps_data <- import("06_pragmatic_scales_data.csv")
+```
+
+Q3. Fix the error in the code above to import the data. 
+
+```{r}
+ps_data <- import("_______/06_pragmatic_scales_data.csv")
+```
+
+Q4. Remember that `{rio}` is flexible with file types---`rio::import()` will call the right function under the hood to read in the file based on the file extension. Use `{rio}` to import `pragmatic_scales_data.sav` (an SPSS file type) and save it to a new object named `ps_data_2`.
+
+```{r}
+ps_data_2 <- ___
+```
+
+
+# Your Turn 2 
+
+Q1. Look through the Files pane and find the file `another_data_set.csv`. Make note of what subdirectory it is saved in. Import the data and save to an object called `another_df`.
+
+```{r}
+another_df <- ___
+```
+
+Q2. Now export the data you just imported and save it into the `data/` directory. Make sure the name of the resulting file is `another_data_set`, and export it as a `.xlsx` file.
+
+```{r}
+___(another_df, "___")
+```
+
+3. One of your colleagues insists you send them a `.sav` file so that they can run the analyses in SPSS. Make another copy of `another_data_set` in the `data/` subdirectory that is in the `.sav` format. 
+
+```{r}
+___(another_df, "___")
+```
+
+# Your Turn 3 
+
+Q1. Take a look at `another_df`, which should be in your Global Environment. Click the "View" button in the Environment pane and also use `View()` in your Console.
+
+Q2. Now look at some summary information about `another_df` using `str()` and `glimpse()`. *Hint*. You will need to load the tidyverse package first in order to use `glimpse()`.
+
+```{r}
+# your code here
+```
+
+Q3. Lastly, find the number of rows and columns in `another_df` using `nrow()` and `ncol()`, respectively. Make sure your answers match the summary information given to you above. 
+
+```{r}
+# your code here
+```
