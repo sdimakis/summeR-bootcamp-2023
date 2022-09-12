@@ -1,0 +1,46 @@
+---
+title: "Visualizing Data with {ggplot2}"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse) # if you have never used the `{tidyverse}` package before, you will need to install it using `install.packages("tidyverse")`
+library(palmerpenguins) # if you have never used the `{palmerpenguins}` package before, you will need to install it using `install.packages("palmerpenguins")`.
+```
+
+# Your Turn 1
+
+Q1. Create a scatter plot to visualize the relationship between `flipper_length_mm` and `bill_length_mm`. 
+
+```{r}
+penguins %>% 
+  ggplot() + 
+  ___(aes(x = ___, y = ___))
+```
+
+Q2. Build on your plot above by adding an aesthetic to visualize the effect of `species`. Choose any aesthetic you’d like or play around with a few. What do they do? How might you use more than one aesthetic? *Note:* Options for aesthetics include `color`, `shape`, `size`, and `alpha`. 
+
+```{r}
+# your code here
+```
+
+# Your Turn 2
+
+Q1. Take a look at the `diamonds` data set that is loaded as part of the `{ggplot2}` package. Use `glimpse()`, `str()`, `head()`, or any other data viewing function we've previously discussed.  
+
+```{r}
+# your code here
+```
+
+Q2. Fill in the blanks in the code to re-create the plot below. *Note*: This plot uses a geom we haven't seen yet called `geom_bar()`, which I've filled in for you. 
+
+```{r}
+diamonds %>%
+  ggplot(aes(x = ___, y = ___, fill = ___)) +
+    geom_bar(position = "dodge", stat = "summary", fun = "mean") +
+    facet_wrap(~___) +
+    labs(title = "Diamond Price by Cut, Color, and Clarity",
+         x     = "Cut", 
+         y     = "Price",
+         fill  = "Color") 
+```
