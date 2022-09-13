@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Welcome</title>
+    <title>R Tips &amp; Tricks</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -14,6 +14,8 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
   </head>
@@ -27,7 +29,528 @@
 
 class: title-slide, center, middle
 
-# Tips &amp; Tricks: Coming soon!
+# R Tips &amp; Tricks
+
+---
+
+# Use a Ligature Font
+
+--
+
+One (superficial) way to improve your code is to use a **ligature font**.
+
+Ligatures are special characters composed of two (or more) characters.
+
+--
+
+.pull-left[
+**Without Ligatures**
+&lt;img src="images/rtips_ligature1.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+**With Ligatures**
+&lt;img src="images/rtips_ligature2.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+--
+
+My ligature font of choice is [JetBrains Mono](https://www.jetbrains.com/lp/mono/), but there are [many](https://betterwebtype.com/articles/2020/02/13/5-monospaced-fonts-with-cool-coding-ligatures/) to choose from.
+
+---
+
+# Use a Ligature Font
+
+To start using a ligature font, all you need to do is install the font on your [Mac](https://support.apple.com/en-us/HT201749) or [PC](https://support.microsoft.com/en-us/office/add-a-font-b7c5f17c-4426-4b53-967f-455339c564c1) and then choose the font in RStudio's preferences pane:
+
+&lt;img src="images/rtips_pref_fonts.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Use a Different Theme
+
+--
+
+Another superficial way to improve your code is to change RStudio's default theme. 
+
+--
+
+As with fonts, you can change the theme in RStudio's preferences pane.
+
+&lt;img src="images/rtips_pref_theme.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Use a Different Theme
+
+You can also [download](https://www.rstudio.com/blog/rstudio-ide-custom-theme-support/) and [create](https://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai) custom themes. 
+
+--
+
+I created (and use) the [outRun](https://github.com/camkay/outRun) theme, but I encourage you to find a theme that suits your personal style. 
+
+---
+
+# Enable Rainbow Parentheses 
+
+--
+
+**Rainbow Parentheses** colour matches opening parentheses with closing parentheses.
+
+--
+
+.pull-left[
+**Without Rainbow Parentheses**
+&lt;img src="images/rtips_paren.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+**With Rainbow Parentheses**
+&lt;img src="images/rtips_paren2.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+---
+
+# Enable Rainbow Parentheses 
+
+You can enable Rainbow Parentheses by clicking the checkbox beside Rainbow Parentheses in RStudio's preferences pane. 
+
+&lt;img src="images/rtips_pref_paren.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Enable Spell-Checking
+
+--
+
+**Real-time spell-checking** will check your spelling in... well... real time. 
+
+--
+
+.pull-left[
+**Without Real-Time Spell-Checking**
+&lt;img src="images/rtips_spellcheck1.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+**With Real-Time Spell-Checking**
+&lt;img src="images/rtips_spellcheck2.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+---
+
+# Enable Spell-Checking
+
+You can enable real-time spell-checking by clicking the checkbox beside real-time spell-checking in RStudio's preferences pane. 
+
+&lt;img src="images/rtips_pref_spellcheck.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Start-Up Messages
+
+--
+
+You can set R to provide a custom start-up message every time you start or restart R. 
+
+--
+
+For example, I use my package [{merlinmann}](https://github.com/camkay/merlinmann) to deliver me a random piece of wisdom from Merlin Mann every time I start or restart R:
+
+&lt;img src="images/rtips_startup.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Start-Up Messages
+
+Other custom start-up message options include:
+
+- Mitch Hedberg jokes from the [{mitchhedberg}](https://github.com/mkearney/mitchhedberg) package.
+- Chuck Norris jokes from the [{norris}](https://github.com/chriscardillo/norris) package.
+- Dad jokes from the [{dadjokeapi}](https://github.com/jhollist/dadjokeapi) package.
+- The Office quotes from the [{dundermifflin}](https://cran.r-project.org/web/packages/dundermifflin/dundermifflin.pdf) package.
+- The Good Place quotes from the [{goodshirt}](https://github.com/adam-gruer/goodshirt) package.
+- General statistics, data visualization, and science quotes from the [{statquotes}](https://cran.r-project.org/web/packages/statquotes/statquotes.pdf) package.
+- Random facts about Carl Friedrich Gauss from the [{gaussfacts}](https://cran.r-project.org/web/packages/gaussfacts/) package.
+- Praise from the [{praise}](https://cran.r-project.org/web/packages/praise/praise.pdf) package.
+- Fortunes from the [{R Fortunes}](https://cran.r-project.org/web/packages/fortunes/fortunes.pdf) package.
+
+--
+
+For more information on using these packages, I would recommend reading [the Customise your RStudio Startup Message tutorial](https://damien-datasci-blog.netlify.app/post/2020-12-31-pimp-your-r-startup-message/) from Damien Dupré.
+
+---
+
+# Multicursor Selection
+
+--
+
+Holding down Option (&lt;key&gt;⌥&lt;/key&gt;) on Mac or Alt (&lt;key&gt;Alt&lt;/Key&gt;) on PC while clicking and dragging the cursor allows you to create a cursor across multiple lines:
+
+&lt;img src="images/rtips_multicursor1.gif" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Multicursor Selection
+
+Holding down Option and Command (&lt;key&gt;⌥&lt;/key&gt; + &lt;key&gt;⌘&lt;/key&gt;) on Mac or Alt and Control (&lt;key&gt;Alt&lt;/Key&gt; + &lt;key&gt;Ctrl&lt;/key&gt;) on PC while clicking at different locations in your script allows you to create multiple cursors with different horizontal locations.
+
+&lt;img src="images/rtips_multicursor2.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Commenting Chunks of Code
+
+--
+
+You can comment out multiple lines of code by highlighting them and then clicking Shift, Command, and C (&lt;key&gt;⇧&lt;/key&gt; + &lt;key&gt;⌘&lt;/key&gt; + &lt;key&gt;C&lt;/key&gt;) on Mac or Control, Shift, and C (&lt;key&gt;⇧&lt;/key&gt; + &lt;key&gt;Ctrl&lt;/key&gt; + &lt;key&gt;C&lt;/key&gt;) on PC.
+
+&lt;img src="images/rtips_comment.gif" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Search Through Code History
+
+--
+
+You can search for previously evaluated lines of code by pressing the up arrow (&lt;key&gt;↑&lt;/key&gt;) on your keyboard. 
+
+&lt;img src="images/rtips_up_arrow.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Search the Help System
+
+--
+
+The question mark (`?`) is very useful for looking up the help documentation for a given function (e.g., `?mean`) but, sometimes, the function you are looking for is in a package that is not loaded.
+
+In those cases, you can use two question marks (`??`) to search all of the help documentation.
+
+For example, typing`??if_else` in the console returns:
+
+&lt;img src="images/rtips_help2.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Assignment Pipe
+
+--
+
+We've talked about regular pipes (`%&gt;%`), but the `{magrittr}` package also has a number of alternative pipes available.footnote[*Note.* These are not loaded as part of the `{tidyverse}` package; you will need to load the `{magrittr}` package separately to use them.].
+
+--
+
+One useful alternative pipe is the **asignment pipe** (`%&lt;&gt;%`). The assignment pipe pipes an object forward---as a normal pipe does---but it assigns the result of the pipe to the original object.
+
+---
+
+# Assignment Pipe
+
+We've talked about regular pipes (`%&gt;%`), but the `{magrittr}` package also has a number of alternative pipes available.
+
+One useful alternative pipe is the **asignment pipe** (`%&lt;&gt;%`). The assignment pipe pipes an object forward---as a normal pipe does---but it assigns the result of the pipe to the original object.
+
+For example:
+
+.pull-left[
+
+```r
+x &lt;- c(1, 2, 3, 4)
+
+x %&gt;%
+  mean() %&gt;%
+  round()
+```
+
+```
+## [1] 2
+```
+
+```r
+x
+```
+
+```
+## [1] 1 2 3 4
+```
+]
+
+.pull-right[
+
+```r
+x &lt;- c(1, 2, 3, 4)
+
+x %&lt;&gt;%
+  mean() %&gt;%
+  round()
+
+x
+```
+
+```
+## [1] 2
+```
+]
+
+---
+
+# Pipes Redux
+
+--
+
+Thus far, we've used pipes only in cases where we want to pass an object to the first argument in subsequent functions. However, sometimes, we will want to pass an object to the second, third, or fourth (etc.) argument.
+
+--
+
+Take, for example, the `gsub()` function in Base R. `gsub()` replaces some set of characters in a string with another set of characters:
+
+
+```r
+the_best_star_trek &lt;- "Star Trek: The Next Generation"
+
+the_best_star_trek &lt;- gsub(pattern     = "The Next Generation", 
+                           replacement = "Voyager", 
+                           x           = the_best_star_trek)
+
+the_best_star_trek
+```
+
+```
+## [1] "Star Trek: Voyager"
+```
+
+--
+
+What if we wanted to pipe `the_best_star_trek` to the `gsub()` function?
+
+---
+
+# Pipes Redux
+
+We can use the dot placeholder (`.`). Essentially, the dot placeholder tells magrittr where to pipe the information. 
+
+For example:
+
+
+```r
+the_best_star_trek &lt;- "Star Trek: The Next Generation"
+
+the_best_star_trek %&gt;%
+  gsub(pattern     = "The Next Generation", 
+       replacement = "Voyager", 
+       x           = .)
+```
+
+```
+## [1] "Star Trek: Voyager"
+```
+
+---
+
+# Timing Your Code
+
+--
+
+There are multiple different ways to accomplish most tasks in R and, many times, you will want to choose the way that is the quickest. But how can you tell?
+
+You can use the `tic()` and `toc()` functions from the `{tictoc}` package to time your code:
+
+
+```r
+# shell sort
+tic() # start timer
+x &lt;- sort(rnorm(1e6), method = "shell")
+toc() # end timer
+```
+
+```
+## 0.126 sec elapsed
+```
+
+```r
+# radix sort
+tic() # start timer
+x &lt;- sort(rnorm(1e6), method = "radix")
+toc() # end timer
+```
+
+```
+## 0.058 sec elapsed
+```
+
+---
+
+# Timing Your Code
+
+You can also use the `microbenchmark()` function from the `{microbenchmark}` package to time your code. The `microbenchmark()` function runs each snippet of code multiple times and averages together the resulting durations. This results in a better estimate of the time it took to run the code. 
+
+
+```r
+# shell sort
+microbenchmark(x &lt;- sort(rnorm(1e6), method = "shell"),
+               times = 10L)
+```
+
+```
+## Warning in microbenchmark(x &lt;- sort(rnorm(1e+06), method = "shell"), times =
+## 10L): less accurate nanosecond times to avoid potential integer overflows
+```
+
+```
+## Unit: milliseconds
+##                                       expr      min       lq     mean   median
+##  x &lt;- sort(rnorm(1e+06), method = "shell") 119.2383 120.8268 126.7392 122.4027
+##        uq      max neval
+##  125.5194 160.1832    10
+```
+
+---
+
+# Timing Your Code
+
+You can also use the `microbenchmark()` function from the `{microbenchmark}` package to time your code. The `microbenchmark()` function runs each snippet of code multiple times and averages together the resulting durations. This results in a better estimate of the time it took to run the code. 
+
+
+```r
+# radix sort
+microbenchmark(x &lt;- sort(rnorm(1e6), method = "radix"),
+               times = 10L)
+```
+
+```
+## Unit: milliseconds
+##                                       expr     min       lq     mean   median
+##  x &lt;- sort(rnorm(1e+06), method = "radix") 52.2891 54.09602 54.42736 54.44681
+##        uq      max neval
+##  54.99502 55.94335    10
+```
+
+---
+
+# Notification Chimes
+
+--
+
+Sometimes code will take a long time to run, and you will start doing something else. It can be useful to be notified when the code finishes evaluating. You can use the `beep()` function from the `{beepr}` package to play a chime when your code has finished evaluating. 
+
+
+```r
+x &lt;- sort(rnorm(1e6), method = "shell")
+beep(sound = 8)
+```
+
+---
+
+# Pasting an Object
+
+--
+
+Sometimes you will want to copy-and-paste an object to another script.
+
+--
+
+One way to do this is using `dput()` from Base R, which creates an ASCII text representation of an R object.
+
+--
+
+
+```r
+rodrigo &lt;- data.frame(number = c(1, 5, 6),
+                      title  = c("Brutal", "Deja Vu", "Good 4 U"),
+                      length = c(2.38, 3.58, 2.97))
+
+rodrigo
+```
+
+```
+##   number    title length
+## 1      1   Brutal   2.38
+## 2      5  Deja Vu   3.58
+## 3      6 Good 4 U   2.97
+```
+
+```r
+dput(rodrigo)
+```
+
+```
+## structure(list(number = c(1, 5, 6), title = c("Brutal", "Deja Vu", 
+## "Good 4 U"), length = c(2.38, 3.58, 2.97)), class = "data.frame", row.names = c(NA, 
+## -3L))
+```
+
+---
+
+# TRUE/FALSE Are Just Numbers
+
+--
+
+Under the hood, `TRUE` and `FALSE` are really just numbers. Specifically, `TRUE` is 1 and `FALSE` is 0.
+
+--
+
+As such, you can count the number of `TRUE`s in a vector using `sum()`.
+
+
+```r
+duck_wins_21_22 &lt;- c(T, T, F, T, F, F, T, 
+                     T, F, F, T, F, T, T, 
+                     T, T, T, T, F, T, T, 
+                     T, T, F, T, F, F, T, 
+                     F, F, F, T, F, T, F)
+
+sum(duck_wins_21_22)
+```
+
+```
+## [1] 20
+```
+
+--
+
+You can also calculate the proportion of `TRUE`s in a vector with `mean()`.
+
+
+```r
+mean(duck_wins_21_22)
+```
+
+```
+## [1] 0.5714286
+```
+
+---
+
+# Parsing Numbers
+
+--
+
+You can use the `parse_number()` function from the `{readr}` package to strip any non-numeric characters in a vector.
+
+
+```r
+afc_richmond &lt;- c("24 Sam Obisanya",
+                  "Roy Kent 6",
+                  "Jamie 9 Tartt")
+
+parse_number(afc_richmond)
+```
+
+```
+## [1] 24  6  9
+```
+
+---
+class: inverse, center, middle
+# Q &amp; A
+
+<div class="countdown" id="timer_55ffdb2f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
