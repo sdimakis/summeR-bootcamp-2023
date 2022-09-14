@@ -30,6 +30,6 @@ subtitle = ""
   icon = "table"
   icon_pack = "fas"
   name = "**Tidying & visualizing data** <br><br> <i class='fa fa-calendar'></i> Friday, 9/23 <br> 9 AM - 1 PM PDT"
-  description = "<br> Data tidying with {tidyr} <br> Data Visualization with {ggplot2} <br> Tips & Tricks"
+  description = "<br> Data tidying with {tidyr} <br> Data Visualization with {ggplot2} <br> R Tips & Tricks"
 
 +++

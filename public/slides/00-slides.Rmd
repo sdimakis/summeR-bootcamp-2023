@@ -91,16 +91,15 @@ knitr::include_graphics("images/mcdougald.png")
 # Schedule `r emo::ji("calendar")`
 
 #### **Day 1: Tuesday, 9/20, 9 AM - 11 AM PDT**
-+ Basics of R & RStudio
-+ Basics of R Markdown
++ Basics of R, RStudio, & R Markdown
 + Data Types & Structures
 
 --
 
 #### **Day 2: Thursday, 9/22, 9 AM - 2 PM PDT**
 + Functions, Packages, & Debugging
++ Piping
 + Introduction to the Tidyverse
-+ Pipes
 + Importing Data & Project-Oriented Workflows
 + Data Wrangling with {dplyr}
 
