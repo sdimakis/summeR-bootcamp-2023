@@ -136,7 +136,7 @@ log10(100)
 ---
 # Basic computing
 
-Thankfully, R follows the order of operations (BEDMAS/PEMDAS/BODMAS/BIDMAS).
+Thankfully, R follows the order of operations.
 
 ```{r}
 2 + 2 * 3
@@ -152,7 +152,7 @@ Thankfully, R follows the order of operations (BEDMAS/PEMDAS/BODMAS/BIDMAS).
 
 ***
 
-All of the values computer thus far haven't been stored anywhere though...
+All of the values computed thus far haven't been stored anywhere though...
 
 ---
 
@@ -204,7 +204,7 @@ You want to use a consistent style so that others (including your future self) c
 
 --
 
-We highly recommend following the [tidyverse style guide](https://style.tidyverse.org/). We'll talk more about the tidyverse tomorrow
+We highly recommend following the [tidyverse style guide](https://style.tidyverse.org/). We'll talk more about the tidyverse tomorrow.
 
 --
 ***
@@ -284,7 +284,7 @@ You may be wondering how to name variables in R. There are just a few rules...
 
 2. Object names can contain alphanumeric characters, underscores (`_`), and/or periods (`.`).
 
-3. R is case sensitive, so `A` and `a` are different variables
+3. R is case sensitive, so `A` and `a` are different variables.
 
 --
 ***
@@ -323,7 +323,7 @@ class: yourturn
 countdown(minutes = 2, seconds = 00)
 ```
 
-Open the `01_rstudio_basics.Rmd` file.
+Open the `01_r_basics.Rmd` file.
 
 1. Create a variable called `var_1` that is equal to 4.
 
@@ -358,7 +358,7 @@ var_2
 
 R Markdown is a magical thing. It allows you to combine R code and plain text together in the same document. 
 
-R Markdown documents end with the extension `.Rmd`. Let's take a look at how they work... `r fontawesome::fa("cloud")`
+R Markdown documents end with the extension `.Rmd`. Let's take a look at how they work...
 
 .center[
 ```{r echo=FALSE, out.width="70%"}
@@ -383,7 +383,7 @@ class: yourturn
 countdown(minutes = 2)
 ```
 
-1. Go back to `01_rstudio_basics.Rmd` and click `knit`. Take a look at the resulting file called `01_rstudio_basics.html`. 
+1. Go back to `01_r_basics.Rmd` and click `knit`. Take a look at the resulting file called `01_r_basics.html`. 
 
 2. Insert `author: [YOUR NAME]` after `title: "Basics of R, RStudio, & R Markdown"` but before `output: html_document`. Re-knit the document. 
 
@@ -410,20 +410,6 @@ knitr::include_graphics("images/rmarkdown_example_author.png")
 ```
 ]
 ]
-
----
-class: inverse, center, middle
-# Q & A
-
-```{r echo=FALSE}
-countdown(minutes = 5)
-```
-
----
-class: inverse, center, middle
-# Next up...
-
-## Data Types & Structures
 
 ---
 class: inverse, center, middle
