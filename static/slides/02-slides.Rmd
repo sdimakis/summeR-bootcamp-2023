@@ -64,25 +64,49 @@ You can use `typeof()` to find out the type of a value or object.
 
 --
 
-```{r}
+```{r, eval = FALSE}
 typeof(TRUE)
 ```
 
 --
 
-```{r}
+```{r, echo = FALSE}
+typeof(TRUE)
+```
+
+--
+
+```{r, eval = FALSE}
 typeof(1L)
 ```
 
 --
 
-```{r}
+```{r, echo = FALSE}
+typeof(1L)
+```
+
+--
+
+```{r, eval = FALSE}
 typeof("one")
 ```
 
 --
 
-```{r}
+```{r, echo = FALSE}
+typeof("one")
+```
+
+--
+
+```{r, eval = FALSE}
+typeof(1.5)
+```
+
+--
+
+```{r, echo = FALSE}
 typeof(1.5)
 ```
 
@@ -91,13 +115,25 @@ typeof(1.5)
 
 You can use `typeof()` to find out the type of a value or object.
 
-```{r}
+```{r, eval = FALSE}
 typeof(1)
 ```
 
 --
 
-```{r}
+```{r, echo = FALSE}
+typeof(1)
+```
+
+--
+
+```{r, eval = FALSE}
+typeof("10")
+```
+
+--
+
+```{r, echo = FALSE}
 typeof("10")
 ```
 
@@ -488,7 +524,7 @@ z["Antoni"]
 ```
 
 ---
-# Modifying Vectors 
+# Modifying vectors 
 
 You can use indexing to change elements within a vector. 
 
