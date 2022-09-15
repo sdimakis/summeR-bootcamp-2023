@@ -111,15 +111,8 @@ knitr::include_graphics("images/mcdougald.png")
 + R Tips & Tricks
 
 ---
-class: split-three
+class: split-two
 # Logistics
-
-.column[.content[.center[
-<br><br><br><br><br>
-# [`r fontawesome::fa("globe", height = "120px")`](https://uorbootcamp2022.netlify.app)
-
-### RStudio Cloud
-]]]
 
 .column[.content[.center[
 <br><br><br><br><br>
