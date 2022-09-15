@@ -20,6 +20,8 @@ library(tidyverse)
 library(tictoc)
 library(microbenchmark)
 library(beepr)
+library(plotly)
+library(gganimate)
 
 xaringanExtra::use_xaringan_extra(include = c("panelset", "tile_view", "share_again"))
 xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin", "pocket"))
@@ -235,7 +237,7 @@ knitr::include_graphics("images/rtips_multicursor2.gif")
 
 ---
 
-# Commenting Chunks of Code
+# Comment Chunks of Code
 
 --
 
@@ -364,7 +366,7 @@ the_best_star_trek %>%
 
 ---
 
-# Timing Your Code
+# Time Your Code
 
 --
 
@@ -386,7 +388,7 @@ toc() # end timer
 
 ---
 
-# Timing Your Code
+# Time Your Code
 
 You can also use the `microbenchmark()` function from the `{microbenchmark}` package to time your code. The `microbenchmark()` function runs each snippet of code multiple times and averages together the resulting durations. This results in a better estimate of the time it took to run the code. 
 
@@ -398,7 +400,7 @@ microbenchmark(x <- sort(rnorm(1e6), method = "shell"),
 
 ---
 
-# Timing Your Code
+# Time Your Code
 
 You can also use the `microbenchmark()` function from the `{microbenchmark}` package to time your code. The `microbenchmark()` function runs each snippet of code multiple times and averages together the resulting durations. This results in a better estimate of the time it took to run the code. 
 
@@ -424,7 +426,7 @@ beep(sound = 8)
 
 ---
 
-# Pasting an Object
+# Paste an Object
 
 --
 
@@ -478,7 +480,7 @@ mean(duck_wins_21_22)
 
 ---
 
-# Parsing Numbers
+# Parse Numbers
 
 --
 
@@ -491,6 +493,39 @@ afc_richmond <- c("24 Sam Obisanya",
 
 parse_number(afc_richmond)
 
+```
+
+---
+
+# Create Interactive Charts
+
+--
+
+You can use the `ggplotly()` function from the `{plotly}` package to create interactive plots.
+
+```{r, message=FALSE, warning=FALSE, error=FALSE, fig.height=4, fig.width=10, fig.align='center', fig.retina=2}
+plot <- ggplot(mtcars,  aes(x = mpg)) +
+  geom_histogram(fill = "#15758c", color = "white") +
+  labs(y = "Count") + 
+  theme_bw()
+
+ggplotly(plot)
+```
+
+---
+
+# Create Animated Plots
+
+--
+
+You can use the `{gganimate}` package to create animated plots
+
+```{r, message=FALSE, warning=FALSE, error=FALSE, fig.height=4, fig.width=10, fig.align='center', fig.retina=2}
+ggplot(mtcars,  aes(x = mpg)) +
+  geom_histogram(fill = "#15758c", color = "white") +
+  transition_states(cyl) +
+  labs(title = "Cylinders: {closest_state}", y = "Count") + 
+  theme_bw()
 ```
 
 ---
