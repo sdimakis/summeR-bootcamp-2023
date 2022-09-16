@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Tips & Tricks"
+title: "R Tips & Tricks"
 subtitle: ""
 summary: " "
 authors: []
