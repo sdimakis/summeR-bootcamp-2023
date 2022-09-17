@@ -81,7 +81,7 @@ knitr::include_graphics("images/dominik.png")
 .column[.content[.center[
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 ```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/mcdougald.png")
+knitr::include_graphics("images/mcdougald2.png")
 ```
 
 ### Sarah M.
