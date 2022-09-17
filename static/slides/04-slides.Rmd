@@ -186,8 +186,8 @@ Note that you aren't limited to just two pipes. You can use many (MANY!) pipes t
 For example:
 
 ```{r}
-horror_movies_consumed <- c(JAN = 0,  FEB = 1, MAR = NA, APR = 1, 
-                            MAY = 3,  JUN = 0, JUL =  2, AUG = 3, 
+horror_movies_consumed <- c(JAN = 0, FEB =  1, MAR = NA, APR = 1, 
+                            MAY = 3, JUN =  0, JUL =  2, AUG = 3, 
                             SEP = 1, OCT = 22, NOV =  1, DEC = NA)
 
 horror_movies_consumed %>%

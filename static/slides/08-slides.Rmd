@@ -231,7 +231,7 @@ pivot_longer(data, cols, names_to, values_to)
 
 `cols` are the columns to pivot into longer format.
 
-`names_to` is a string specifying the name of the column to create from the data stored in the column names of `data`
+`names_to` is a string specifying the name of the column to create from the data stored in the column names of `data`.
 
 `values_to` is a string specifying the name of the column to create from the data stored in the cell values.
 
@@ -293,20 +293,20 @@ enrollment2 <- tibble(university = c(rep("UO",      4),
                                      rep("PSU", 4)),
                       year       = c(rep(c(rep(2020, 2),
                                            rep(2021, 2)), 3)),
-                      type       = c(rep(c("undergraduate",
-                                           "graduate"), 6)),
-                      count      = c(18054,
-                                     3746,
-                                     18604,
-                                     3694,
-                                     26644,
-                                     5048,
-                                     27564,
-                                     5019,
-                                     18959,
-                                     5020,
-                                     18047,
-                                     5134))
+                      type       = c(rep(c("enrollment",
+                                           "faculty"), 6)),
+                      count      = c(21800,
+                                     1926,
+                                     22298,
+                                     1949,
+                                     33359,
+                                     4730,
+                                     34108,
+                                     4798,
+                                     26012,
+                                     1694,
+                                     23181,
+                                     1690))
 ```
 
 ```{r}

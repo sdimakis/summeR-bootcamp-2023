@@ -116,43 +116,6 @@ background-size: 10%
 
 + `summarise()` reduces multiple values down to single summary statistics.
 
-
----
-background-image: url(images/hex/magrittr.png)
-background-position: 90% 5%
-background-size: 10%
-
-# A review of pipes
-
-`x %>% f(y)` is equivalent to `f(x, y)`
-
---
-***
-
-R Code 
-
-```{r eval=FALSE}
-starwars %>% 
-  filter(species == "Droid") %>% 
-  select(name, height, mass) %>% 
-  arrange(desc(height))
-```
-
---
-
-Translated into English
-
-```{r eval = FALSE}
-start with star wars data *AND THEN*
-  filter to include only observations from Droids *AND THEN*
-  select only the columns `name`, `height`, and `mass` *AND THEN*
-  arrange observations by descending order of `height`
-```
-
---
-***
-Read more on piping: [https://magrittr.tidyverse.org/reference/pipe.html](https://magrittr.tidyverse.org/reference/pipe.html)
-
 ---
 class: inverse, center, middle
 
@@ -326,7 +289,7 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 4)
+countdown(minutes = 5)
 ```
 
 1. Convert the data frame `mtcars` to a tibble and assign the resulting object to `data`. *Note.* The data frame `mtcars` is automatically loaded in R; you don't have to install it separately.
@@ -575,11 +538,11 @@ starwars %>%
 
 ```{r}
 starwars %>%
-  mutate(height_lb = mass * 2.2)
+  mutate(mass_lb = mass * 2.2)
 ```
 ]
 
-.panel[.panel-name[Example 2]
+.panel[.panel-name[Example 3]
 
 ```{r}
 starwars %>%
@@ -602,7 +565,7 @@ countdown(minutes = 5)
 
 1. As we did with indexing in base R, you can use the minus sign (`-`) to "de-select" columns. Keep everything in `data` except `vs`.
 
-1. Use `mutate()` to convert `cyl` from type "dbl" to type "factor".
+1. Use `mutate()` to convert `cyl` from type "double" to type "factor". *Hint:* You might want to look up the function `as.factor()`.
 
 ---
 class: solution
@@ -682,9 +645,11 @@ background-size: 10%
 summarize(.data, ...)
 ```
 
-`.data` is a data frame or tibble]
+`.data` is a data frame or tibble.
 
 `...` are name-value pairs of summary functions. The names will be the names of the variable in the resulting object.
+
+]
 
 .panel[.panel-name[Example]
 
@@ -737,8 +702,9 @@ Let's see a couple examples of how we can combine `group_by()` and `summarize()`
 
 .panel[.panel-name[Example 1]
 
-```{r}
-starwars %>% 
+```{r, warning = FALSE, message = FALSE}
+starwars %>%
+  filter(species  %in% c("Human", "Droid", "Gungan")) %>%
   group_by(species) %>% 
   summarize(mean_mass = mean(mass, na.rm = TRUE),
             sd_mass   =   sd(mass, na.rm = TRUE))
@@ -748,8 +714,9 @@ starwars %>%
 
 .panel[.panel-name[Example 2]
 
-```{r}
+```{r, warning = FALSE, message = FALSE}
 starwars %>% 
+  filter(species  %in% c("Human", "Droid", "Gungan")) %>%
   group_by(species, eye_color) %>% 
   summarize(mean_mass = mean(mass, na.rm = TRUE),
             sd_mass   =   sd(mass, na.rm = TRUE))
@@ -771,7 +738,7 @@ countdown(minutes = 5)
 
 1. From `data`, get the mean `hp` for each of the different `cyl` values.
 
-1. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest `hp`?
+1. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest average `hp`?
 
 ---
 class: solution
@@ -781,7 +748,7 @@ class: solution
 .panelset[
 .panel[.panel-name[Q1]
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 data %>% 
   group_by(cyl) %>% 
   summarize(mean_hp = mean(hp))
@@ -791,7 +758,7 @@ data %>%
 
 .panel[.panel-name[Q2]
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 data %>% 
   group_by(cyl, gear) %>% 
   summarize(mean_hp = mean(hp)) %>% 
@@ -809,7 +776,7 @@ background-size: 10%
 
 # Deeper dive
 
-What if we want to apply dplyr verbs across multiple columns and rows **simultaneously**?
+What if we want to apply `{dplyr}` verbs across multiple columns and rows **simultaneously**?
 
 ```{r echo=FALSE}
 knitr::include_url("https://dplyr-wisely.netlify.app/")

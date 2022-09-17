@@ -118,45 +118,6 @@ background-size: 10%
 
 + `summarise()` reduces multiple values down to single summary statistics.
 
-
----
-background-image: url(images/hex/magrittr.png)
-background-position: 90% 5%
-background-size: 10%
-
-# A review of pipes
-
-`x %&gt;% f(y)` is equivalent to `f(x, y)`
-
---
-***
-
-R Code 
-
-
-```r
-starwars %&gt;% 
-  filter(species == "Droid") %&gt;% 
-  select(name, height, mass) %&gt;% 
-  arrange(desc(height))
-```
-
---
-
-Translated into English
-
-
-```r
-start with star wars data *AND THEN*
-  filter to include only observations from Droids *AND THEN*
-  select only the columns `name`, `height`, and `mass` *AND THEN*
-  arrange observations by descending order of `height`
-```
-
---
-***
-Read more on piping: [https://magrittr.tidyverse.org/reference/pipe.html](https://magrittr.tidyverse.org/reference/pipe.html)
-
 ---
 class: inverse, center, middle
 
@@ -473,9 +434,9 @@ class: yourturn
 
 # Your turn 1
 
-<div class="countdown" id="timer_eea830b3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_07cd1aae" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
 1. Convert the data frame `mtcars` to a tibble and assign the resulting object to `data`. *Note.* The data frame `mtcars` is automatically loaded in R; you don't have to install it separately.
@@ -893,29 +854,29 @@ starwars %&gt;%
 
 ```r
 starwars %&gt;%
-  mutate(height_lb = mass * 2.2)
+  mutate(mass_lb = mass * 2.2)
 ```
 
 ```
 ## # A tibble: 87 × 7
-##    name               height  mass hair_color    eye_color species height_lb
-##    &lt;chr&gt;               &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;     &lt;chr&gt;       &lt;dbl&gt;
-##  1 Luke Skywalker        172    77 blond         blue      Human       169. 
-##  2 C-3PO                 167    75 &lt;NA&gt;          yellow    Droid       165  
-##  3 R2-D2                  96    32 &lt;NA&gt;          red       Droid        70.4
-##  4 Darth Vader           202   136 none          yellow    Human       299. 
-##  5 Leia Organa           150    49 brown         brown     Human       108. 
-##  6 Owen Lars             178   120 brown, grey   blue      Human       264  
-##  7 Beru Whitesun lars    165    75 brown         blue      Human       165  
-##  8 R5-D4                  97    32 &lt;NA&gt;          red       Droid        70.4
-##  9 Biggs Darklighter     183    84 black         brown     Human       185. 
-## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray Human       169. 
+##    name               height  mass hair_color    eye_color species mass_lb
+##    &lt;chr&gt;               &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;
+##  1 Luke Skywalker        172    77 blond         blue      Human     169. 
+##  2 C-3PO                 167    75 &lt;NA&gt;          yellow    Droid     165  
+##  3 R2-D2                  96    32 &lt;NA&gt;          red       Droid      70.4
+##  4 Darth Vader           202   136 none          yellow    Human     299. 
+##  5 Leia Organa           150    49 brown         brown     Human     108. 
+##  6 Owen Lars             178   120 brown, grey   blue      Human     264  
+##  7 Beru Whitesun lars    165    75 brown         blue      Human     165  
+##  8 R5-D4                  97    32 &lt;NA&gt;          red       Droid      70.4
+##  9 Biggs Darklighter     183    84 black         brown     Human     185. 
+## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray Human     169. 
 ## # … with 77 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
 ```
 ]
 
-.panel[.panel-name[Example 2]
+.panel[.panel-name[Example 3]
 
 
 ```r
@@ -949,7 +910,7 @@ class: yourturn
 
 # Your turn 2
 
-<div class="countdown" id="timer_787ea359" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_2733ff7a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -958,7 +919,7 @@ class: yourturn
 
 1. As we did with indexing in base R, you can use the minus sign (`-`) to "de-select" columns. Keep everything in `data` except `vs`.
 
-1. Use `mutate()` to convert `cyl` from type "dbl" to type "factor".
+1. Use `mutate()` to convert `cyl` from type "double" to type "factor". *Hint:* You might want to look up the function `as.factor()`.
 
 ---
 class: solution
@@ -1092,9 +1053,11 @@ background-size: 10%
 summarize(.data, ...)
 ```
 
-`.data` is a data frame or tibble]
+`.data` is a data frame or tibble.
 
 `...` are name-value pairs of summary functions. The names will be the names of the variable in the resulting object.
+
+]
 
 .panel[.panel-name[Example]
 
@@ -1153,28 +1116,20 @@ Let's see a couple examples of how we can combine `group_by()` and `summarize()`
 
 
 ```r
-starwars %&gt;% 
+starwars %&gt;%
+  filter(species  %in% c("Human", "Droid", "Gungan")) %&gt;%
   group_by(species) %&gt;% 
   summarize(mean_mass = mean(mass, na.rm = TRUE),
             sd_mass   =   sd(mass, na.rm = TRUE))
 ```
 
 ```
-## # A tibble: 38 × 3
-##    species   mean_mass sd_mass
-##    &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;
-##  1 Aleena         15      NA  
-##  2 Besalisk      102      NA  
-##  3 Cerean         82      NA  
-##  4 Chagrian      NaN      NA  
-##  5 Clawdite       55      NA  
-##  6 Droid          69.8    51.0
-##  7 Dug            40      NA  
-##  8 Ewok           20      NA  
-##  9 Geonosian      80      NA  
-## 10 Gungan         74      11.3
-## # … with 28 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # A tibble: 3 × 3
+##   species mean_mass sd_mass
+##   &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt;
+## 1 Droid        69.8    51.0
+## 2 Gungan       74      11.3
+## 3 Human        82.8    19.4
 ```
 
 ]
@@ -1184,33 +1139,28 @@ starwars %&gt;%
 
 ```r
 starwars %&gt;% 
+  filter(species  %in% c("Human", "Droid", "Gungan")) %&gt;%
   group_by(species, eye_color) %&gt;% 
   summarize(mean_mass = mean(mass, na.rm = TRUE),
             sd_mass   =   sd(mass, na.rm = TRUE))
 ```
 
 ```
-## `summarise()` has grouped output by 'species'. You can override using the
-## `.groups` argument.
-```
-
-```
-## # A tibble: 51 × 4
-## # Groups:   species [38]
-##    species  eye_color mean_mass sd_mass
-##    &lt;chr&gt;    &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;
-##  1 Aleena   unknown          15    NA  
-##  2 Besalisk yellow          102    NA  
-##  3 Cerean   yellow           82    NA  
-##  4 Chagrian blue            NaN    NA  
-##  5 Clawdite yellow           55    NA  
-##  6 Droid    black           NaN    NA  
-##  7 Droid    red              68    62.4
-##  8 Droid    red, blue       NaN    NA  
-##  9 Droid    yellow           75    NA  
-## 10 Dug      orange           40    NA  
-## # … with 41 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # A tibble: 11 × 4
+## # Groups:   species [3]
+##    species eye_color mean_mass sd_mass
+##    &lt;chr&gt;   &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;
+##  1 Droid   black         NaN      NA  
+##  2 Droid   red            68      62.4
+##  3 Droid   red, blue     NaN      NA  
+##  4 Droid   yellow         75      NA  
+##  5 Gungan  orange         74      11.3
+##  6 Human   blue           90.6    17.6
+##  7 Human   blue-gray      77      NA  
+##  8 Human   brown          74.7    13.9
+##  9 Human   dark          NaN      NA  
+## 10 Human   hazel          77      NA  
+## 11 Human   yellow        106.     43.1
 ```
 
 ]
@@ -1223,14 +1173,14 @@ class: yourturn
 
 # Your turn 3
 
-<div class="countdown" id="timer_84cb9b3e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_5a472a98" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
 1. From `data`, get the mean `hp` for each of the different `cyl` values.
 
-1. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest `hp`?
+1. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest average `hp`?
 
 ---
 class: solution
@@ -1269,11 +1219,6 @@ data %&gt;%
 ```
 
 ```
-## `summarise()` has grouped output by 'cyl'. You can override using the `.groups`
-## argument.
-```
-
-```
 ## # A tibble: 8 × 3
 ## # Groups:   cyl [3]
 ##     cyl  gear mean_hp
@@ -1299,7 +1244,7 @@ background-size: 10%
 
 # Deeper dive
 
-What if we want to apply dplyr verbs across multiple columns and rows **simultaneously**?
+What if we want to apply `{dplyr}` verbs across multiple columns and rows **simultaneously**?
 
 &lt;iframe src="https://dplyr-wisely.netlify.app/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
 
@@ -1309,7 +1254,7 @@ What if we want to apply dplyr verbs across multiple columns and rows **simultan
 class: inverse, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_a180c15a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c28c2b84" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>

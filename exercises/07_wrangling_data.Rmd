@@ -55,7 +55,7 @@ data %>%
   select(___)
 ```
 
-Q3. Use `mutate()` to convert `cyl` from type "dbl" to type "factor".
+Q3. Use `mutate()` to convert `cyl` from type "double" to type "factor". *Hint:* You might want to look up the function `as.factor()`.
 
 ```{r}
 data %>% 

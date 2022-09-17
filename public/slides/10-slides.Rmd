@@ -207,7 +207,7 @@ Other custom start-up message options include:
 - General statistics, data visualization, and science quotes from the [{statquotes}](https://cran.r-project.org/web/packages/statquotes/statquotes.pdf) package.
 - Random facts about Carl Friedrich Gauss from the [{gaussfacts}](https://cran.r-project.org/web/packages/gaussfacts/) package.
 - Praise from the [{praise}](https://cran.r-project.org/web/packages/praise/praise.pdf) package.
-- Fortunes from the [{R Fortunes}](https://cran.r-project.org/web/packages/fortunes/fortunes.pdf) package.
+- Fortunes from the [{fortunes}](https://cran.r-project.org/web/packages/fortunes/fortunes.pdf) package.
 
 --
 
@@ -301,7 +301,7 @@ For example:
 ```{r}
 x <- c(1, 2, 3, 4)
 
-x %>%
+x <- x %>%
   mean() %>%
   round()
 
@@ -351,7 +351,7 @@ What if we wanted to pipe `the_best_star_trek` to the `gsub()` function?
 
 # Pipes Redux
 
-We can use the dot placeholder (`.`). Essentially, the dot placeholder tells magrittr where to pipe the information. 
+We can use the dot placeholder (`.`). Essentially, the dot placeholder tells `{magrittr}` where to pipe the information. 
 
 For example:
 
@@ -420,8 +420,8 @@ microbenchmark(x <- sort(rnorm(1e6), method = "radix"),
 Sometimes code will take a long time to run, and you will start doing something else. It can be useful to be notified when the code finishes evaluating. You can use the `beep()` function from the `{beepr}` package to play a chime when your code has finished evaluating. 
 
 ```{r}
-x <- sort(rnorm(1e6), method = "shell")
-beep(sound = 8)
+x <- sort(rnorm(5e7), method = "shell")
+beep(sound = 2)
 ```
 
 ---
@@ -458,7 +458,29 @@ Under the hood, `TRUE` and `FALSE` are really just numbers. Specifically, `TRUE`
 
 --
 
+```{r}
+duck_wins_21_22 <- c(T, T, F, T, F, F, T, 
+                     T, F, F, T, F, T, T, 
+                     T, T, T, T, F, T, T, 
+                     T, T, F, T, F, F, T, 
+                     F, F, F, T, F, T, F)
+```
+
+--
+
 As such, you can count the number of `TRUE`s in a vector using `sum()`.
+
+--
+
+```{r}
+sum(duck_wins_21_22)
+```
+
+---
+
+# TRUE/FALSE Are Just Numbers
+
+Under the hood, `TRUE` and `FALSE` are really just numbers. Specifically, `TRUE` is 1 and `FALSE` is 0.
 
 ```{r}
 duck_wins_21_22 <- c(T, T, F, T, F, F, T, 
@@ -466,13 +488,33 @@ duck_wins_21_22 <- c(T, T, F, T, F, F, T,
                      T, T, T, T, F, T, T, 
                      T, T, F, T, F, F, T, 
                      F, F, F, T, F, T, F)
-
-sum(duck_wins_21_22)
 ```
+
+You can also count the number of `FALSE`s using a combination of `!` and `sum()`.
 
 --
 
+```{r}
+sum(!duck_wins_21_22)
+```
+
+---
+
+# TRUE/FALSE Are Just Numbers
+
+Under the hood, `TRUE` and `FALSE` are really just numbers. Specifically, `TRUE` is 1 and `FALSE` is 0.
+
+```{r}
+duck_wins_21_22 <- c(T, T, F, T, F, F, T, 
+                     T, F, F, T, F, T, T, 
+                     T, T, T, T, F, T, T, 
+                     T, T, F, T, F, F, T, 
+                     F, F, F, T, F, T, F)
+```
+
 You can also calculate the proportion of `TRUE`s in a vector with `mean()`.
+
+--
 
 ```{r}
 mean(duck_wins_21_22)
@@ -518,7 +560,7 @@ ggplotly(plot)
 
 --
 
-You can use the `{gganimate}` package to create animated plots
+You can use the `{gganimate}` package to create animated plots.
 
 ```{r, message=FALSE, warning=FALSE, error=FALSE, fig.height=4, fig.width=10, fig.align='center', fig.retina=2}
 ggplot(mtcars,  aes(x = mpg)) +

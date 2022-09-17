@@ -219,8 +219,6 @@ It will automatically create a `.Rproj` file in that folder, which will keep tra
 --
 ***
 
-For example, we've been using RStudio Projects for "Your Turn" exercises
-
 ```{r echo=FALSE}
 knitr::include_graphics("images/example_rproj.png")
 ```
@@ -230,7 +228,7 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 6)
 ```
 
 
@@ -475,7 +473,7 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 3)
+countdown(minutes = 4)
 ```
 
 1. Take a look at `another_df`, which should be in your Global Environment. Click the "View" button in the Environment pane and also use `View()` in your Console. 

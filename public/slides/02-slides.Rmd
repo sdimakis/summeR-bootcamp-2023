@@ -294,6 +294,10 @@ For example, what happens if we combine the vectors `x` and `letters` together?
 --
 
 ```{r}
+x
+
+letters
+
 mixed_vec <- c(x, letters)
 mixed_vec
 ```
@@ -312,6 +316,8 @@ This process is called **coercion**. R coerces a vector into whichever type will
 We can coerce `mixed_vec` to be numeric using `as.numeric()`, but notice what happens to the character values `r emo::ji("eyes")`
 
 ```{r}
+mixed_vec
+
 as.numeric(mixed_vec)
 ```
 
@@ -587,12 +593,6 @@ named[3] <- 21
 named
 ```
 
-```{r eval=FALSE}
-# this works too
-named[3] <- named[3]*7
-named
-```
-
 ]
 ]
 
@@ -606,8 +606,8 @@ Vectors are great for storing a single type of data, but what if we have a varie
 
 For example, let's say I have some information about Kendrick Lamar that I want to store together in a single object:
 
-- his name ("Kendrick Lamar") -- a **string**
-- his height in feet (5.5) -- a **number**
+- his name ("Kendrick Lamar") -- a **character**
+- his height in feet (5.5) -- a **double**
 - whether or not he has won a Grammy (TRUE) -- a **logical**
 
 --
@@ -897,7 +897,7 @@ We can create a data frame in a similar way to how we made a list.
 dunder_mifflin <- data.frame(id        = c(1, 2, 3),
                              name      = c("Michael", "Jim", "Dwight"), 
                              job_title = c("Regional Manager", "Salesperson", "Assistant to the Regional Manager"),
-                             age       = c(25, 43, 39))
+                             age       = c(43, 25, 39))
 dunder_mifflin
 ```
 
