@@ -72,7 +72,7 @@ data %>%
   summarize(___ = mean(___))
 ```
 
-Q2. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest `hp`?
+Q2. Now get the mean `hp` for each unique combination of `cyl` and `gear` and arrange the resulting rows by descending order of `hp`. Which combination of `cyl` and `gear` had the greatest average `hp`?
 
 ```{r}
 data %>% 

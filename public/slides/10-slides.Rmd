@@ -571,6 +571,14 @@ ggplot(mtcars,  aes(x = mpg)) +
 ```
 
 ---
+
+# Other Resources
+
+--
+
+Check out the [resources](https://uorbootcamp2022.netlify.app/resources/) page on the [UO R Bootcamp](https://uorbootcamp2022.netlify.app) website for additional readings, websites, tutorials, and classes!
+
+---
 class: inverse, center, middle
 # Q & A
 

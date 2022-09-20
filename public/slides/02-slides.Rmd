@@ -897,7 +897,7 @@ We can create a data frame in a similar way to how we made a list.
 dunder_mifflin <- data.frame(id        = c(1, 2, 3),
                              name      = c("Michael", "Jim", "Dwight"), 
                              job_title = c("Regional Manager", "Salesperson", "Assistant to the Regional Manager"),
-                             age       = c(43, 25, 39))
+                             age       = c(40, 27, 35))
 dunder_mifflin
 ```
 

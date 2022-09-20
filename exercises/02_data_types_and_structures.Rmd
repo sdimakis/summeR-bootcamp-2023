@@ -66,14 +66,14 @@ Q3. Change the  third element of `named` to the value 21 and then show your resu
 
 # Your Turn 4
 
-1. Create a list like mine that is made up of `name`, `height`, and `ice_cream`, but corresponds to information about you. Make sure you enter two types of icecream data (because who could choose?!).
+Q1. Create a list like mine that is made up of `name`, `height`, and `ice_cream`, but corresponds to information about you. Make sure you enter two types of icecream data (because who could choose?!).
 
 ```{r}
 ___ <- list(___)
 ```
 
 
-2. Index your list to print only your name.
+Q2. Index your list to print only your name.
 
 ```{r}
 
@@ -81,7 +81,7 @@ ___ <- list(___)
 
 # Your Turn 5
 
-1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure.
+Q1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure.
 
     `c1` = c(1, 2, 3) <br>
     `c2` = c(2, 4, 6) <br>
@@ -93,15 +93,9 @@ df_2 <- data.frame(___)
 ___(df_2)
 ```
 
-2. Add a fourth column, `c4`, which is the first and second columns multiplied together.
+Q2. Add a fourth column, `c4`, which is the first and second columns multiplied together.
 
 ```{r}
 df_2$c4 <- ___
-```
-
-3. Try to add the first and second rows together. What happens? Why?
-
-```{r}
-___ + ___
 ```
 
