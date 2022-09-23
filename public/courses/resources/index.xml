@@ -225,13 +225,13 @@
 &lt;a href=&#34;https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Dramatic Tour through Python’s Data Visualization Landscape (including ggplot and Altair)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;The Washington Post&amp;rsquo;s 
 &lt;a href=&#34;https://www.washingtonpost.com/graphics/politics/2016-election/the-demographic-groups-fueling-the-election/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;demographic tug-of-war&amp;rdquo;&lt;/a&gt; visualization is a lovely illustration of how &lt;em&gt;&lt;strong&gt;not&lt;/strong&gt;&lt;/em&gt; to appropriately use color saturation and hue to encode information, and &lt;strong&gt;also&lt;/strong&gt; has misleading axes (both in unit spacing and direction)!&lt;/li&gt;
-&lt;li&gt;The New York Times&amp;rsquo; interactive 
+&lt;li&gt;The New York Times&#39; interactive 
 &lt;a href=&#34;http://www.nytimes.com/interactive/2016/upshot/clinton-trump-paths-to-win-election.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;The 1,024 Ways Clinton or Trump Can Win the Election&amp;rdquo;&lt;/a&gt; is a great use of interactivity as a data exploration tool.&lt;/li&gt;
 &lt;li&gt;Also from the NYT, 
 &lt;a href=&#34;http://www.nytimes.com/2016/10/07/upshot/your-surgeon-is-probably-a-republican-your-psychiatrist-probably-a-democrat.html?smprod=nytcore-iphone&amp;amp;smid=nytcore-iphone-share&amp;amp;_r=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Your Surgeon Is Probably a Republican, Your Psychiatrist Probably a Democrat&amp;rdquo;&lt;/a&gt; makes excellent use of a graphs and charts to tell a very clear story. Also note their detailed description at the end of the article of how the data were collected!&lt;/li&gt;
 &lt;li&gt;The Washington Post&amp;rsquo;s 
 &lt;a href=&#34;https://www.washingtonpost.com/graphics/national/one-hundred-years-of-hurricanes/?%3Ftid%3D=sm_pg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;One Hundred Years of Hurricanes&amp;rdquo;&lt;/a&gt; is a nice example of small-multiples cartography along with color.&lt;/li&gt;
-&lt;li&gt;The New York Times&amp;rsquo; 
+&lt;li&gt;The New York Times&#39; 
 &lt;a href=&#34;http://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;What Good Marathons and Bad Investments Have in Common&amp;rdquo;&lt;/a&gt; illustrates a good use of contrast and preattentive processing (plus is a very interesting story!).&lt;/li&gt;
 &lt;li&gt;From Our World In Data, a nice example of using color and saturation to highlight certain information, in a terrifying plot about 
 &lt;a href=&#34;https://ourworldindata.org/the-link-between-life-expectancy-and-health-spending-us-focus#life-expectancy-vs-health-expenditure-over-time-1970-2014ref&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Life Expectancy vs. Health Expenditure Over Time&lt;/a&gt;.&lt;/li&gt;

@@ -45,20 +45,11 @@ background-size: 10%
 
 # ggplot
 
-`{ggplot2}` is a tidyverse package for data visualization. It follows the **"grammar of graphics"**.
+`{ggplot2}` is the tidyverse package for **data visualization** that can make beautiful, customizable, publication-ready plots 
 
 --
 
-Even with just a few of its functions, it can make beautiful, publication-ready plots. 
-
---
-
-Its more advanced features add even more versatility. 
-
---
-
-People make companion packages that allow you to do even more (e.g., `ggpubr` to add statistics to your plot)---you'll use this in gradstats. 
-
+It follows the **"grammar of graphics"**, creating graphics one layer at a time (like a painting)
 
 ---
 background-image: url(images/hex/palmerpenguins.png)
@@ -69,21 +60,15 @@ background-size: 10%
 
 We're going to use the **Palmer Penguins** dataset as an example throughout our discussion of `{ggplot}`.
 
---
-
-This data comes from the `{palmerpenugins}` package, which you can download from CRAN using `install.packages("palmerpenguins")`. 
-
---
-
-And remember, to load the package, use `library(palmerpenguins)`, which will give you access to the built-in dataset, called `penguins`.
-
---
-
 .center[
 ```{r echo=FALSE, out.width="60%"}
 knitr::include_graphics("images/penguins.png")
 ```
 ]
+
+--
+
+The dataset **penguins** comes from the `{palmerpenugins}` package, which you can download with `install.packages("palmerpenguins")` and load with `library(palmerpenguins)`. 
 
 ---
 
@@ -98,6 +83,7 @@ library(palmerpenguins)
 penguins
 ```
 
+
 ---
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
@@ -105,11 +91,38 @@ background-size: 10%
 
 # {ggplot2}
 
-When creating a plot in `{ggplot2}`, the first thing you have to do is call the `ggplot()` function. 
+There are 3 components to making any plot.
+
+1. The data set, including variables you want visually represent
 
 --
 
-It takes `data` as its first argument. Let's start there...
+2. Geoms or geometric shapes (e.g., bars, points, lines)
+
+--
+
+3. Aesthetic mappings (e.g., color, shape, transparency, location)
+
+--
+
+.center[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("images/ggplot_summary.png")
+```
+
+]
+---
+background-image: url(images/hex/ggplot2.png)
+background-position: 90% 5%
+background-size: 10%
+
+# Data set
+
+When creating a plot in `{ggplot2}`, the first thing you have to do is call the `ggplot()` function and tell it what data you want to graph.
+
+--
+
+The function `ggplot()` takes `data` as its first argument. Let's start there...
 
 --
 
@@ -126,45 +139,28 @@ ggplot(data = penguins)
 
 ```{r plot-1-out, ref.label="plot-1", echo=FALSE, fig.dim=c(4.8, 4.5)}
 ```
+
 ]
 ]
 
 ---
+
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# {ggplot2}
+# Geoms
 
-All we got was a blank square! 
-
---
-
-To understand why, let's take a look at the philosophy of `{ggplot2}`...
-
-<iframe src="https://player.vimeo.com/video/223812632?h=05e2af1b10&color=428bca" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/223812632">01-Data-Visualization</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
----
-background-image: url(images/hex/ggplot2.png)
-background-position: 90% 5%
-background-size: 10%
-
-# {ggplot2}
-
-To summarize, there are 3 basic steps to making any plot.
-
-```{r echo=FALSE, out.width="40%"}
-knitr::include_graphics("images/ggplot_summary.png")
-```
+**Geoms** are geometric objects like points, bars, histograms, boxplots
 
 --
 
-We already did step 1 above, by providing our `penguins` dataset to `ggplot()`. 
+In order to paint a geom on our blank canvas, we need to tell `ggplot()` which geom we want to map
 
 --
 
-Now let's move onto geoms and aesthetic mappings...
+Some popular geoms are `geom_histogram()` for histograms, `geom_bar()` for bar charts, `geom_point()` for points (e.g., for scatter plots), and`geom_boxplot()` for boxplots
+
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -173,28 +169,20 @@ background-size: 10%
 
 # Aesthetic mapping
 
-The basic idea with aesthetic mapping is that we want to take our data and map it onto physical space using geometric objects, or `geoms`. 
-
---
-
-For `ggplot()` to place a `geom`, it needs to know how to map aspects of the data onto the **aesthetics** (or visual features) of the graph.
-
---
-
 Each `geom()` function in `ggplot` takes a **mapping** argument. 
 
 --
 
-Let’s start with a basic geom, `geom_histogram()`...
+**Aesthetic mapping** allows us to assign aesthetic properties to the geom, e.g., location, color, size, transparency (different geoms have different options)
 
 ---
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Mapping with geoms
+# Geoms and aesthetic mapping
 
-We're going to call `ggplot()` again, and this time add the `geom_histogram()` **layer**, telling it to map the variable `flipper_length_mm` to the x-axis aesthetic.
+We're going to call `ggplot()` again, and this time add the `geom_histogram()` **layer**, telling `ggplot()` to map the variable `flipper_length_mm` on the x-axis
 
 --
 
@@ -215,15 +203,15 @@ penguins %>%
 
 ]
 ]
-
 ---
+
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
 # Mapping with geoms 
 
-You can add additional arguments to the `geom()`. For example, we could change the number of bins...
+If we want to add a static property to a `geom()`, we need to do so outside of the `mapping` parameter. For example, we could change the number of bins...
 
 --
 
