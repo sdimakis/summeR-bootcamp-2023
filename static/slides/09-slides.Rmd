@@ -355,11 +355,11 @@ background-size: 10%
 
 # Mapping with geoms 
 
-Notice that we included `color` **inside** our aesthetic mapping call (`mapping = aes()`) here, but not when we filled our histogram with the color red earlier.
+Notice that we included `color` **inside** our aesthetic mapping call (`mapping = aes()`) here, but not when we filled our histogram with the color turquoise earlier.
 
 --
 
-This is the difference between mapping an aesthetic to **data** and just setting an aesthetic to some **value** (e.g., "red").
+This is the difference between mapping an aesthetic to **data** and just setting an aesthetic to some **value** (e.g., "turquoise").
 
 --
 
@@ -372,19 +372,19 @@ background-size: 10%
 
 # Mapping with geoms
 
-What happens if we tell `ggplot` to make our points red but accidentally include that **inside** the `aes()` call?
+What happens if we tell `ggplot` to make our points turquoise but accidentally include that **inside** the `aes()` call?
 
 --
 
 .panelset[
 .panel[.panel-name[Code]
 
-```{r penguins-point-red, eval=FALSE}
+```{r penguins-point-turq, eval=FALSE}
 penguins %>% 
   ggplot() + 
   geom_point(mapping = aes(x     = flipper_length_mm, 
                            y     = bill_length_mm,
-                           color = "red"))
+                           color = "turquoise"))
 ```
 
 ]
@@ -393,12 +393,12 @@ penguins %>%
 
 .pull-left[
 
-```{r penguins-point-red-out, ref.label="penguins-point-red", echo=FALSE, fig.dim=c(4.8, 4.5), warning = FALSE, message = FALSE}
+```{r penguins-point-turq-out, ref.label="penguins-point-turq", echo=FALSE, fig.dim=c(4.8, 4.5), warning = FALSE, message = FALSE}
 ```
 ]
 
 .pull-right[
-This is not what we want! `ggplot` is treating the value "red" as if it were part of our data, which it isn't.
+This is not what we want! `ggplot` is treating the value "turquoise" as if it were part of our data, which it isn't.
 ]
 
 ]

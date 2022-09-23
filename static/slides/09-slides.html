@@ -370,11 +370,11 @@ background-size: 10%
 
 # Mapping with geoms 
 
-Notice that we included `color` **inside** our aesthetic mapping call (`mapping = aes()`) here, but not when we filled our histogram with the color red earlier.
+Notice that we included `color` **inside** our aesthetic mapping call (`mapping = aes()`) here, but not when we filled our histogram with the color turquoise earlier.
 
 --
 
-This is the difference between mapping an aesthetic to **data** and just setting an aesthetic to some **value** (e.g., "red").
+This is the difference between mapping an aesthetic to **data** and just setting an aesthetic to some **value** (e.g., "turquoise").
 
 --
 
@@ -387,7 +387,7 @@ background-size: 10%
 
 # Mapping with geoms
 
-What happens if we tell `ggplot` to make our points red but accidentally include that **inside** the `aes()` call?
+What happens if we tell `ggplot` to make our points turquoise but accidentally include that **inside** the `aes()` call?
 
 --
 
@@ -400,7 +400,7 @@ penguins %&gt;%
   ggplot() + 
   geom_point(mapping = aes(x     = flipper_length_mm, 
                            y     = bill_length_mm,
-                           color = "red"))
+                           color = "turquoise"))
 ```
 
 ]
@@ -409,11 +409,11 @@ penguins %&gt;%
 
 .pull-left[
 
-![](09-slides_files/figure-html/penguins-point-red-out-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/penguins-point-turq-out-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
-This is not what we want! `ggplot` is treating the value "red" as if it were part of our data, which it isn't.
+This is not what we want! `ggplot` is treating the value "turquoise" as if it were part of our data, which it isn't.
 ]
 
 ]
@@ -423,7 +423,7 @@ This is not what we want! `ggplot` is treating the value "red" as if it were par
 class: yourturn
 # Your Turn 1
 
-<div class="countdown" id="timer_632d3eb1" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_632ddfe3" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -712,7 +712,7 @@ penguins %&gt;%
 class: yourturn
 # Your Turn 2
 
-<div class="countdown" id="timer_632d3e8d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_632ddef8" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">06</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -910,7 +910,7 @@ background-size: 10%
 class: inverse, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_632d407d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_632de15d" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -918,7 +918,7 @@ class: inverse, center, middle
 class: inverse, center, middle
 # Break! 
 
-<div class="countdown" id="timer_632d3ef1" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_632ddfac" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
