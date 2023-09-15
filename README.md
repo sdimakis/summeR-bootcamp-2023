@@ -1,16 +1,14 @@
-# summeR-bootcamp-2022
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9af47a19-4cf5-47c1-8c42-0f51dcf2bb2b/deploy-status)](https://app.netlify.com/sites/uorbootcamp2022/deploys)
+# summeR-bootcamp-2023
 
 This repo contains materials for the UO R Bootcamp: a 3-day introductory R workshop developed by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
 
-The full website is available here: [uorbootcamp2022.netlify.app](https://uorbootcamp2022.netlify.app/)
+The full website is available here: [https://uorbootcamp2023.netlify.app/](https://uorbootcamp2023.netlify.app/)
 
 # Description
 
 The UO R Bootcamp gives a gentle introduction to R and RStudio, transforming and visualizing data with the tidyverse, and the basics of R Markdown. It assumes no prior experience with R or any other programming language and is designed to get learners up and running with the most widely used tools for conducting reproducible data analysis in R, while emphasizing best practices for writing code and organizing project-oriented workflows. It also contains a curated list of resources relevant to each topic for those who want more opportunities for learning and practice. 
 
-Please contact [Cameron S. Kay](https://cameronstuartkay.com), the 2022 bootcamp coordinator, with any questions at [ckay@uoregon.edu](mailto:ckay@uoregon.edu).
+Please contact Sarah Dimakis, the 2023 bootcamp coordinator, with any questions at [sdimakis@uoregon.edu](mailto:sdimakis@uoregon.edu).
 
 Topics covered include:
 
@@ -27,7 +25,7 @@ Topics covered include:
 
 # Acknowledgments
 
-Much of the content was adapted from [previous iterations](https://github.com/uopsych) of the R Bootcamp led by [Brendan Cullen](https://bcullen.rbind.io/), [Jessica Kosie](https://jkosie.github.io/) and [Cory Costello](https://corykcostello.com/). Other content was adapted from a variety of sources, including [R for Data Science](https://r4ds.had.co.nz/), [Modern Dive](https://moderndive.com/), [Alison Hill](https://alison.rbind.io/)'s [R Markdown for Medicine](https://rmd4medicine.netlify.app/) workshop, [Michael Frank](https://web.stanford.edu/~mcfrank/)'s [R Markdown workshop](https://github.com/mcfrank/rmarkdown-workshop), and [Silvia Canelón](https://silvia.rbind.io/)'s Intro to the Tidyverse [presentation](https://github.com/spcanelon/2020-rladies-chi-tidyverse) for R-Ladies Chicago. 
+Much of the content was adapted from [previous iterations](https://github.com/uopsych) of the R Bootcamp led by [Cameron Kay](https://antisocialitylab.com/), [Brendan Cullen](https://bcullen.rbind.io/), [Jessica Kosie](https://jkosie.github.io/) and [Cory Costello](https://corykcostello.com/). Other content was adapted from a variety of sources, including [R for Data Science](https://r4ds.had.co.nz/), [Modern Dive](https://moderndive.com/), [Alison Hill](https://alison.rbind.io/)'s [R Markdown for Medicine](https://rmd4medicine.netlify.app/) workshop, [Michael Frank](https://web.stanford.edu/~mcfrank/)'s [R Markdown workshop](https://github.com/mcfrank/rmarkdown-workshop), and [Silvia Canelón](https://silvia.rbind.io/)'s Intro to the Tidyverse [presentation](https://github.com/spcanelon/2020-rladies-chi-tidyverse) for R-Ladies Chicago. 
 
 This website was based on a template [demo course website](https://github.com/apreshill/share-blogdown) created by [Alison Hill](https://alison.rbind.io) as part of an [RStudio Webinar](https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/) along with [Desirée De Leon](https://desiree.rbind.io/). Note boxes were created following a [tutorial](https://desiree.rbind.io/post/2019/making-tip-boxes-with-bookdown-and-rmarkdown/) by [Desirée De Leon](https://desiree.rbind.io/). Some [custom CSS](https://github.com/emitanaka/ninja-theme) was also borrowed from [Emi Tanaka](https://emitanaka.org/). 
 

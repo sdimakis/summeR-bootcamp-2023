@@ -10,10 +10,10 @@ role: "Department of Psychology"
 social:
 - icon: slack
   icon_pack: fab
-  link: https://uodatascience.slack.com/
+  link: https://uopsychology.slack.com/
 - icon: github
   icon_pack: fab
-  link: https://github.com/uopsych/summeR-bootcamp-2022
+  link: https://github.com/sdimakis/summeR-bootcamp-2023
 superuser: true
 user_groups:
 - Researchers
