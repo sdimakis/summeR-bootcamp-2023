@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-Hello! Welcome to the 5th Annual UO R Bootcamp. There are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
+Hello! Welcome to the 6th Annual UO R Bootcamp. There are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
 
 :::clock
 If possible, please try to complete this checklist *before* the first UO R Bootcamp session. Thank you!
@@ -39,19 +39,11 @@ If possible, please try to complete this checklist *before* the first UO R Bootc
 
 <br> 
 
-1) Register for the UO R Bootcamp by completing this short [registration survey](https://oregon.qualtrics.com/jfe/form/SV_dniQzU8XldXFodo). If you can't make all of the days (or all of the sessions on a given day), that's okay! We just ask that you register so that we can (1) send you the links to join the Zoom sessions and (2) get a better understanding of your familiarity with R. Registration is, of course, free. 
+1) Join the [UO Psychology Slack](https://app.slack.com/client/TVAHQJSKZ/CUX7ZTV7D). The slack channel will help us help you troubleshoot any issues you have with your code during the camp and to answer any questions you have. It is also the best place to ask questions outside of the scheduled bootcamp hours. This is the department's multipurpose slack workspace, and we'll be using the channel `#rbootcamp`. You should have received an email invitation to join the `UO Psychology` workspace. If you haven't received an invitation, send Sarah an email at [sdimakis@uoregon.edu](mailto:ckay@uoregon.edu). 
 
-2) Make sure you have a [Zoom account](https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=101392) set up through the University of Oregon. We will use the same Zoom link for each day of the bootcamp. You will receive the link through email and slack.
+2) Download and install both [R](https://cran.r-project.org) and [RStudio](https://www.rstudio.com/products/rstudio/download/). [R](https://cran.r-project.org) is free and, for the purposes of the bootcamp, you will only need the free version of [RStudio](https://www.rstudio.com/products/rstudio/download/). If you have any trouble downloading or opening [R](https://cran.r-project.org) or [RStudio](https://www.rstudio.com/products/rstudio/download/), please let one of the UO R Bootcamp team members know, and we will do our best to help you solve the issue.
 
-3) Join the [Slack workspace](https://uodatascience.slack.com/). This is how we will primarily be communicating with each other, and it is the best place to ask questions outside of the scheduled bootcamp hours. We'll be using the channel `#bootcamp2022`. You should have received an email invitation to join the `SlackRs` workspace. If you haven't received an invitation, send Cameron an email at [ckay@uoregon.edu](mailto:ckay@uoregon.edu). When you join, please introduce yourself and say hello in the `#bootcamp2022` channel!
-
-4) Download and install both [R](https://cran.r-project.org) and [RStudio](https://www.rstudio.com/products/rstudio/download/). [R](https://cran.r-project.org) is free and, for the purposes of the bootcamp, you will only need the free version of [RStudio](https://www.rstudio.com/products/rstudio/download/). If you have any trouble downloading or opening [R](https://cran.r-project.org) or [RStudio](https://www.rstudio.com/products/rstudio/download/), please let one of the UO R Bootcamp team members know, and we will do our best to help you solve the issue.
-
-5) Download the [exercises](https://drive.google.com/drive/folders/1m3GpSyiV7ISHS_jvzK4M98sangzMmbqr?usp=sharing) for the UO R Bootcamp. We will be working through the materials and exercises together during the bootcamp.
-
-6) Review the [Code of Conduct](/#code_of_conduct).
-
-7) *Optional* - Download [Google Chrome](https://www.google.com/chrome/) if you don't have it already. The materials on this website are best viewed with Chrome. We've found that using other browsers (e.g., Firefox, Safari) can lead to some technical difficulties.
+3) Download the [exercises](https://drive.google.com/drive/folders/1NXdlOZ5ELdxbqGcO6oZR3UnaTv4GIcfP?usp=drive_link) for the UO R Bootcamp. We will be working through the materials and exercises together during the bootcamp.
 
 Looking forward to seeing you all soon. Hopefully we'll have you loving R in no time!
 
