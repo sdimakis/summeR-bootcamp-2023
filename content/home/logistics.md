@@ -14,21 +14,21 @@ title = "Logistics"
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "fa-solid fa-video"
-  icon_pack = "fa"
-  name = "<a href='https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=101392'>Zoom</a>"
+  icon = "chalkboard"
+  icon_pack = "fas"
+  name = "Straub 008"
   description = "For attending the workshop sessions"
   
 [[feature]]
   icon = "slack"
   icon_pack = "fab"
-  name = "<a href='https://uodatascience.slack.com/'>Slack</a>"
-  description = "For communicating outside of the workshop (use channel `#bootcamp2022`)"
+  name = "<a href='https://uopsychology.slack.com'>Slack</a>"
+  description = "For troubleshooting and asking questions (use channel `#rbootcamp`)"
   
 [[feature]]
   icon = "github"
   icon_pack = "fab"
-  name = "<a href='https://github.com/uopsych/summeR-bootcamp-2021'>GitHub</a>"
+  name = "<a href='https://github.com/sdimakis/summeR-bootcamp-2023'>GitHub</a>"
   description = "For accessing source code of all workshop materials"
 
 +++
