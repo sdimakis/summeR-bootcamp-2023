@@ -27,208 +27,175 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
-# Welcome
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
 
-## Introduction and Orientation
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+# Introduction and Orientation
 
+UO R Bootcamp 2023
 ---
 class: split-four
 
 # Hello `r emo::ji("wave")`
 
-###  Welcome to the 5th annual UO R Bootcamp!
+###  Welcome to the 6th annual UO R Bootcamp!
 
---
 
-## <center>The Team</center>
 
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/cam.png")
+.column[.content[.center[<br><br><br><br><br><br>
+
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/dimakis.png")
 ```
 
-### Cameron
+### <u>Sarah</u>
+
 ]]]
 
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/sarah.png")
+.column[.content[.center[<br><br><br><br><br><br>
+
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/shryock.png")
+```
+### <u>Ian</u>
+
+
+]]]
+
+
+.column[.content[.center[<br><br><br><br><br><br>
+
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/rait.png")
 ```
 
-### Sarah D.
+
+### <u>Lindsay</u>
+
 ]]]
 
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/dominik.png")
+
+
+.column[.content[.center[<br><br><br><br><br><br>
+
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/gratz.png")
 ```
 
-### Dominik
+
+### <u>Dominik</u>
+
+
 ]]]
-
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/mcdougald2.png")
-```
-
-### Sarah M.
-]]]
-
 ---
 # Schedule `r emo::ji("calendar")`
 
-#### **Day 1: Tuesday, 9/20, 9 AM - 11 AM PDT**
+
+#### **Day 1: Wednesday, 9/20, 9 AM - 12 PM PDT**
+.smaller-font[
 + Basics of R, RStudio, & R Markdown
 + Data Types & Structures
++ Functions, Packages, & Debugging]
 
 --
 
-#### **Day 2: Thursday, 9/22, 9 AM - 2 PM PDT**
-+ Functions, Packages, & Debugging
+#### **Day 2: Thursday, 9/21, 9 AM - 1 PM PDT**
+.smaller-font[
 + Piping
 + Introduction to the Tidyverse
 + Importing Data & Project-Oriented Workflows
-+ Data Wrangling with {dplyr}
++ Data Wrangling with `{dplyr}`]
 
 --
 
-#### **Day 3: Friday, 9/23, 9 AM - 1 PM PDT**
-+ Data Tidying with {tidyr}
-+ Data Visualization with {ggplot2}
-+ R Tips & Tricks
+#### **Day 3: Friday, 9/22, 9 AM - 1 PM PDT**
+.smaller-font[+ Data Tidying with `{tidyr}`
++ Data Visualization with `{ggplot2}`
++ R Tips & Tricks]
 
 ---
-class: split-two
+class: split-three
 # Logistics
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("slack", height = "120px")`](https://uodatascience.slack.com/)
+# [`r fontawesome::fa("slack", height = "120px")`](https://uopsychology.slack.com/)
 
-### Slack <br> (#bootcamp2022)
+### Slack <br> (#rbootcamp)
 ]]]
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("github", height = "120px")`](https://github.com/uopsych/summeR-bootcamp-2022)
+# [`r fontawesome::fa("google", height = "120px")`](https://drive.google.com/drive/folders/1NXdlOZ5ELdxbqGcO6oZR3UnaTv4GIcfP)
+
+### Google drive
+]]]
+
+.column[.content[.center[
+<br><br><br><br><br>
+# [`r fontawesome::fa("github", height = "120px")`](https://github.com/sdimakis/summeR-bootcamp-2023)
 
 ### GitHub
 ]]]
-
 ---
+class: split-three
+
 # A word of encouragement
 
-+ R has a substantial learning curve, but...
+R has a substantial learning curve, but...
 
 --
 
-  + 1) It's absolutely worth it! (I promise)
+  + It's absolutely worth it! 
   
 --
 
-  + 2) *Everyone* goes through this
+  +  *Everyone* goes through this
   
 --
 
 > “There is no way of going from knowing nothing about a subject to knowing something about a subject without going through a period of great frustration and much suckiness.”
 
---
+.column[.content[.right[<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-.right[-Hadley Wickham, <br>Chief Scientist at RStudio]
+]]]
 
-.right[
+.column[.content[.right[<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+-Hadley Wickham, <br>*Chief Scientist at RStudio*]]]
+
+.column[.content[.left[<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ```{r echo=FALSE, out.width="25%"}
 knitr::include_graphics("images/hadley.jpg")
 ```
-]
-
----
-# A word of encouragement
-
-+ R has a substantial learning curve, but...
-
-  + 1) It's absolutely worth it! (I promise)
-
-  + 2) *Everyone* goes through this
-
-```{r, echo = FALSE, messages=FALSE, warning=FALSE, error=FALSE, fig.height=4, fig.width=10, fig.align='center', fig.retina=2} 
-experience <- data.frame(experience = c(3, 5, 5, 5, 5, 5, 5, 2, 2, 5, 4, 
-                                        4, 5, 5, 6, 2, 5, 1, 3, 5, 3))
-
-experience %>%
-  ggplot(aes(x = experience)) +
-    geom_bar(fill = "#15758c") +
-    scale_x_continuous(limits = c(.5, 8.5), 
-                       breaks = seq(1, 8, 1), 
-                       labels = c("1\nThe letter?",
-                                  "2\nI think I've\nheard of it.",
-                                  "3\nI've definitely\nheard of it.",
-                                  "4\nI've opened it\nbefore.",
-                                  "5\nI've used it to\nanalyze data.",
-                                  "6\nI often use it to\nanalyze data.",
-                                  "7\nI am an expert\nR user.",
-                                  "8\nI am Hadley\nWickham.")) +
-    scale_y_continuous(limits = c(0, 11),
-                       breaks = seq(0, 11, 1)) +
-    theme_bw() +
-    labs(title = "Which of the following best describes your prior experience with R?",
-         x     = "Experience", 
-         y     = "Count") +
-    theme(axis.title.x = element_blank(),
-          axis.text = element_text(color = "black", size = 10))
-
-```
+]]]
 
 
----
-
-.footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
-
-.pull-left[.center[
-```{r echo=FALSE, out.width="60%"}
-knitr::include_graphics("images/breakr.gif")
-```
-]]
-
-.pull-right[.center[
-```{r echo=FALSE, out.width="60%"}
-knitr::include_graphics("images/stormyr.gif")
-```
-]]
-
---
-
-.center[
-# `r emo::ji("clock3")` + `r emo::ji("flex")` ...
-]
-
---
-
-.pull-left[.center[
-```{r echo=FALSE, out.width="60%"}
-knitr::include_graphics("images/heartyr.gif")
-```
-]]
-
-
-.pull-right[.center[
-```{r echo=FALSE, out.width="60%"}
-knitr::include_graphics("images/rainbowr.gif")
-```
-]]
 
 
 ---
@@ -259,7 +226,6 @@ knitr::include_graphics("images/rstudio_logo.png")
 
 **RStudio** is an integrated development environment (IDE) that provides an interface to R.
 
-RStudio also *currently* refers to the [company](https://rstudio.com/about/) that develops RStudio.
 ]
 ---
 # What are R & RStudio?
@@ -271,31 +237,35 @@ knitr::include_graphics("images/engine_dashboard.png")
 .footnote[Image from [*Modern Dive*](https://moderndive.netlify.app/1-1-r-rstudio.html)]
 ---
 
-# Why use R?
+class: inverse, center, middle
 
-## It's open source
+#Why should you invest the time to learn R?
+
+---
+
+
+# R is open source
 
 --
 
-+ It's free!
++ R and RStudio are free to download
 
 --
 
-+ It's easier to share your data & code
++ You can easily save and share your code
 
+--
+
++ Anyone can contribute (including you!)
+ 
 --
 
 + Innovations spread quickly
 
---
-
-+ *You* can contribute!
 
 ---
 
-# Why use R?
-
-## It's powerful & flexible
+## R is powerful & flexible
 
 --
 
@@ -317,20 +287,20 @@ knitr::include_graphics("images/engine_dashboard.png")
 + In R, it is never *if* but *how*...
 
 ---
-# Why use R?
 
-## It's a useful, transferable skill
+## Learning to code in R is a useful, transferable skill
 
 --
 
 + R is used across many industries, especially in UX & data science
 
+--
+
 + It is easier to learn a new programming language when you already know one
 
 ---
-# Why use R?
 
-## Reduce errors, enhance reproducibility & transparency
+## Using R can reduce errors and enhance reproducibility & transparency
 
 --
 
@@ -345,9 +315,8 @@ knitr::include_graphics("images/engine_dashboard.png")
 + You can use R to automate reporting of your analyses (for HW or publication), reducing all too common errors in reported statistics (see [Nuijten et al.](https://link.springer.com/article/10.3758/s13428-015-0664-2))
 
 ---
-# Why use R?
 
-## It's efficient
+## R is efficient
 
 --
 
@@ -366,16 +335,16 @@ knitr::include_graphics("images/engine_dashboard.png")
 + It runs faster and is less bloated than GUI-based statistical software (e.g., SPSS)
 
 ---
-# Why use R?
 
-## It's fun `r emo::ji("partying_face")`
+## R is fun `r emo::ji("partying_face")`
 
 ---
 class: inverse, center, middle
 # Q & A
 
+
 ```{r echo=FALSE}
-countdown(minutes = 3)
+countdown(minutes = 3, color_text = "#FEE123")
 ```
 
 ---
