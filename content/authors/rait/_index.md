@@ -14,4 +14,4 @@ user_groups:
 - Teaching Assistants
 ---
 
-Bio forthcoming.
+Lindsay is a doctoral candidate studying cognitive neuroscience at the University of Oregon. She is interested in how context (i.e., where and when events takes place) shapes not only how much individuals remember, but also the order in which individuals remember the events.
