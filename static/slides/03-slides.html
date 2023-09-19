@@ -211,7 +211,8 @@ mean(x = coffee_consumed_na, na.rm = TRUE)
 class: yourturn
 # Your turn 1
 
-<div class="countdown" id="timer_632d3073" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_660732c2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -368,12 +369,7 @@ sd(TRUE, vec_na)
 ```
 
 ```
-## Warning in if (na.rm) "na.or.complete" else "everything": the condition has
-## length &gt; 1 and only the first element will be used
-```
-
-```
-## [1] NA
+## Error in if (na.rm) "na.or.complete" else "everything": the condition has length &gt; 1
 ```
 
 --
@@ -499,7 +495,8 @@ class: split-two
 class: yourturn
 # Your turn 2
 
-<div class="countdown" id="timer_632d2e84" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5c835900" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -520,12 +517,12 @@ class: solution
 .panelset[
 .panel[.panel-name[Q1]
 
-&lt;img src="images/package_yt_1.png" width="1955" /&gt;
+![](images/package_yt_1.png)&lt;!-- --&gt;
 ]
 
 .panel[.panel-name[Q2]
 
-&lt;img src="images/package_yt_2.png" width="1771" /&gt;
+![](images/package_yt_2.png)&lt;!-- --&gt;
 ]
 
 .panel[.panel-name[Q3]
@@ -544,7 +541,7 @@ class: solution
 
 .panel[.panel-name[Q5]
 
-&lt;img src="images/package_yt_5.png" width="1885" /&gt;
+![](images/package_yt_5.png)&lt;!-- --&gt;
 ]
 ]
 
@@ -561,7 +558,7 @@ Another package we're going to use a lot going forward is `{tidyverse}`.
 When we load `{tidyverse}` we get quite a bit of info. 
 
 &lt;br&gt;
-&lt;img src="images/tidyverse_package_load.png" width="2509" /&gt;
+![](images/tidyverse_package_load.png)&lt;!-- --&gt;
 
 ---
 # Packages
@@ -594,7 +591,8 @@ You can tell R explicitly that you want a function from a particular package usi
 class: yourturn
 # Your turn 3
 
-<div class="countdown" id="timer_632d2f71" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_35eeb745" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -657,7 +655,7 @@ But there are a few general things to be aware of...
 
 .pull-right[
 
-&lt;img src="images/debugging.jpg" width="2731" /&gt;
+![](images/debugging.jpg)&lt;!-- --&gt;
 ]
 
 .footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
@@ -666,7 +664,8 @@ But there are a few general things to be aware of...
 class: inverse, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_632d2ff2" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_6064c9de" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -674,7 +673,8 @@ class: inverse, center, middle
 class: inverse, center, middle
 # Break!
 
-<div class="countdown" id="timer_632d2e39" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_dfa2ff53" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -723,6 +723,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

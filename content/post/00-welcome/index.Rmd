@@ -1,7 +1,6 @@
 ---
 title: Welcome
 author: ''
-date: "`r Sys.Date()`"
 weight: 1
 slug: []
 categories: []
