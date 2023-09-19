@@ -18,24 +18,24 @@
  *  Version: 0.4.2
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap);
 
 
 :root {
   /* Fonts */
-  --text-font-family: 'Averia Serif Libre';
+  --text-font-family: Montserrat;
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: 'Averia Serif Libre';
+  --header-font-family: Cabin;
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'Source Code Pro';
   --code-font-is-google: 1;
   --base-font-size: 20px;
-  --text-font-size: 1.2rem;
+  --text-font-size: 1rem;
   --code-font-size: 0.9rem;
   --code-inline-font-size: 1em;
   --header-h1-font-size: 2.75rem;
@@ -43,23 +43,23 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #0E3123;
-  --header-color: #154733;
-  --background-color: white;
-  --link-color: #4D5859;
-  --text-bold-color: #154733;
+  --text-color: #272822;
+  --header-color: #15758c;
+  --background-color: #FFFFFF;
+  --link-color: #15758c;
+  --text-bold-color: #15758c;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: white;
-  --inverse-background-color: #154733;
-  --inverse-header-color: white;
-  --inverse-link-color: #4D5859;
-  --title-slide-background-color: #154733;
-  --title-slide-text-color: #FEE123;
-  --header-background-color: #154733;
-  --header-background-text-color: white;
-  --base: #154733;
-  --white: white;
-  --black: #0E3123;
+  --inverse-text-color: #FFFFFF;
+  --inverse-background-color: #15758c;
+  --inverse-header-color: #FFFFFF;
+  --inverse-link-color: #15758c;
+  --title-slide-background-color: #15758c;
+  --title-slide-text-color: #FFFFFF;
+  --header-background-color: #15758c;
+  --header-background-text-color: #FFFFFF;
+  --base: #15758c;
+  --white: #FFFFFF;
+  --black: #272822;
 }
 
 html {
@@ -68,7 +68,7 @@ html {
 
 body {
   font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
-  font-weight: normal;
+  font-weight: 300;
   color: var(--text-color);
 }
 h1, h2, h3 {
@@ -78,7 +78,7 @@ h1, h2, h3 {
 }
 .remark-slide-content {
   background-color: var(--background-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
@@ -100,10 +100,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #154733;
+  color: #fc653a;
 }
 .remark-slide-number {
-  color: #154733;
+  color: #15758c;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -151,10 +151,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #15473399;
+  color: #15758c99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #154733;
+  color: #15758c;
 }
 .right-column {
   width: 75%;
@@ -176,7 +176,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #15473380;
+  border-left: solid 5px #15758c80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -193,7 +193,7 @@ th, td {
 .remark-slide table:not(.table-unshaded) thead,
 .remark-slide table:not(.table-unshaded) tfoot,
 .remark-slide table:not(.table-unshaded) tr:nth-child(even) {
-  background: #D0DAD6;
+  background: #D0E3E8;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -203,7 +203,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #D0DAD6;
+  background-color: #D0E3E8;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -292,10 +292,3 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: var(--black);
 }
 
-
-
-/* Extra CSS */
-.title-slide {
-  color: white;
-  font-size: 40px;
-}
