@@ -344,7 +344,7 @@ class: inverse, center, middle
 
 
 ```{r echo=FALSE}
-countdown(minutes = 3, color_text = "#FEE123")
+countdown(minutes = 3, color_text = "#FEE123", color_border ="#FEE123")
 ```
 
 ---

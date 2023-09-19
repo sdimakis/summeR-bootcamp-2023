@@ -75,11 +75,11 @@ https://github.com/emitanaka/ninja-theme ***/
 }
 
 .yourturn code {
-  color: #f78f72;
+  color: #FEE123;
 }
 
 .solution {
-  background-color: #158c68;
+  background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
   
 }
@@ -91,7 +91,7 @@ https://github.com/emitanaka/ninja-theme ***/
 }
 
 .solution code {
-  color: #f78f72;
+  color: #FEE123;
 }
 
 
