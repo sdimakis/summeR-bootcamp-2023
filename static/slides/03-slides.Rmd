@@ -27,18 +27,38 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
-class: title-slide, center, middle
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
 
 # Functions, Packages, & Debugging
+
+UO R Bootcamp 2023
+
 
 ---
 # Functions
@@ -52,11 +72,7 @@ We've already used a handful of functions, including `seq()`, arithmetic functio
 --
 ***
 
-Functions take some form of an input, perform some operation, and then return some object(s) as output.
-
---
-
-Functions are made up of **arguments**.
+Functions take input (the *arguments*), perform some operation, and then return some object(s) as output.
 
 ---
 # Functions
@@ -80,14 +96,25 @@ You might also notice that each of the arguments have a value after the `=` in t
 
 These values are the **defaults**; they are what the arguments will be set to if you don't specify them. 
 
---
-***
+---
+# Functions
 
-In fact, since all of the arguments have defaults, we don't have to specify any to run `seq()` as we saw earlier.
+Since all of the arguments have defaults, we don't have to specify any to run `seq()` as we saw earlier.
 
 ```{r}
 seq()
 ```
+
+
+
+---
+# Functions
+
+```{r echo=FALSE, out.width="65%"}
+knitr::include_graphics("images/help_page_annotated.png")
+```
+
+.footnote[Image from [Kieran Healy](https://socviz.co/appendix.html#a-little-more-about-r)]
 
 ---
 # Functions
@@ -100,14 +127,8 @@ Let's take a look at a new function, `mean()`.
 
 
 ---
-# Functions
 
-```{r echo=FALSE, out.width="65%"}
-knitr::include_graphics("images/help_page_annotated.png")
-```
 
-.footnote[Image from [Kieran Healy](https://socviz.co/appendix.html#a-little-more-about-r)]
----
 # Functions
 
 What happens if we run `mean()` without any arguments?
@@ -181,7 +202,9 @@ It returns `NA`. `NA`s are contagious! A single `NA` in a vector will cause many
 
 This sort of makes sense---the mean of `vec_na` in its entirety is unknown, since we don't know what the `NA` value is. That's why you have to remove `NA`s before running calculations by setting `na.rm = TRUE`
 
---
+---
+
+# Functions
 
 ```{r}
 mean(x = coffee_consumed_na, na.rm = TRUE)
@@ -192,12 +215,12 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 2, seconds = 30)
+countdown(minutes = 2, seconds = 30, color_border ="#FEE123")
 ```
 
 1. Look up the help documentation for the function `sd()`.
 
-1. Calculate the standard deviation of `vec_na`. Be sure to remove missing values first. 
+2. Calculate the standard deviation of `vec_na`. Be sure to remove missing values first. 
 
 ```{r}
 vec_na <- c(1, 2, 3, 4, 5, 6, NA, 2, 4)
@@ -233,8 +256,10 @@ You can get the length of many objects with `length()`
 length(x = vec_na)
 ```
 
---
-***
+---
+
+# Functions
+
 
 `nrow()` and `ncol()` can be used to get the number of rows or columns in a matrix or data frame. Let's look at the data frame `df` below
 
@@ -276,7 +301,7 @@ length(x = df)
 ---
 # Functions
 
-Take another look at the help documentation for `sd()` `r emo::ji("eyes")`. 
+Take another look at the help documentation for `sd()`. 
 
 Notice that there are two arguments and they are in order, `x` followed by `na.rm = FALSE`. 
 
@@ -365,9 +390,9 @@ However, whenever we want to to use a package, we need to load the package in ou
 
 We load packages with the `library()` function---we do this once *per session*.
 
---
-***
+---
 
+# Packages 
 Loading a package basically makes the contents of that package searchable by R. 
 
 In other words, after loading a package, R is able to find the functions included in that package. 
@@ -440,15 +465,15 @@ class: yourturn
 countdown(minutes = 3, seconds = 30)
 ```
 
-1. In your RStudio console, look up the help documentation for`import()` by typing `?import`. What do you see?
+1. In your RStudio console, look up the help documentation for `import()` by typing `?import`. What do you see?
 
-1. Run `search()` in the console. Is the `{rio}` package included in this list?
+2. Run `search()` in the console. Is the `{rio}` package included in this list?
  
-1. Load the `{rio}` package using the `library()` function. 
+3. Load the `{rio}` package using the `library()` function. 
 
-1. Now look again at the help documentation for `import()`. What do you see this time?
+4. Now look again at the help documentation for `import()`. What do you see this time?
 
-1. Run `search()` again. What is different this time?
+5. Run `search()` again. What is different this time?
 
 ---
 class: solution
@@ -536,8 +561,9 @@ Which one will R choose? R has an order in which it searches...
 
 It starts with the Global Environment, then searches packages in the order that they were loaded, searching more recently loaded packages first.
 
---
-***
+---
+
+# Packages
 
 You can tell R explicitly that you want a function from a particular package using the notation `package::function_name`. When in doubt, it's better to use the double colon operator to be specific about which function you want.
 
@@ -595,8 +621,9 @@ We're not going to go into details of debugging, because that could (and should)
 
 But there are a few general things to be aware of...
 
---
-***
+---
+
+# Debugging
 
 .pull-left[
 + Google is your best friend---it is *very* likely someone else has had your exact same problem/question before
@@ -616,7 +643,7 @@ knitr::include_graphics("images/debugging.jpg")
 .footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
@@ -624,7 +651,7 @@ countdown(minutes = 5)
 ```
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Break!
 
 ```{r echo=FALSE}
