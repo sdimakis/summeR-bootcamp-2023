@@ -27,16 +27,37 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
 # Piping
+
+UO R Bootcamp 2023
+
 
 ---
 background-image: url(images/hex/magrittr.png)
@@ -69,25 +90,22 @@ In general form, this means that...
 
 `x %>% f(y)` is the same as `f(x, y)`
 
---
-***
-
-Let's see an example...
-
 ---
+
 background-image: url(images/hex/magrittr.png)
 background-position: 90% 5%
 background-size: 10%
 
 # Pipe operator
 
---
+Let's see an example...
+
 
 ```{r}
 coffee_consumed <- c(20, 16, 16, 12, 0, 16, 30, 60)
 ```
 
-Let's say we wanted to take the mean of the `coffee_consumed` vector (as we did in the previous slide deck) and then we wanted to round the resulting value.
+Let's say we wanted to take the mean of the `coffee_consumed` vector  and then we wanted to round the resulting value.
 
 --
 ***
@@ -105,11 +123,13 @@ round(coffee_consumed_avg)
 This is inefficient.
 
 ---
+
 background-image: url(images/hex/magrittr.png)
 background-position: 90% 5%
 background-size: 10%
 
 # Pipe operator
+
 
 ```{r}
 coffee_consumed <- c(20, 16, 16, 12, 0, 16, 30, 60)
@@ -117,7 +137,7 @@ coffee_consumed <- c(20, 16, 16, 12, 0, 16, 30, 60)
 
 Let's say we wanted to take the mean of the `coffee_consumed` vector (as we did in the previous slide deck) and then we wanted to round the resulting value.
 
-***
+--
 
 We could, instead, do the following:
 
@@ -200,14 +220,14 @@ horror_movies_consumed %>%
 --
 ***
 
-`r emo::ji("keyboard")` You can enter a pipe with the shortcut `CTRL+Shift+M` for PC or `CMD+Shift+M` for Mac.
+.smaller-font[Tip: You can enter a pipe with the shortcut `CTRL+Shift+M` for PC or `CMD+Shift+M` for Mac.]
 
 ---
 class: yourturn
 # Your Turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 2, seconds = 30)
+countdown(minutes = 2, seconds = 30, color_border ="#FEE123")
 ```
 
 The code below calculates the standard deviation of the US population between 1790 and 1970 and then rounds the resulting value.
@@ -246,7 +266,7 @@ uspop %>%
 ]
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
