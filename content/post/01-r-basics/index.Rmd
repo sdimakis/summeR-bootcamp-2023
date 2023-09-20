@@ -1,5 +1,5 @@
 ---
-title: 01 Basics of R, RStudio, & R Markdown
+title: 01 - Basics of R, RStudio, & R Markdown
 author: ''
 date: 2023-09-20
 weight: 2
