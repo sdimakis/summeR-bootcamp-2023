@@ -30,18 +30,40 @@ xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin", "pocke
 yt_counter <- 0
 ```
 
+
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
+
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
 # R Tips & Tricks
+
+UO R Bootcamp 2023
 
 ---
 
@@ -69,9 +91,6 @@ knitr::include_graphics("images/rtips_ligature2.png")
 ```
 ]
 
---
-
-My ligature font of choice is [JetBrains Mono](https://www.jetbrains.com/lp/mono/), but there are [many](https://betterwebtype.com/articles/2020/02/13/5-monospaced-fonts-with-cool-coding-ligatures/) to choose from.
 
 ---
 
@@ -99,15 +118,11 @@ As with fonts, you can change the theme in RStudio's preferences pane.
 knitr::include_graphics("images/rtips_pref_theme.png")
 ```
 
----
-
-# Use a Different Theme
+--
 
 You can also [download](https://www.rstudio.com/blog/rstudio-ide-custom-theme-support/) and [create](https://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai) custom themes. 
 
---
 
-I created (and use) the [outRun](https://github.com/camkay/outRun) theme, but I encourage you to find a theme that suits your personal style. 
 
 ---
 
@@ -579,7 +594,7 @@ ggplot(mtcars,  aes(x = mpg)) +
 Check out the [resources](https://uorbootcamp2022.netlify.app/resources/) page on the [UO R Bootcamp](https://uorbootcamp2022.netlify.app) website for additional readings, websites, tutorials, and classes!
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}

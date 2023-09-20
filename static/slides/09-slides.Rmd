@@ -27,16 +27,37 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
+
 # Data Visualization with {ggplot2}
+
+UO R Bootcamp 2023
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -122,7 +143,7 @@ When creating a plot in `{ggplot2}`, the first thing you have to do is call the 
 
 --
 
-The function `ggplot()` takes `data` as its first argument. Let's start there...
+The function `ggplot()` takes `data` as its first argument. 
 
 --
 
@@ -290,9 +311,7 @@ background-size: 10%
 
 # Mapping with geoms
 
-We get an error, telling us that `geom_point()` requires the y-aesthetic.
-
-This makes sense---we need an x- and y-axis to define where points belong on a scatter plot. Let's add `bill_length_mm` as the y-axis
+.smaller-font[We get an error, telling us that `geom_point()` requires the y-aesthetic. This makes sense---we need an x- and y-axis to define where points belong on a scatter plot. Let's add `bill_length_mm` as the y-axis]
 
 --
 
@@ -322,9 +341,7 @@ background-size: 10%
 
 # Mapping with geoms
 
-Let's find out if the relationship between `flipper_length_mm` and `bill_length_mm` relates to the species of penguin. 
-
-We'll map `species` to the `color` aesthetic (similar to `fill`, but for 1D objects).
+Let's find out if the relationship between `flipper_length_mm` and `bill_length_mm` relates to the species of penguin. We'll map `species` to the `color` aesthetic (similar to `fill`, but for 1D objects).
 
 --
 
@@ -547,7 +564,7 @@ Learn more on that [here](http://www.statisticshowto.com/lowess-smoothing/).
 .panelset[
 .panel[.panel-name[Code 2]
 
-You can change that by setting the `method` argument in `geom_smooth()`. Let's change it to our old friend linear regression or "lm".
+.smaller-font[You can change that by setting the `method` argument in `geom_smooth()`. Let's change it to our old friend linear regression or "lm".]
 
 ```{r point-smooth-lm, eval=FALSE}
 penguins %>% 
@@ -765,23 +782,15 @@ You can do a TON more customization of your plots than what we've covered so far
 
 --
 
-For example, you can change your axis labels, tweak the theme of the plot, etc...
+For example, you can change your axis labels, change the theme of the plot, etc...
 
---
-***
-
-Good resources: 
-
-https://ggplot2.tidyverse.org/reference/theme.html
-
-http://r-statistics.co/Complete-Ggplot2-Tutorial-Part2-Customizing-Theme-With-R-Code.html
 
 ---
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Eric Ekholm](https://github.com/ekholme/tidytuesday#most-recent-finished-contribution)]
 ```{r echo=FALSE, out.width="60%", fig.align='center'}
@@ -793,7 +802,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Eric Ekholm](https://github.com/ekholme/tidytuesday#most-recent-finished-contribution)]
 
@@ -806,7 +815,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -819,7 +828,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -832,7 +841,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Jake Kaupp](https://github.com/jkaupp/tidytuesdays)]
 
@@ -845,7 +854,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -858,7 +867,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Torsten Sprenger](https://github.com/spren9er/tidytuesday)]
 
@@ -871,7 +880,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Ariane Aumaitre](https://twitter.com/ariamsita?s=20&t=e0M_tAtBxKKKdjlWpykazw)]
 
@@ -884,7 +893,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Cara Thompson](https://github.com/cararthompson/tidytuesdays)]
 
@@ -897,7 +906,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example `r emo::ji("exploding_head")`
+# Examples `r emo::ji("exploding_head")`
 
 .footnote[Image from [Cameron S. Kay](https://twitter.com/cameronskay/status/1552003928295817217/photo/1) `r emo::ji("upside_down_face")`]
 
@@ -906,7 +915,7 @@ knitr::include_graphics("images/ggplot_ex_10.jpeg")
 ```
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
@@ -914,7 +923,7 @@ countdown(minutes = 5)
 ```
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Break! 
 
 ```{r echo=FALSE}

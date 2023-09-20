@@ -29,7 +29,18 @@
 
 class: title-slide, center, middle
 
+.top-left[
+&lt;img src="images/uo-logo2.png" width="100%" /&gt;
+]
+
+.top-right[
+&lt;img src="images/psy-logo.png" width="100%" /&gt;
+]
+
+
 # Data Visualization with {ggplot2}
+
+UO R Bootcamp 2023
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -77,20 +88,20 @@ penguins
 
 ```
 ## # A tibble: 344 × 8
-##    species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
-##    &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
-##  1 Adelie  Torgersen           39.1          18.7               181        3750
-##  2 Adelie  Torgersen           39.5          17.4               186        3800
-##  3 Adelie  Torgersen           40.3          18                 195        3250
-##  4 Adelie  Torgersen           NA            NA                  NA          NA
-##  5 Adelie  Torgersen           36.7          19.3               193        3450
-##  6 Adelie  Torgersen           39.3          20.6               190        3650
-##  7 Adelie  Torgersen           38.9          17.8               181        3625
-##  8 Adelie  Torgersen           39.2          19.6               195        4675
-##  9 Adelie  Torgersen           34.1          18.1               193        3475
-## 10 Adelie  Torgersen           42            20.2               190        4250
+##    species island    bill_length_mm bill_depth_mm flipper_length_mm
+##    &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;
+##  1 Adelie  Torgersen           39.1          18.7               181
+##  2 Adelie  Torgersen           39.5          17.4               186
+##  3 Adelie  Torgersen           40.3          18                 195
+##  4 Adelie  Torgersen           NA            NA                  NA
+##  5 Adelie  Torgersen           36.7          19.3               193
+##  6 Adelie  Torgersen           39.3          20.6               190
+##  7 Adelie  Torgersen           38.9          17.8               181
+##  8 Adelie  Torgersen           39.2          19.6               195
+##  9 Adelie  Torgersen           34.1          18.1               193
+## 10 Adelie  Torgersen           42            20.2               190
 ## # ℹ 334 more rows
-## # ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;
+## # ℹ 3 more variables: body_mass_g &lt;int&gt;, sex &lt;fct&gt;, year &lt;int&gt;
 ```
 
 
@@ -130,7 +141,7 @@ When creating a plot in `{ggplot2}`, the first thing you have to do is call the 
 
 --
 
-The function `ggplot()` takes `data` as its first argument. Let's start there...
+The function `ggplot()` takes `data` as its first argument. 
 
 --
 
@@ -307,9 +318,7 @@ background-size: 10%
 
 # Mapping with geoms
 
-We get an error, telling us that `geom_point()` requires the y-aesthetic.
-
-This makes sense---we need an x- and y-axis to define where points belong on a scatter plot. Let's add `bill_length_mm` as the y-axis
+.smaller-font[We get an error, telling us that `geom_point()` requires the y-aesthetic. This makes sense---we need an x- and y-axis to define where points belong on a scatter plot. Let's add `bill_length_mm` as the y-axis]
 
 --
 
@@ -339,9 +348,7 @@ background-size: 10%
 
 # Mapping with geoms
 
-Let's find out if the relationship between `flipper_length_mm` and `bill_length_mm` relates to the species of penguin. 
-
-We'll map `species` to the `color` aesthetic (similar to `fill`, but for 1D objects).
+Let's find out if the relationship between `flipper_length_mm` and `bill_length_mm` relates to the species of penguin. We'll map `species` to the `color` aesthetic (similar to `fill`, but for 1D objects).
 
 --
 
@@ -425,7 +432,7 @@ This is not what we want! `ggplot` is treating the value "turquoise" as if it we
 class: yourturn
 # Your Turn 1
 
-<div class="countdown" id="timer_dddb7209" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ce165d64" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -565,7 +572,7 @@ Learn more on that [here](http://www.statisticshowto.com/lowess-smoothing/).
 .panelset[
 .panel[.panel-name[Code 2]
 
-You can change that by setting the `method` argument in `geom_smooth()`. Let's change it to our old friend linear regression or "lm".
+.smaller-font[You can change that by setting the `method` argument in `geom_smooth()`. Let's change it to our old friend linear regression or "lm".]
 
 
 ```r
@@ -715,7 +722,7 @@ penguins %&gt;%
 class: yourturn
 # Your Turn 2
 
-<div class="countdown" id="timer_51db3fd6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a08e192d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">06</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -743,16 +750,16 @@ glimpse(diamonds)
 ```
 ## Rows: 53,940
 ## Columns: 10
-## $ carat   &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.23, 0.…
-## $ cut     &lt;ord&gt; Ideal, Premium, Good, Premium, Good, Very Good, Very Good, Ver…
-## $ color   &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, J, I,…
-## $ clarity &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, VS1, …
-## $ depth   &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.4, 64…
-## $ table   &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 62, 58…
-## $ price   &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 340, 34…
-## $ x       &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.00, 4.…
-## $ y       &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.05, 4.…
-## $ z       &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.39, 2.…
+## $ carat   &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0…
+## $ cut     &lt;ord&gt; Ideal, Premium, Good, Premium, Good, Very Good, Very Go…
+## $ color   &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J…
+## $ clarity &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1…
+## $ depth   &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 5…
+## $ table   &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54,…
+## $ price   &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, …
+## $ x       &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4…
+## $ y       &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4…
+## $ z       &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2…
 ```
 ]
 
@@ -774,7 +781,7 @@ diamonds %&gt;%
 
 .pull-right[
 
-![](09-slides_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
 ]
 ]
 ]
@@ -790,23 +797,15 @@ You can do a TON more customization of your plots than what we've covered so far
 
 --
 
-For example, you can change your axis labels, tweak the theme of the plot, etc...
+For example, you can change your axis labels, change the theme of the plot, etc...
 
---
-***
-
-Good resources: 
-
-https://ggplot2.tidyverse.org/reference/theme.html
-
-http://r-statistics.co/Complete-Ggplot2-Tutorial-Part2-Customizing-Theme-With-R-Code.html
 
 ---
 background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Eric Ekholm](https://github.com/ekholme/tidytuesday#most-recent-finished-contribution)]
 &lt;img src="images/ggplot_ex_1.png" width="60%" style="display: block; margin: auto;" /&gt;
@@ -816,7 +815,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Eric Ekholm](https://github.com/ekholme/tidytuesday#most-recent-finished-contribution)]
 
@@ -827,7 +826,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -838,7 +837,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -849,7 +848,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Jake Kaupp](https://github.com/jkaupp/tidytuesdays)]
 
@@ -860,7 +859,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Georgios Karamanis](https://github.com/gkaramanis/tidytuesday#highlights-click-on-image-to-go-to-code-)]
 
@@ -871,7 +870,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Torsten Sprenger](https://github.com/spren9er/tidytuesday)]
 
@@ -882,7 +881,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Ariane Aumaitre](https://twitter.com/ariamsita?s=20&amp;t=e0M_tAtBxKKKdjlWpykazw)]
 
@@ -893,7 +892,7 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Cara Thompson](https://github.com/cararthompson/tidytuesdays)]
 
@@ -904,26 +903,26 @@ background-image: url(images/hex/ggplot2.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Example 🤯
+# Examples 🤯
 
 .footnote[Image from [Cameron S. Kay](https://twitter.com/cameronskay/status/1552003928295817217/photo/1) 🙃]
 
 &lt;img src="images/ggplot_ex_10.jpeg" width="100%" /&gt;
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_948e4f46" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_170913b5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Break! 
 
-<div class="countdown" id="timer_c7b52ef1" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_af22a7d2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>

@@ -29,7 +29,17 @@
 
 class: title-slide, center, middle
 
+.top-left[
+&lt;img src="images/uo-logo2.png" width="100%" /&gt;
+]
+
+.top-right[
+&lt;img src="images/psy-logo.png" width="100%" /&gt;
+]
+
 # Data Wrangling with {dplyr}
+
+UO R Bootcamp 2023
 
 ---
 background-image: url(images/hex/tidyverse.png)
@@ -80,8 +90,7 @@ starwars
 ##  8 R5-D4                  97    32 &lt;NA&gt;          red       Droid  
 ##  9 Biggs Darklighter     183    84 black         brown     Human  
 ## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray Human  
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 
 ---
@@ -94,6 +103,7 @@ background-size: 10%
 `{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
 
 --
+
 ***
 
 **Manipulating observations**
@@ -102,7 +112,16 @@ background-size: 10%
 
 + `arrange()` changes the ordering of the rows.
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# {dplyr}
+
+`{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+
 ***
 
 **Manipulating variables**
@@ -111,7 +130,16 @@ background-size: 10%
 
 + `mutate()` adds new variables that are functions of existing variables.
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# {dplyr}
+
+`{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+
 ***
 
 **Summarizing data**
@@ -132,7 +160,7 @@ background-size: 10%
 
 ### Subset observations (rows) with `filter()`
 
-&lt;img src="images/dplyr/filter.png" width="400" /&gt;
+![](images/dplyr/filter.png)&lt;!-- --&gt;
 
 ---
 background-image: url(images/hex/dplyr.png)
@@ -141,7 +169,7 @@ background-size: 10%
 
 # `filter()`
 
-&lt;img src="images/dplyr_filter.jpg" width="9099" /&gt;
+![](images/dplyr_filter.jpg)&lt;!-- --&gt;
 
 .footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
 
@@ -266,8 +294,7 @@ starwars %&gt;%
 ##  8 Boba Fett            183  78.2 black         brown     Human  
 ##  9 Lando Calrissian     177  79   black         brown     Human  
 ## 10 Arvel Crynyd          NA  NA   brown         brown     Human  
-## # … with 13 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 13 more rows
 ```
 
 ]
@@ -312,8 +339,7 @@ starwars %&gt;%
 ##  8 Anakin Skywalker      188    84 blond         blue      Human  
 ##  9 Wilhuff Tarkin        180    NA auburn, grey  blue      Human  
 ## 10 Chewbacca             228   112 brown         blue      Wookiee
-## # … with 72 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 72 more rows
 ```
 ]
 
@@ -350,7 +376,7 @@ background-size: 10%
 
 ### Arrange rows by column values with `arrange()`
 
-&lt;img src="images/dplyr/arrange.png" width="400" /&gt;
+![](images/dplyr/arrange.png)&lt;!-- --&gt;
 
 ---
 background-image: url(images/hex/dplyr.png)
@@ -395,8 +421,7 @@ starwars %&gt;%
 ##  8 Padmé Amidala            165    45 brown      brown     Human         
 ##  9 Wat Tambor               193    48 none       unknown   Skakoan       
 ## 10 Sly Moore                178    48 none       white     &lt;NA&gt;          
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 
 ]
@@ -423,8 +448,7 @@ starwars %&gt;%
 ##  8 Chewbacca                228   112 brown       blue          Wookiee   
 ##  9 Jek Tono Porkins         180   110 brown       blue          Human     
 ## 10 Dexter Jettster          198   102 none        yellow        Besalisk  
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 ]
@@ -434,7 +458,7 @@ class: yourturn
 
 # Your turn 1
 
-<div class="countdown" id="timer_07cd1aae" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_57d8f421" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -547,8 +571,7 @@ data_filtered
 ##  8  17.8     6  168.   123  3.92  3.44  18.9     1     0     4     4
 ##  9  10.4     8  472    205  2.93  5.25  18.0     0     0     3     4
 ## 10  10.4     8  460    215  3     5.42  17.8     0     0     3     4
-## # … with 11 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 11 more rows
 ```
 
 ]
@@ -568,7 +591,7 @@ background-size: 10%
 
 ### Select columns with `select()`
 
-&lt;img src="images/dplyr/select.png" width="400" /&gt;
+![](images/dplyr/select.png)&lt;!-- --&gt;
 
 
 ---
@@ -615,8 +638,7 @@ starwars %&gt;%
 ##  8 R5-D4                 32
 ##  9 Biggs Darklighter     84
 ## 10 Obi-Wan Kenobi        77
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 
 ]
@@ -643,8 +665,7 @@ starwars %&gt;%
 ##  8     97    32 &lt;NA&gt;         
 ##  9    183    84 black        
 ## 10    182    77 auburn, white
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 
 ]
@@ -676,7 +697,6 @@ Here are some commonly used ones:
 
 `contains()`: Contains a literal string.
 
-`matches()`: Matches a regular expression.
 
 .footnote[🔗 https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html#overview-of-selection-features]
 
@@ -714,8 +734,7 @@ starwars %&gt;%
 ##  8     97 &lt;NA&gt;         
 ##  9    183 black        
 ## 10    182 auburn, white
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 
@@ -741,8 +760,7 @@ starwars %&gt;%
 ##  8 &lt;NA&gt;          red      
 ##  9 black         brown    
 ## 10 auburn, white blue-gray
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 
@@ -768,8 +786,7 @@ starwars %&gt;%
 ##  8 &lt;NA&gt;          red      
 ##  9 black         brown    
 ## 10 auburn, white blue-gray
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 
@@ -784,7 +801,7 @@ background-size: 10%
 
 ### Create (or overwrite) variables with `mutate()`
 
-&lt;img src="images/dplyr/mutate.png" width="400" /&gt;
+![](images/dplyr/mutate.png)&lt;!-- --&gt;
 
 ---
 background-image: url(images/hex/dplyr.png)
@@ -843,8 +860,7 @@ starwars %&gt;%
 ##  8 R5-D4                  97    32 &lt;NA&gt;          red       Droid        37.8
 ##  9 Biggs Darklighter     183    84 black         brown     Human        71.4
 ## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray Human        71.0
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 
 ]
@@ -871,8 +887,7 @@ starwars %&gt;%
 ##  8 R5-D4                  97    32 &lt;NA&gt;          red       Droid      70.4
 ##  9 Biggs Darklighter     183    84 black         brown     Human     185. 
 ## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray Human     169. 
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 
@@ -898,8 +913,7 @@ starwars %&gt;%
 ##  8 R5-D4                  97    32 &lt;NA&gt;          red       droid  
 ##  9 Biggs Darklighter     183    84 black         brown     human  
 ## 10 Obi-Wan Kenobi        182    77 auburn, white blue-gray human  
-## # … with 77 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 77 more rows
 ```
 ]
 
@@ -910,7 +924,7 @@ class: yourturn
 
 # Your turn 2
 
-<div class="countdown" id="timer_2733ff7a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_4b359a84" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -949,8 +963,7 @@ data %&gt;%
 ##  8  24.4    62
 ##  9  22.8    95
 ## 10  19.2   123
-## # … with 22 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 22 more rows
 ```
 
 ]
@@ -977,8 +990,7 @@ data %&gt;%
 ##  8  24.4     4  147.    62  3.69  3.19  20       0     4     2
 ##  9  22.8     4  141.    95  3.92  3.15  22.9     0     4     2
 ## 10  19.2     6  168.   123  3.92  3.44  18.3     0     4     4
-## # … with 22 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 22 more rows
 ```
 
 ]
@@ -1005,8 +1017,7 @@ data %&gt;%
 ##  8  24.4 4      147.    62  3.69  3.19  20       1     0     4     2
 ##  9  22.8 4      141.    95  3.92  3.15  22.9     1     0     4     2
 ## 10  19.2 6      168.   123  3.92  3.44  18.3     1     0     4     4
-## # … with 22 more rows
-## # ℹ Use `print(n = ...)` to see more rows
+## # ℹ 22 more rows
 ```
 
 ]
@@ -1028,12 +1039,18 @@ background-size: 10%
 
 &lt;img src="images/dplyr/summarize.png" width="40%" /&gt;
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# `summarize()`
 ***
 
 Summary functions take vectors as inputs and return single values as outputs.
 
-&lt;img src="images/dplyr/summary_function.png" width="533" /&gt;
+![](images/dplyr/summary_function.png)&lt;!-- --&gt;
 
 Common examples are `mean()`, `sd()`, `max()`, `min()`, `sum()`, etc...
 
@@ -1173,7 +1190,7 @@ class: yourturn
 
 # Your turn 3
 
-<div class="countdown" id="timer_5a472a98" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a847eebc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1251,10 +1268,11 @@ What if we want to apply `{dplyr}` verbs across multiple columns and rows **simu
 .footnote[🔗 [dplyr-wisely.netlify.app](https://dplyr-wisely.netlify.app/)]
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
+
 # Q &amp; A
 
-<div class="countdown" id="timer_c28c2b84" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_1a9c42d7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>

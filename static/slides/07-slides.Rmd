@@ -27,23 +27,36 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a",
-                colors = c(
-                  blue = "#6495ed",
-                  red = "#f34213",
-                  purple = "#3e2f5b",
-                  orange = "#ff8811",
-                  green = "#136f63",
-                  white = "#FFFFFF"))
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
 # Data Wrangling with {dplyr}
+
+UO R Bootcamp 2023
 
 ---
 background-image: url(images/hex/tidyverse.png)
@@ -92,6 +105,7 @@ background-size: 10%
 `{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
 
 --
+
 ***
 
 **Manipulating observations**
@@ -100,7 +114,16 @@ background-size: 10%
 
 + `arrange()` changes the ordering of the rows.
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# {dplyr}
+
+`{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+
 ***
 
 **Manipulating variables**
@@ -109,7 +132,16 @@ background-size: 10%
 
 + `mutate()` adds new variables that are functions of existing variables.
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# {dplyr}
+
+`{dplyr}` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+
 ***
 
 **Summarizing data**
@@ -434,7 +466,6 @@ Here are some commonly used ones:
 
 `contains()`: Contains a literal string.
 
-`matches()`: Matches a regular expression.
 
 .footnote[`r emo::ji("link")` https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html#overview-of-selection-features]
 
@@ -619,7 +650,13 @@ background-size: 10%
 knitr::include_graphics("images/dplyr/summarize.png")
 ```
 
---
+---
+
+background-image: url(images/hex/dplyr.png)
+background-position: 90% 5%
+background-size: 10%
+
+# `summarize()`
 ***
 
 Summary functions take vectors as inputs and return single values as outputs.
@@ -785,9 +822,10 @@ knitr::include_url("https://dplyr-wisely.netlify.app/")
 .footnote[`r emo::ji("link")` [dplyr-wisely.netlify.app](https://dplyr-wisely.netlify.app/)]
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
+
 # Q & A
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 5, color_border ="#FEE123")
 ```
