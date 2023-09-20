@@ -1,13 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Data Visualization with {ggplot2}"
+title: "09 Data Visualization with {ggplot2}"
 subtitle: ""
 summary: " "
 authors: []
 tags: []
 categories: []
-date: "`r Sys.Date()`"
+date: "2023-09-22"
 weight: 10
 featured: false
 draft: false

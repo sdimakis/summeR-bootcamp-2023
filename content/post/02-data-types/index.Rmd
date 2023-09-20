@@ -2,7 +2,7 @@
 title: 02 Data Types & Structures
 author: ''
 date: 2023-09-20
-weight: 2
+weight: 3
 slug: []
 categories: []
 tags: []
