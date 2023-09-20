@@ -339,7 +339,7 @@ class: inverse, center, middle
 ## R is fun `r emo::ji("partying_face")`
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 

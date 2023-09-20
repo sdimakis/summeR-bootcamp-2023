@@ -422,7 +422,7 @@ class: yourturn, center, middle
 
 
 ```{r echo=FALSE}
-countdown(minutes = 3)
+countdown(minutes = 3, color_text = "#FEE123", color_border ="#FEE123")
 ```
 
 ---
@@ -430,7 +430,7 @@ class: yourturn, center, middle
 # Break! 
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 5, color_text = "#FEE123", color_border ="#FEE123")
 ```
 
 
