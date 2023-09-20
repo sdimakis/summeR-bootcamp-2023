@@ -27,16 +27,38 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
+
 # Introduction to the Tidyverse
+
+UO R Bootcamp 2023
+
 
 ---
 # Tidyverse
@@ -535,17 +557,17 @@ knitr::include_url("https://purrr.tidyverse.org/")
 ]
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
-countdown(minutes = 3)
+countdown(minutes = 3, color_border ="#FEE123")
 ```
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Break!
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 5, color_border ="#FEE123")
 ```

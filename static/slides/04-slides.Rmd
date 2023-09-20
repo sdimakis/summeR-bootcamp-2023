@@ -270,7 +270,7 @@ class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
-countdown(minutes = 3)
+countdown(minutes = 3, color_border ="#FEE123")
 ```
 
 
