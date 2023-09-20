@@ -27,16 +27,37 @@ yt_counter <- 0
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#15758c",
-                text_font_google = google_font("Montserrat", "300", "300i"),
+style_mono_light(base_color = "#154733",
+                header_font_google = google_font("Averia Serif Libre"),
+                text_font_google = google_font("Averia Serif Libre"),
                 code_font_google = google_font("Source Code Pro"),
-                link_color = "#15758c",
-                code_inline_color = "#fc653a")
+                link_color = "#4D5859",
+                code_inline_color = "#154733",
+                title_slide_text_color = "#FEE123",
+                white_color = "white",
+                text_font_size = "1.2rem",
+                extra_css = list(".title-slide" = list("color" =  "white", "font-size" = "40px")))
+
 ```
 
 class: title-slide, center, middle
 
+.top-left[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/uo-logo2.png")
+```
+]
+
+.top-right[
+```{r echo = FALSE, out.width="100%"}
+knitr::include_graphics("images/psy-logo.png")
+```
+]
+
+
 # Importing Data & Project-Oriented Workflows
+
+UO R Bootcamp 2023
 
 ---
 
@@ -54,8 +75,6 @@ Importing data in R has 2 challenging aspects...
 
 ---
 # Importing data
-
-### Challenge 1: File types
 
 --
 
@@ -90,8 +109,6 @@ knitr::include_graphics("images/hex/rio.png")
 ---
 
 # Importing data
-
-### Challenge 1: File types
 
 
 .pull-left[
@@ -137,10 +154,6 @@ We'll get some practice with this in a few minutes.
 ---
 # Project-oriented workflows
 
-### Challenge 2: File paths
-
---
-
 When R looks for a file, it has a starting point. This is called the **working directory**. 
 
 --
@@ -156,7 +169,10 @@ If you ever get lost, you can print your working directory with `getwd()`
 
 If you are working in a `.Rmd` document, R by default will set whatever folder on your computer where that `.Rmd` file lives as your working directory 
 
---
+---
+
+# Project-oriented workflows
+
 
 ```{r}
 getwd()
@@ -168,15 +184,13 @@ For example, I created these slides in a `.Rmd` document that lives in this fold
 class: split-three
 # Project-oriented workflows
 
-### RStudio Projects
-
-The best way to simplify issues with working directories is to use **RStudio Projects**. 
+The best way to simplify issues with working directories is to use <u>**RStudio Projects**</u>. 
 
 --
 ***
 
 .column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ### Step 1
 ```{r echo = FALSE, out.width="90%"}
@@ -185,7 +199,7 @@ knitr::include_graphics("images/create_project1.png")
 ]]]
 
 .column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ### Step 2
 ```{r echo = FALSE, out.width="90%"}
@@ -196,7 +210,7 @@ knitr::include_graphics("images/create_project2.png")
 ]]]
 
 .column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ### Step 3
 ```{r echo = FALSE, out.width="90%"}
@@ -207,8 +221,6 @@ knitr::include_graphics("images/create_project3.png")
 
 ---
 # Project-oriented workflows
-
-### RStudio Projects
 
 When you create a Project in RStudio, it is associated with a folder somewhere on your computer. 
 
@@ -228,9 +240,8 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 6)
+countdown(minutes = 6, color_border = "#FEE123")
 ```
-
 
 
 Q1. Load the `{rio}` package.
@@ -320,7 +331,7 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 5, color_border = "#FEE123")
 ```
 
 1. Look through the Files pane and find the file `another_data_set.csv`. Make note of what subdirectory it is saved in. Import the data and save to an object called `another_df`.
@@ -383,20 +394,11 @@ You should see `ps_data` in the environment pane with a little data table icon a
 
 --
 
-You'll notice that this ran `View(ps_data)` in the console. We could have instead just typed this directly ourselves`*`---notice the capital `V` in `View()` `r emo::ji("eyes")`
+You'll notice that this ran `View(ps_data)` in the console. We could have instead just typed this directly ourselves`*`---notice the capital `V` in `View()`
 
---
-
-***
-
-`*` Feel free to use `View()` in the console, but please **never** write `View()` in your scripts. It can be disorienting for people who are running through your code to suddenly have the focal window change. 
 
 ---
 # Viewing data 
-
-### `head()` and `tail()`
-
---
 
 .panelset[
 .panel[.panel-name[`head()`]
@@ -416,14 +418,7 @@ head(ps_data)
 tail(ps_data)
 ```
 ]
-]
 
----
-# Viewing data
-
-### `str()` and `glimpse()`
-
-.panelset[
 .panel[.panel-name[`str()`]
 
 We saw `str()` when we first introduced data frames. It's worth mentioning it again because it can be so useful when you import data to see how your variables were read in (i.e. their types)
@@ -445,12 +440,11 @@ glimpse(ps_data)
 ]
 ]
 
+
 ---
 # Viewing data
 
-### `tibble()`
-
-As noted in the previous slide deck, a `tibble` is much like the data frame in base R, but **it has nicer printing methods**. 
+A `tibble` is much like the data frame in base R, but **it has nicer printing methods**. 
 
 --
 
@@ -458,8 +452,6 @@ As a result, you only have to call a `tibble` to see much of the information you
 
 ---
 # Viewing data
-
-### `tibble()`
 
 ```{r}
 ps_data <- tibble(ps_data)
@@ -473,14 +465,14 @@ class: yourturn
 # Your turn `r (yt_counter <- yt_counter + 1)`
 
 ```{r echo=FALSE}
-countdown(minutes = 4)
+countdown(minutes = 4, color_border = "#FEE123")
 ```
 
 1. Take a look at `another_df`, which should be in your Global Environment. Click the "View" button in the Environment pane and also use `View()` in your Console. 
 
-1. Now look at some summary information about `another_df` using `str()` and `glimpse()`. *Hint*. You will need to load the tidyverse package first in order to use `glimpse()`.
+2. Now look at some summary information about `another_df` using `str()` and `glimpse()`. *Hint*. You will need to load the tidyverse package first in order to use `glimpse()`.
 
-1. Lastly, find the number of rows and columns in `another_df` using `nrow()` and `ncol()`, respectively. Make sure your answers match the summary information given to you above. 
+3. Lastly, find the number of rows and columns in `another_df` using `nrow()` and `ncol()`, respectively. Make sure your answers match the summary information given to you above. 
 
 ---
 class: solution
@@ -522,18 +514,18 @@ ncol(another_df)
 ]
  
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Q & A
 
 ```{r echo=FALSE}
-countdown(minutes = 5)
+countdown(minutes = 5, color_border = "#FEE123")
 ```
 
 ---
-class: inverse, center, middle
+class: yourturn, center, middle
 # Break! 
 
 ```{r echo=FALSE}
-countdown(minutes = 30)
+countdown(minutes = 10, color_border = "#FEE123")
 ```
 
