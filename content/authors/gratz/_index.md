@@ -14,4 +14,4 @@ user_groups:
 - Teaching Assistants
 ---
 
-Bio forthcoming.
+Dominik is a fourth-year PhD student in Ulrich Mayr's lab at the University of Oregon. He is interested in cognitive control, specifically in how the cognitive system selects information from different sources. He uses R primarily to clean, analyze, and visualize data, but also to create Shiny applications or to edit images.
