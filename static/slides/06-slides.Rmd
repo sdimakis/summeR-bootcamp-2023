@@ -276,7 +276,7 @@ ps_data <- import("06_pragmatic_scales_data.csv")
 
 ***
 
-The file **pragmatic_scales_data.csv** is saved in the **data** folder, so we need to tell R to look in that folder.
+The file *pragmatic_scales_data.csv* is saved in the *data* folder, so we need to tell R to look in that folder.
 ]
 
 .panel[.panel-name[Q3]
