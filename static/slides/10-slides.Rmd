@@ -11,6 +11,8 @@ output:
     highlightStyle: github
     highlightLines: true
     countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -553,12 +555,22 @@ ggplotly(plot)
 
 You can use the `{gganimate}` package to create animated plots.
 
-```{r, message=FALSE, warning=FALSE, error=FALSE, fig.height=4, fig.width=10, fig.align='center', fig.retina=2}
-ggplot(mtcars,  aes(x = mpg)) +
-  geom_histogram(fill = "#15758c", color = "white") +
-  transition_states(cyl) +
-  labs(title = "Cylinders: {closest_state}", y = "Count") + 
-  theme_bw()
+
+```{r, eval=FALSE}
+ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+  geom_point(alpha = 0.7, show.legend = FALSE) +
+  scale_colour_manual(values = country_colors) +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  facet_wrap(~continent) +
+  labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+  transition_time(year) +
+  ease_aes('linear')
+```
+
+
+```{r echo=FALSE, out.width="40%", fig.align='center'}
+knitr::include_graphics("images/gganimate.gif")
 ```
 
 ---
