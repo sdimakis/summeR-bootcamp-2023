@@ -202,7 +202,7 @@ You can set R to provide a custom start-up message every time you start or resta
 
 --
 
-For example, I use my package [{merlinmann}](https://github.com/camkay/merlinmann) to deliver me a random piece of wisdom from Merlin Mann every time I start or restart R:
+For example, Cam (previous RBootcamp instructor) uses his package [{merlinmann}](https://github.com/camkay/merlinmann) to deliver a random piece of wisdom from Merlin Mann every time he starts or restart R:
 
 ```{r echo=FALSE, out.width="50%", fig.align='center'}
 knitr::include_graphics("images/rtips_startup.png")
